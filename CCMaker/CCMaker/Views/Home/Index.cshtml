@@ -1,0 +1,232 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .draggable {
+        cursor: move;
+    }
+</style>
+
+<svg id="svgparent" viewBox="0 0 800 800"></svg>
+
+<script type="text/javascript">
+    var Kodiak = {
+        Name: "Kodiak 10/20",
+        Boxes: "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+    }
+    var Drakhun = {
+        Name: "MoW Drakhun 10/18(16)",
+        Boxes: "00000000000\n.....000000"
+    }
+    var ShockTroopers = {
+        Name: "MoW Shocktroopers+UA 10/17",
+        Boxes: "100000000\n200000000\n300000000\n400000000\n500000000\n*00000000"
+    }
+
+    var models = [Kodiak, Drakhun, ShockTroopers];
+    var selectedElement, offset;
+
+    models.forEach(GenerateSVG);
+
+
+
+
+    function startDrag(evt) {
+        console.log('entered: "' + evt.target.id + '"');
+        var target = evt.target;
+        //while (target.id == "")
+        //    target = target.;
+        if (evt.target.classList.contains('draggable')) {
+            selectedElement = evt.target;
+            offset = getMousePosition(evt);
+            offset.x -= parseFloat(selectedElement.getAttributeNS(null, "x"));
+            offset.y -= parseFloat(selectedElement.getAttributeNS(null, "y"));
+        }
+    }
+    function drag(evt) {
+        if (selectedElement) {
+            evt.preventDefault();
+            var coord = getMousePosition(evt);
+            selectedElement.setAttributeNS(null, "x", coord.x - offset.x);
+            selectedElement.setAttributeNS(null, "y", coord.y - offset.y);
+        }
+    }
+    function endDrag(evt) {
+        selectedElement = null;
+    }
+    function getMousePosition(evt) {
+        var CTM = evt.target.getScreenCTM();
+        return {
+            x: (evt.clientX - CTM.e) / CTM.a,
+            y: (evt.clientY - CTM.f) / CTM.d
+        };
+    }
+
+
+
+
+    function GenerateSVG(value) {
+        var svgParent = document.getElementById("svgparent");
+
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.id = 'svg' + value.Name.replace(/\s/g, '');
+        svg.style.width='275px';
+        svg.style.height = '200px';
+        svg.classList.add('draggable');
+        svgParent.appendChild(svg);
+
+        svg.addEventListener('mousedown', startDrag);
+        svg.addEventListener('mousemove', drag);
+        svg.addEventListener('mouseup', endDrag);
+        svg.addEventListener('mouseleave', endDrag);
+        console.log(svg.id);
+
+        var lines = value.Boxes.split('\n');
+        var LongestLine = 0
+        lines.forEach(function (current_value) {
+            if (current_value.length > LongestLine)
+                LongestLine = current_value.length;
+        });
+
+        var border = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        border.setAttributeNS(null, 'x', 2);
+        border.setAttributeNS(null, 'y', 9);
+        border.setAttributeNS(null, 'width', LongestLine * 23 + 3);
+        border.setAttributeNS(null, 'height', lines.length * 23 + 7);
+        border.setAttributeNS(null, 'rx', 3);
+        border.setAttributeNS(null, 'ry', 3);
+        border.setAttributeNS(null, 'stroke', 'black');
+        border.setAttributeNS(null, 'fill', 'white');
+        svg.appendChild(border);
+
+
+        var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text.setAttribute('y', '11');
+        text.setAttribute('fill', 'black');
+        text.textContent = value.Name;
+        svg.appendChild(text);
+        var textwidth = text.getComputedTextLength();
+        text.setAttribute('x', (5 + LongestLine * 23 + 5 - textwidth) / 2);
+
+
+        var boarderbreak = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        boarderbreak.setAttributeNS(null, 'x', (5 + LongestLine * 23 + 5 - textwidth) / 2 - 3);
+        boarderbreak.setAttributeNS(null, 'y', 8);
+        boarderbreak.setAttributeNS(null, 'width', textwidth + 6);
+        boarderbreak.setAttributeNS(null, 'height', 3);
+        boarderbreak.setAttributeNS(null, 'stroke', 'white');
+        boarderbreak.setAttributeNS(null, 'fill', 'white');
+        svg.insertBefore(boarderbreak, text);
+
+        var InitialXOffset = 5;
+        var currentXOffset = 5;
+        var currentYOffset = 16;
+
+        for (var i = 0; i < value.Boxes.length; i++) {
+            switch (value.Boxes.charAt(i)) {
+                case '0':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    currentXOffset += 23;
+                    break;
+                case 'L':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'L'));
+                    currentXOffset += 23;
+                    break;
+                case 'R':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'R'));
+                    currentXOffset += 23;
+                    break;
+                case 'M':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'M'));
+                    currentXOffset += 23;
+                    break;
+                case 'C':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'C'));
+                    currentXOffset += 23;
+                    break;
+                case 'H':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'H'));
+                    currentXOffset += 23;
+                    break;
+                case 'A':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'A'));
+                    currentXOffset += 23;
+                    break;
+                case 'S':
+                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'S'));
+                    currentXOffset += 23;
+                    break;
+                case '1':
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'A'));
+                    currentXOffset += 23;
+                    break;
+                case '2':
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'B'));
+                    currentXOffset += 23;
+                    break;
+                case '3':
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'C'));
+                    currentXOffset += 23;
+                    break;
+                case '4':
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'D'));
+                    currentXOffset += 23;
+                    break;
+                case '5':
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'E'));
+                    currentXOffset += 23;
+                    break;
+                case '6':
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'F'));
+                    currentXOffset += 23;
+                    break;
+                case '*':
+                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, '*'));
+                    currentXOffset += 23;
+                    break;
+                case '.':
+                    currentXOffset += 23;
+                    break;
+                case '\n':
+                    currentYOffset += 23;
+                    currentXOffset = InitialXOffset;
+                    break;
+
+            }
+        }
+    }
+
+    function CreateSquare(currentXOffset, currentYOffset) {
+        var square = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        square.setAttributeNS(null, 'x', currentXOffset);
+        square.setAttributeNS(null, 'y', currentYOffset);
+        square.setAttributeNS(null, 'width', 20);
+        square.setAttributeNS(null, 'height', 20);
+        square.setAttributeNS(null, 'rx', 3);
+        square.setAttributeNS(null, 'ry', 3);
+        square.setAttributeNS(null, 'stroke', 'black');
+        square.setAttributeNS(null, 'fill', 'white');
+        return square;
+    }
+
+    function AddLetter(currentXOffset, currentYOffset, Letter) {
+        var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text.setAttribute('x', currentXOffset + 5);
+        text.setAttribute('y', currentYOffset + 14);
+        text.setAttribute('fill', 'black');
+        text.textContent = Letter;
+        return text;
+    }
+
+</script>
+
+
+

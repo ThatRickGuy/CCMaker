@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCMaker", "CCMaker\CCMaker.csproj", "{329E2F21-F459-4768-9B7B-104061733A6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{329E2F21-F459-4768-9B7B-104061733A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{329E2F21-F459-4768-9B7B-104061733A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{329E2F21-F459-4768-9B7B-104061733A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{329E2F21-F459-4768-9B7B-104061733A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1A37E59-EB9D-457C-9EF5-E875CFC59A75}
+	EndGlobalSection
+EndGlobal
