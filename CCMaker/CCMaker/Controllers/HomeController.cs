@@ -12,7 +12,7 @@ namespace CCMaker.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View("Index1");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

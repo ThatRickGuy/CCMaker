@@ -8,7 +8,8 @@
     }
 </style>
 
-<svg id="svgparent" viewBox="0 0 800 800"></svg>
+<svg id="svgparent" viewBox="0 0 800 800" style="background-color:antiquewhite"></svg>
+<script src="https://d3js.org/d3.v5.min.js"></script>
 
 <script type="text/javascript">
     var Kodiak = {
@@ -30,7 +31,7 @@
     models.forEach(GenerateSVG);
 
 
-
+    /*
 
     function startDrag(evt) {
         console.log('entered: "' + evt.target.id + '"');
@@ -63,23 +64,43 @@
         };
     }
 
+*/
 
+    
+
+    var drag = d3.behavior.drag()
+        .on("drag", function (d, i) {
+            d.x += d3.event.dx
+            d.y += d3.event.dy
+            d3.select(this).attr("transform", function (d, i) {
+                return "translate(" + [d.x, d.y] + ")"
+            })
+        });
 
 
     function GenerateSVG(value) {
         var svgParent = document.getElementById("svgparent");
 
-        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg.id = 'svg' + value.Name.replace(/\s/g, '');
-        svg.style.width='275px';
-        svg.style.height = '200px';
-        svg.classList.add('draggable');
-        svgParent.appendChild(svg);
+        //var svg = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        //svg.id = 'svg' + value.Name.replace(/\s/g, '');
+        //svg.classList.add('draggable');
+        //svg.setAttribute('pointer-events', 'all');
+        //svg.call
+        //svgParent.appendChild(svg);
 
-        svg.addEventListener('mousedown', startDrag);
-        svg.addEventListener('mousemove', drag);
-        svg.addEventListener('mouseup', endDrag);
-        svg.addEventListener('mouseleave', endDrag);
+        var svg = d3.select("#svgparent");
+        svg.append("svg:g")
+            //.data([data.sort(d3.descending)])
+            //.data([data])
+            .data([{ "x": 0, "y": 0 }])
+            .attr("transform", "translate(" + 0 + "," + 0 + ")")
+            .call(drag);
+
+
+        //svg.addEventListener('mousedown', startDrag);
+        //svg.addEventListener('mousemove', drag);
+        //svg.addEventListener('mouseup', endDrag);
+        //svg.addEventListener('mouseleave', endDrag);
         console.log(svg.id);
 
         var lines = value.Boxes.split('\n');
@@ -98,6 +119,7 @@
         border.setAttributeNS(null, 'ry', 3);
         border.setAttributeNS(null, 'stroke', 'black');
         border.setAttributeNS(null, 'fill', 'white');
+        border.setAttributeNS(null, 'pointer-events', 'none');
         svg.appendChild(border);
 
 
@@ -105,6 +127,7 @@
         text.setAttribute('y', '11');
         text.setAttribute('fill', 'black');
         text.textContent = value.Name;
+        text.setAttribute('pointer-events', 'none');
         svg.appendChild(text);
         var textwidth = text.getComputedTextLength();
         text.setAttribute('x', (5 + LongestLine * 23 + 5 - textwidth) / 2);
@@ -117,7 +140,46 @@
         boarderbreak.setAttributeNS(null, 'height', 3);
         boarderbreak.setAttributeNS(null, 'stroke', 'white');
         boarderbreak.setAttributeNS(null, 'fill', 'white');
+        boarderbreak.setAttributeNS(null, 'pointer-events', 'none');
         svg.insertBefore(boarderbreak, text);
+
+
+        var area = svg.getBBox()
+
+        //var plate = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        //plate.id = 'plate' + value.Name.replace(/\s/g, '');
+        //plate.classList.add('draggable');
+        //plate.setAttribute('pointer-events', 'all');
+        //plate.setAttributeNS(null, 'x', 0);
+        //plate.setAttributeNS(null, 'y', 0);
+        //plate.setAttributeNS(null, 'width', area.width);
+        //plate.setAttributeNS(null, 'height', area.height);
+        //plate.setAttributeNS(null, 'fill', 'purple');
+        //svg.insertBefore(plate,border);
+
+        //var plateid = '#' + plate.id;
+
+        //var drag = d3.behavior.drag().on("drag", function (d) {
+        //    d.x += d3.event.dx;
+        //    d.y += d3.event.dy;
+        //    d3.select(this.parentNode).select("g").attr("transform", "translate(" + d.x + "," + d.y + ")");
+        //    var self = this;
+        //    d3.select("#overPath").attr("d", function (_d) {
+        //        if (self.id === "plate1") {
+        //            _d.x1 += d3.event.dx;
+        //            _d.y1 += d3.event.dy;
+        //        } else {
+        //            _d.x2 += d3.event.dx;
+        //            _d.y2 += d3.event.dy;
+        //        }
+        //        return "M" + _d.x1 + "," + _d.y1 + "L" + _d.x2 + "," + _d.y2;
+        //    });
+        //});
+
+        //d3.selectAll(plateid).call(drag);
+
+        console.log(value.Name + " (" + area.x + "," + area.y + ") " + area.width + "x" + area.height)
+
 
         var InitialXOffset = 5;
         var currentXOffset = 5;
@@ -126,74 +188,77 @@
         for (var i = 0; i < value.Boxes.length; i++) {
             switch (value.Boxes.charAt(i)) {
                 case '0':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
                     currentXOffset += 23;
                     break;
                 case 'L':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'L'));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'L'));
                     currentXOffset += 23;
                     break;
                 case 'R':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'R'));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'R'));
                     currentXOffset += 23;
                     break;
                 case 'M':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'M'));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'M'));
                     currentXOffset += 23;
                     break;
                 case 'C':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'C'));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'C'));
                     currentXOffset += 23;
                     break;
                 case 'H':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'H'));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'H'));
                     currentXOffset += 23;
                     break;
                 case 'A':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'A'));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'A'));
                     currentXOffset += 23;
                     break;
                 case 'S':
-                    svg.appendChild(CreateSquare(currentXOffset, currentYOffset));
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'S'));
+                    svg.appendChild(CreateSquare(plate, currentXOffset, currentYOffset));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'S'));
                     currentXOffset += 23;
                     break;
                 case '1':
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'A'));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'A'));
                     currentXOffset += 23;
                     break;
                 case '2':
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'B'));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'B'));
                     currentXOffset += 23;
                     break;
                 case '3':
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'C'));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'C'));
                     currentXOffset += 23;
                     break;
                 case '4':
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'D'));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'D'));
                     currentXOffset += 23;
                     break;
                 case '5':
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'E'));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'E'));
                     currentXOffset += 23;
                     break;
                 case '6':
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, 'F'));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, 'F'));
                     currentXOffset += 23;
                     break;
                 case '*':
-                    svg.appendChild(AddLetter(currentXOffset, currentYOffset, '*'));
+                    svg.appendChild(AddLetter(plate, currentXOffset, currentYOffset, '*'));
                     currentXOffset += 23;
                     break;
                 case '.':
                     currentXOffset += 23;
+                    break;
+                case '>':
+                    currentXOffset += 12.5;
                     break;
                 case '\n':
                     currentYOffset += 23;
@@ -204,7 +269,7 @@
         }
     }
 
-    function CreateSquare(currentXOffset, currentYOffset) {
+    function CreateSquare(plate, currentXOffset, currentYOffset) {
         var square = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
         square.setAttributeNS(null, 'x', currentXOffset);
         square.setAttributeNS(null, 'y', currentYOffset);
@@ -214,15 +279,17 @@
         square.setAttributeNS(null, 'ry', 3);
         square.setAttributeNS(null, 'stroke', 'black');
         square.setAttributeNS(null, 'fill', 'white');
+        square.setAttributeNS(null, 'pointer-events', 'none');
         return square;
     }
 
-    function AddLetter(currentXOffset, currentYOffset, Letter) {
+    function AddLetter(plate, currentXOffset, currentYOffset, Letter) {
         var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
         text.setAttribute('x', currentXOffset + 5);
         text.setAttribute('y', currentYOffset + 14);
         text.setAttribute('fill', 'black');
         text.textContent = Letter;
+        text.setAttribute('pointer-events', 'none');
         return text;
     }
 
