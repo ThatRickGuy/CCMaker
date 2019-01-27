@@ -1,0 +1,1719 @@
+{
+  "Factions": [
+    {
+      "Name": "Khador",
+      "Models": {
+        "Casters": [
+          {
+            "Faction": "Khador",
+            "CCName": "Butcher 1",
+            "DisplayName": "Butcher 14/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Butcher 2",
+            "DisplayName": "Butcher 14/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Butcher 3",
+            "DisplayName": "Butcher 14/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000\n-1000>00000\n2000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>00000\n-1000>00000\n2000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n-1000>00000\n2000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Cylena 1 (Alt)",
+            "DisplayName": "Cylena 17/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\\.....>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Harkevich 1",
+            "DisplayName": "Harkevich 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Irusk 1",
+            "DisplayName": "Irusk 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Irusk 2",
+            "DisplayName": "Irusk 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Karchev 1",
+            "DisplayName": "Karchev 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n000000\nLLM0RR\n.LMMR."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n0000LL\n0000MM\n00000M\n0000RR\n0000R."
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Kozlov 1",
+            "DisplayName": "Kozlov 15/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Malakov 2",
+            "DisplayName": "Malakov 16/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Old Witch 1",
+            "DisplayName": "Old Witch 15/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Old Witch 2",
+            "DisplayName": "Old Witch 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Sorscha 1",
+            "DisplayName": "Sorscha 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Sorscha 2",
+            "DisplayName": "Sorscha 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Sorscha 3",
+            "DisplayName": "Sorscha 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Strakhov 1",
+            "DisplayName": "Strakhov 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Strakhov 2",
+            "DisplayName": "Strakhov 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000\n-100000\n200000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00\n-100000\n200000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000\n-100000\n200000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Vladimir 1",
+            "DisplayName": "Vlad 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Vladimir 2",
+            "DisplayName": "Vlad 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Vladimir 3",
+            "DisplayName": "Vlad 15/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Zerkova 1",
+            "DisplayName": "Zerkova 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Zerkova 1",
+            "DisplayName": "Zerkova 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000\n-100000\n200000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0\n-100000\n200000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000\n-100000\n200000"
+              }
+            ]
+          }
+        ],
+        "Jacks": [
+          {
+            "Faction": "Khador",
+            "CCName": "Beast 09",
+            "DisplayName": "Beast 09 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Behemoth",
+            "DisplayName": "Behemoth 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n00SS00\nLLMCRR\nLMMCCR"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000LL\n0000LM\n000SMM\n000SCC\n0000RC\n0000RR"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Berserker",
+            "DisplayName": "Berserker 11/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0L00R0\nLLMCRR\n.MM.C."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00L.\n.00LLM\n0000MM\n0000C.\n.00RRC\n..00R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Black Ivan",
+            "DisplayName": "Black Ivan 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Conquest",
+            "DisplayName": "Conquest 7/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "...000000...\n..00000000..\n0000SSSS0000\n0LLLSCCSRRR0\nLLCCCCCCCCRR\nLCMMMMMMMMCR"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Decimator",
+            "DisplayName": "Decimator 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Demolisher",
+            "DisplayName": "Demolisher 10/23",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Destroyer",
+            "DisplayName": "Destroyer 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Devastator",
+            "DisplayName": "Devastator 10/23",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Drago",
+            "DisplayName": "Drago 11/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000L.\n000LLM\n0000MM\n0000CC\n000RRC\n.000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Grolar",
+            "DisplayName": "Grolar 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Juggernaut",
+            "DisplayName": "Juggernaut 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Kodiak",
+            "DisplayName": "Kodiak 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Mad Dog",
+            "DisplayName": "Mad Dog 11/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0L00R0\nLLMCRR\n.MM.C."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00L.\n.00LLM\n0000MM\n0000C.\n.00RRC\n..00R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Marauder",
+            "DisplayName": "Marauder 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Rager",
+            "DisplayName": "Rager 11/18(20)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0L00R0\nLLMCRR\n.MM.C."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00L.\n.00LLM\n0000MM\n0000C.\n.00RRC\n..00R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Ruin",
+            "DisplayName": "Ruin 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Spriggan",
+            "DisplayName": "Spriggan 10/19(21)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Torch",
+            "DisplayName": "Torch 10/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Victor",
+            "DisplayName": "Victor 7/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "...000000...\n..00000000..\n0000SSSS0000\n0LLLSCCSRRR0\nLLCCCCCCCCRR\nLCMMMMMMMMCR"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
+              }
+            ]
+          }
+        ],
+        "Units": [
+          {
+            "Faction": "Khador",
+            "CCName": "Great Bears of the Gallowswood",
+            "DisplayName": "Great Bears 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Greylord Outriders (min)",
+            "DisplayName": "Outriders 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Greylord Outriders (max)",
+            "DisplayName": "Outriders 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000\n500000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Iron Fang Uhlans (min)",
+            "DisplayName": "Uhlans 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Iron Fang Uhlans (max)",
+            "DisplayName": "Uhlans 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000\n500000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Bombardiers (min)",
+            "DisplayName": "MoW Bombardiers 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Bombardiers (max)",
+            "DisplayName": "MoW Bombardiers 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000\n4000>00000\n5000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Demolition Corps (min)",
+            "DisplayName": "MoW Demo Corps 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Demolition Corps (max)",
+            "DisplayName": "MoW Demo Corps 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000\n4000>00000\n5000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Shocktroopers (min)",
+            "DisplayName": "MoW Shocktroops 10/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Shocktroopers (max)",
+            "DisplayName": "MoW Shocktroops 10/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000\n4000>00000\n5000>00000"
+              }
+            ]
+          }
+        ],
+        "Attachments": [
+          {
+            "Faction": "Khador",
+            "CCName": "Battle Mechanic Officer",
+            "DisplayName": "Mechanic UA 11/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Black Dragon Officer & Standard",
+            "DisplayName": "Black Dragon UA 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "2Black Dragon Officer & Standard",
+            "DisplayName": "Black Dragon UA 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "2Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "3Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "4Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "5Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000\n500000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "6Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "7Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "8Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000\n800000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "9Greylord Escort",
+            "DisplayName": "Doom Reaver UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000\n800000\n900000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Iron Fang Pikemen Officer & Standard",
+            "DisplayName": "IFP UA 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "2Iron Fang Pikemen Officer & Standard",
+            "DisplayName": "IFP UA 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "3Iron Fang Pikemen Officer & Standard",
+            "DisplayName": "IFP UA 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Kayazy Assassin Underboss",
+            "DisplayName": "Underboss 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "2Kayazy Assassin Underboss",
+            "DisplayName": "Underboss 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Koldun Kapitan Valachev",
+            "DisplayName": "Valachev 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Bombardier Officer",
+            "DisplayName": "Bombardier UA 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Shocktrooper Officer",
+            "DisplayName": "Shocktrooper UA 10/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Sergeant Dragos Dragadovich",
+            "DisplayName": "\"Dragos 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "War Dog",
+            "DisplayName": "War Dog 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Infantry Officer & Standard",
+            "DisplayName": "WGI UA",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "2Winter Guard Infantry Officer & Standard",
+            "DisplayName": "WGI UA",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "3Winter Guard Infantry Officer & Standard",
+            "DisplayName": "WGI UA",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "4Winter Guard Infantry Officer & Standard",
+            "DisplayName": "WGI UA",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000"
+              }
+            ]
+          }
+        ],
+        "Solos": [
+          {
+            "Faction": "Khador",
+            "CCName": "Fenris",
+            "DisplayName": "Fenris 13/16(14)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Greylord Forge Seer",
+            "DisplayName": "Forge Seer 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Greylord Forge Seer",
+            "DisplayName": "Forge Seer 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Iron Fang Kovnik",
+            "DisplayName": "IF Kovnik 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Iron Fang Kovnik",
+            "DisplayName": "IF Kovnik 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Kaptain Sofya Skirova",
+            "DisplayName": "Sofya 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Koldun Lord",
+            "DisplayName": "Koldun Lord 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Koldun Lord",
+            "DisplayName": "Koldun Lord 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Kovnik Andrei Malakov",
+            "DisplayName": "Malakov 14/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Kovnik Jozef Grigorovich",
+            "DisplayName": "Joe 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Drakhun",
+            "DisplayName": "Drakhun 10/18(16)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Man-O-War Drakhun",
+            "DisplayName": "Drakhun 10/18(16)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000>00000\n....000>00000\n200000>00000\n....000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Kovnik",
+            "DisplayName": "MoW Kovnik 10/16(18)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Man-O-War Kovnik",
+            "DisplayName": "MoW Kovnik 10/16(18)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Strike Tanker",
+            "DisplayName": "Strike Tanker 9/17(21)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Man-O-War Strike Tanker",
+            "DisplayName": "Strike Tanker 9/17(21)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000>00000\n200000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Suppression Tanker",
+            "DisplayName": "Suppress Tanker 9/17(21)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Man-O-War Suppression Tanker",
+            "DisplayName": "Suppress Tanker 9/17(21)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000>00000\n200000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Manhunter",
+            "DisplayName": "Manhunter 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Manhunter",
+            "DisplayName": "Manhunter 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Uhlan Kovnik Markov",
+            "DisplayName": "Markov 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "",
+            "DisplayName": "",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Widowmaker Marksman",
+            "DisplayName": "Widowmaker 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Artillery Kapitan",
+            "DisplayName": "WG Artillery Kap 12/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "2Winter Guard Artillery Kapitan",
+            "DisplayName": "WG Artillery Kap 12/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Yuri the Axe",
+            "DisplayName": "Yuri 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          }
+        ],
+        "BattleEngines": [
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Assault Chariot",
+            "DisplayName": "Assault Chariot 9/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal 15 max",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal 10 max",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "2Man-O-War Assault Chariot",
+            "DisplayName": "Assault Chariot 9/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000>00000>00000\n2000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal 15 max",
+                "Boxes": "100000>00000>00000\n......>.....>..000\n200000>00000>00000\n......>.....>..000"
+              },
+              {
+                "Name": "Horizontal 10 max",
+                "Boxes": "100000>00000\n...000>00000\n200000>00000\n...000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Man-O-War Siege Chariot",
+            "DisplayName": "Siege Chariot 9/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal 15 max",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal 10 max",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "2Man-O-War Siege Chariot",
+            "DisplayName": "Siege Chariot 9/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000>00000>00000\n2000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal 15 max",
+                "Boxes": "100000>00000>00000\n......>.....>..000\n200000>00000>00000\n......>.....>..000"
+              },
+              {
+                "Name": "Horizontal 10 max",
+                "Boxes": "100000>00000\n...000>00000\n200000>00000\n...000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Gun Carriage",
+            "DisplayName": "Gun Carriage 9/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal 15 max",
+                "Boxes": "00000>00000>00000\n00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal 10 max",
+                "Boxes": "00000>00000\n00000>00000\n00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Gun Carriage",
+            "DisplayName": "Gun Carriage 9/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000>00000>00000>00000>00000\n2000>00000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal 15 max",
+                "Boxes": "100000>00000>00000\n.00000>00000>00000\n......>.....>..000\n200000>00000>00000\n.00000>00000>00000\n......>.....>..000"
+              },
+              {
+                "Name": "Horizontal 10 max",
+                "Boxes": "100000>00000\n.00000>00000\n.00000>00000\n...000>00000\n200000>00000\n.00000>00000\n.00000>00000\n...000>00000"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Name": "Minions",
+      "Models": {
+        "Beasts": [
+          {
+            "Faction": "Minions",
+            "CCName": "Blackhide Wrastler",
+            "DisplayName": "Wrastler 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
