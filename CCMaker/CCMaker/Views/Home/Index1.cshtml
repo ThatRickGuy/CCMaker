@@ -1,110 +1,118 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = "";
+}
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>CC Maker</title>
     <script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    <script src="~/lib/jquery/dist/jquery.js"></script>
     <style type="text/css">
     </style>
 </head>
 <body>
-    <div style="width:100%; height:700px;">
-        <div style="width:100%; height:25%;">
-            Conflict Chamber Code: <input type="text" id="txtCCCode" /><br />
-            Print Width (inches): <input type="text" id="txtWidth" /><br />
-            Print Height (inches): <input type="text" id="txtHeight" /><br />
-        </div>
-        <div style="height:100%; width:100%">
-            <svg id="svg" style="width:100%; height:100%;">
 
-            </svg>
-        </div>
+
+    <div style="position:absolute; top:0px; height:100%; width:100%; z-index:1;">
+        <svg id="svg" style="position:absolute; width:110%; height:110%; top:-5px;">
+
+        </svg>
     </div>
+
+    <div style="position:absolute; top:5px; right:5px; cursor:pointer;z-index:5;">
+        <i class="fas fa-bars" data-toggle="collapse" data-target="#LoadDiv"></i>
+    </div>
+
+    <div id="LoadDiv" style="position:absolute; width:90%; z-index:9; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
+        Conflict Chamber URL: <input type="text" id="txtCCURL" /><button onclick="LoadFromCC(); ">Load!</button><br />
+        <button onclick="save();">Generate Save Link</button>
+        <div id="SaveLink"></div>
+    </div>
+
+
     <script type="text/javascript">
-
-
-        $.get("https://api.conflictchamber.com/list/c3201b_-0T6ZkZkUnjl5l5l4l3l37Ml07Ml07Ml0.txt", function (data) {
-            /*https://conflictchamber.com/#c3201b_-0T6ZkZkUnjl5l5l4l3l37Ml07Ml07Ml0
-
-Khador Army - 75 / 75 points
-[Theme] Armored Corps
-
-!!! This army contains a CID entry.
-
-[Butcher 1] Orsus Zoktavir, The Butcher of Khardov [+28]
-- Rager [10]
-- Spriggan [17]
-- Greylord Adjunct [4]
-Man-O-War Kovnik [4]
-Man-O-War Kovnik [4]
-Man-O-War Strike Tanker [0(5)]
-Man-O-War Suppression Tanker [0(6)]
-Man-O-War Suppression Tanker [0(6)]
-Man-O-War Bombardiers (max) [16]
-- Man-O-War Bombardier Officer [5]
-Man-O-War Bombardiers (max) [16]
-- Man-O-War Bombardier Officer [5]
-Man-O-War Bombardiers (max) [16]
-- Man-O-War Bombardier Officer [5]
-*/
-            var AllModels;
-            $.getJSON("/Lookup.json", function (json) {
-                var AllModels = json;
-
-                console.log(AllModels.Factions);
-
-                var lines = data.split('\n');
-                var arrayLength = lines.length;
-                var Faction;
-                var ModelNames = [];
-
-                for (var i = 1; i < arrayLength; i++) {
-                    var line = String(lines[i]);
-                    if (line.indexOf("[Theme]") == 0 || line.indexOf("!!!") == 0 || line == "") {
-                        //do nothing
-                    }
-                    else {
-
-                        var ModelName = "";
-                        if (line.indexOf("Army") >= 1) {
-                            //Faction
-                            Faction = line.split("Army")[0].trim();
-                        }
-                        else if (line.indexOf("[") == 0) {
-                            //warcaster
-                            var ModelName = line.split(']')[0].substr(1);
-                            ModelNames.push(ModelName);
-                        }
-                        else if (line.indexOf("-") == 1) {
-                            //attachment or beast/jack
-                            var ModelName = line.split('[')[0].substr(2).trim();
-                            ModelNames.push(ModelName);
-                        }
-                        else {
-                            var ModelName = line.split('[')[0].trim();
-                            ModelNames.push(ModelName);
-                        }
-                    }
-                }
-
-                for (var i = 0; i < ModelNames.length; i++) {
-                    var x = lookup(AllModels, Faction, ModelNames[i]);
-                    if (x != null) {
-                        console.log(x);
-                        var model = {
-                            Name: x.DisplayName,
-                            Type: x.Type,
-                            Boxes: x.BoxFormats[0].Boxes
-                        };
-                        model_factory(model);
-                    }
-                }
-            });
+        $(document).ready(function () {
+            $.ajaxSetup({ cache: false });
         });
 
+
+        $('#LoadDiv').collapse("show");
+        
+        function save() {
+            exportSVG(document.getElementById('svg'));
+        }
+
+        function LoadFromCC() {
+            $('#LoadDiv').collapse("hide");
+            $("#svg").empty();
+            var url = txtCCURL.value;
+            var CCCode = url.split('?')[1];
+            $.get("https://api.conflictchamber.com/list/" + CCCode + ".txt", function (data) {
+
+                var AllModels;
+                $.getJSON("/Lookup.json", function (json) {
+                    var AllModels = json;
+
+                    console.log(AllModels.Factions);
+
+                    var lines = data.split('\n');
+                    var arrayLength = lines.length;
+                    var Faction;
+                    var ModelNames = [];
+
+                    for (var i = 1; i < arrayLength; i++) {
+                        var line = String(lines[i]);
+                        if (line.indexOf("[Theme]") == 0 || line.indexOf("!!!") == 0 || line == "") {
+                            //do nothing
+                        }
+                        else {
+
+                            var ModelName = "";
+                            if (line.indexOf("Army") >= 1) {
+                                //Faction
+                                Faction = line.split("Army")[0].trim();
+                            }
+                            else if (line.indexOf("[") == 0) {
+                                //warcaster
+                                var ModelName = line.split(']')[0].substr(1);
+                                ModelNames.push(ModelName);
+                            }
+                            else if (line.indexOf("-") == 1) {
+                                //attachment or beast/jack
+                                var ModelName = line.split('[')[0].substr(2).trim();
+                                ModelNames.push(ModelName);
+                            }
+                            else {
+                                var ModelName = line.split('[')[0].trim();
+                                ModelNames.push(ModelName);
+                            }
+                        }
+                    }
+
+                    for (var i = 0; i < ModelNames.length; i++) {
+                        var x = lookup(AllModels, Faction, ModelNames[i]);
+                        if (x != null) {
+                            console.log(x);
+                            var model = {
+                                Name: x.DisplayName,
+                                Type: x.Type,
+                                Boxes: x.BoxFormats[0].Boxes
+                            };
+                            model_factory(model);
+                        }
+                    }
+                });
+            });
+        }
 
 
         function lookup(AllModels, Faction, TargetName) {
@@ -124,76 +132,6 @@ Man-O-War Bombardiers (max) [16]
             }
             return null;
         }
-
-                //function lookup(obj, TargetKey, TargetValue, DelveDeeper) {
-                //    for (key in obj) {
-                //        value = obj[key];
-
-                //        if (key == "Attachments" || key == "Beasts" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
-                //            var q = true;
-                //        }
-
-                //        // console.log(key + ': ' + value);
-                //        if (TargetKey == key && TargetValue == value) return [obj];
-
-                //        if (value.constructor === Array && typeof (value) != "string") {
-                //            for (var i = 0; i < value.length; ++i) {
-                //                var x;
-                //                if (key == "Attachments" || key == "Beasts" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
-                //                    DelveDeeper = false;
-                //                    x = lookup(value[i], TargetKey, TargetValue, DelveDeeper);
-                //                } else {
-                //                    if (DelveDeeper) x = lookup(value[i], TargetKey, TargetValue, DelveDeeper);
-                //                }
-                //                if (x != null) return x;
-                //            }
-                //        } else if (typeof (value) == "object") {
-
-                //            var x;
-                //            if (key == "Attachments" || key == "Beasts" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
-                //                DelveDeeper = false;
-                //                x = lookup(value, TargetKey, TargetValue, DelveDeeper);
-                //            } else {
-                //                if (DelveDeeper) x = lookup(value, TargetKey, TargetValue, DelveDeeper);
-                //            }
-                //            if (x != null) return x;
-                //        }
-                //    }
-                //    return null;
-                //}
-                                        //}
-
-
-                                        //var Kodiak = {
-                                        //    Name: "Kodiak 10/20",
-                                        //    Type: "S",
-                                        //    Boxes: "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
-                                        //}
-                                        //var Drakhun = {
-                                        //    Name: "MoW Drakhun 10/18(16)",
-                                        //    Type: "S",
-                                        //    Boxes: "00000000000\n.....000000"
-                                        //}
-                                        //var ShockTroopers = {
-                                        //    Name: "MoW Shocktroopers+UA 10/17",
-                                        //    Type: "S",
-                                        //    Boxes: "100000000\n200000000\n300000000\n400000000\n500000000\n*00000000"
-                                        //}
-                                        //var Wrastler = {
-                                        //    Name: "Blackhide Wrastler",
-                                        //    Type: "C",
-                                        //    Boxes: "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0\n>0.0.0"
-                                        //}
-                                        //var Wrastler2 = {
-                                        //    Name: "Blackhide Wrastler",
-                                        //    Type: "C",
-                                        //    Boxes: "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
-                                        //}
-
-                                        //var models = [Kodiak, Drakhun, ShockTroopers, Wrastler, Wrastler2];
-
-                                        //models.forEach(model_factory);
-
     </script>
 </body>
 </html>

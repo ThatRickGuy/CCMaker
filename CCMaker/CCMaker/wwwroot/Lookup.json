@@ -533,11 +533,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "...000000...\n..00000000..\n0000SSSS0000\n0LLLSCCSRRR0\nLLCCCCCCCCRR\nLCMMMMMMMMCR"
+                "Boxes": "...000>000...\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
+                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
               }
             ]
           },
@@ -773,11 +773,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "...000000...\n..00000000..\n0000SSSS0000\n0LLLSCCSRRR0\nLLCCCCCCCCRR\nLCMMMMMMMMCR"
+                "Boxes": "...000>000...\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
+                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
               }
             ]
           }
@@ -912,6 +912,18 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "1000>00000\n2000>00000\n3000>00000\n4000>00000\n5000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Kommandant Atanas Arconovich & Standard",
+            "DisplayName": "Atanas 10/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000\n000>00000"
               }
             ]
           }
