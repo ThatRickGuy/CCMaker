@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <script src="~/js/site.js" asp-append-version="true"></script>
 
+    <script src="~/lib/jquery/dist/jquery.js"></script>
     <style type="text/css">
     </style>
 </head>
@@ -25,39 +26,173 @@
     <script type="text/javascript">
 
 
-        
+        $.get("https://api.conflictchamber.com/list/c3201b_-0T6ZkZkUnjl5l5l4l3l37Ml07Ml07Ml0.txt", function (data) {
+            /*https://conflictchamber.com/#c3201b_-0T6ZkZkUnjl5l5l4l3l37Ml07Ml07Ml0
+
+Khador Army - 75 / 75 points
+[Theme] Armored Corps
+
+!!! This army contains a CID entry.
+
+[Butcher 1] Orsus Zoktavir, The Butcher of Khardov [+28]
+- Rager [10]
+- Spriggan [17]
+- Greylord Adjunct [4]
+Man-O-War Kovnik [4]
+Man-O-War Kovnik [4]
+Man-O-War Strike Tanker [0(5)]
+Man-O-War Suppression Tanker [0(6)]
+Man-O-War Suppression Tanker [0(6)]
+Man-O-War Bombardiers (max) [16]
+- Man-O-War Bombardier Officer [5]
+Man-O-War Bombardiers (max) [16]
+- Man-O-War Bombardier Officer [5]
+Man-O-War Bombardiers (max) [16]
+- Man-O-War Bombardier Officer [5]
+*/
+            var AllModels;
+            $.getJSON("/Lookup.json", function (json) {
+                var AllModels = json;
+
+                console.log(AllModels.Factions);
+
+                var lines = data.split('\n');
+                var arrayLength = lines.length;
+                var Faction;
+                var ModelNames = [];
+
+                for (var i = 1; i < arrayLength; i++) {
+                    var line = String(lines[i]);
+                    if (line.indexOf("[Theme]") == 0 || line.indexOf("!!!") == 0 || line == "") {
+                        //do nothing
+                    }
+                    else {
+
+                        var ModelName = "";
+                        if (line.indexOf("Army") >= 1) {
+                            //Faction
+                            Faction = line.split("Army")[0].trim();
+                        }
+                        else if (line.indexOf("[") == 0) {
+                            //warcaster
+                            var ModelName = line.split(']')[0].substr(1);
+                            ModelNames.push(ModelName);
+                        }
+                        else if (line.indexOf("-") == 1) {
+                            //attachment or beast/jack
+                            var ModelName = line.split('[')[0].substr(2).trim();
+                            ModelNames.push(ModelName);
+                        }
+                        else {
+                            var ModelName = line.split('[')[0].trim();
+                            ModelNames.push(ModelName);
+                        }
+                    }
+                }
+
+                for (var i = 0; i < ModelNames.length; i++) {
+                    var x = lookup(AllModels, Faction, ModelNames[i]);
+                    if (x != null) {
+                        console.log(x);
+                        var model = {
+                            Name: x.DisplayName,
+                            Type: x.Type,
+                            Boxes: x.BoxFormats[0].Boxes
+                        };
+                        model_factory(model);
+                    }
+                }
+            });
+        });
 
 
 
-        var Kodiak = {
-            Name: "Kodiak 10/20",
-            Type: "S",
-            Boxes: "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
-        }
-        var Drakhun = {
-            Name: "MoW Drakhun 10/18(16)",
-            Type: "S",
-            Boxes: "00000000000\n.....000000"
-        }
-        var ShockTroopers = {
-            Name: "MoW Shocktroopers+UA 10/17",
-            Type: "S",
-            Boxes: "100000000\n200000000\n300000000\n400000000\n500000000\n*00000000"
-        }
-        var Wrastler = {
-            Name: "Blackhide Wrastler",
-            Type: "C",
-            Boxes: "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0\n>0.0.0"
-        }
-        var Wrastler2 = {
-            Name: "Blackhide Wrastler",
-            Type: "C",
-            Boxes: "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
+        function lookup(AllModels, Faction, TargetName) {
+            for (var i = 0; i < AllModels.Factions.length; i++) {
+                if (AllModels.Factions[i].Name == Faction) {
+                    for (key in AllModels.Factions[i].Models) {
+                        if (key == "Attachments" || key == "Beasts" || key == "Jacks" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
+                            value = AllModels.Factions[i].Models[key];
+                            for (var j = 0; j < value.length; j++) {
+                                if (value[j].CCName == TargetName) {
+                                    return value[j];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return null;
         }
 
-        var models = [Kodiak, Drakhun, ShockTroopers, Wrastler, Wrastler2];
+                //function lookup(obj, TargetKey, TargetValue, DelveDeeper) {
+                //    for (key in obj) {
+                //        value = obj[key];
 
-        models.forEach(model_factory);
+                //        if (key == "Attachments" || key == "Beasts" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
+                //            var q = true;
+                //        }
+
+                //        // console.log(key + ': ' + value);
+                //        if (TargetKey == key && TargetValue == value) return [obj];
+
+                //        if (value.constructor === Array && typeof (value) != "string") {
+                //            for (var i = 0; i < value.length; ++i) {
+                //                var x;
+                //                if (key == "Attachments" || key == "Beasts" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
+                //                    DelveDeeper = false;
+                //                    x = lookup(value[i], TargetKey, TargetValue, DelveDeeper);
+                //                } else {
+                //                    if (DelveDeeper) x = lookup(value[i], TargetKey, TargetValue, DelveDeeper);
+                //                }
+                //                if (x != null) return x;
+                //            }
+                //        } else if (typeof (value) == "object") {
+
+                //            var x;
+                //            if (key == "Attachments" || key == "Beasts" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
+                //                DelveDeeper = false;
+                //                x = lookup(value, TargetKey, TargetValue, DelveDeeper);
+                //            } else {
+                //                if (DelveDeeper) x = lookup(value, TargetKey, TargetValue, DelveDeeper);
+                //            }
+                //            if (x != null) return x;
+                //        }
+                //    }
+                //    return null;
+                //}
+                                        //}
+
+
+                                        //var Kodiak = {
+                                        //    Name: "Kodiak 10/20",
+                                        //    Type: "S",
+                                        //    Boxes: "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                                        //}
+                                        //var Drakhun = {
+                                        //    Name: "MoW Drakhun 10/18(16)",
+                                        //    Type: "S",
+                                        //    Boxes: "00000000000\n.....000000"
+                                        //}
+                                        //var ShockTroopers = {
+                                        //    Name: "MoW Shocktroopers+UA 10/17",
+                                        //    Type: "S",
+                                        //    Boxes: "100000000\n200000000\n300000000\n400000000\n500000000\n*00000000"
+                                        //}
+                                        //var Wrastler = {
+                                        //    Name: "Blackhide Wrastler",
+                                        //    Type: "C",
+                                        //    Boxes: "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0\n>0.0.0"
+                                        //}
+                                        //var Wrastler2 = {
+                                        //    Name: "Blackhide Wrastler",
+                                        //    Type: "C",
+                                        //    Boxes: "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
+                                        //}
+
+                                        //var models = [Kodiak, Drakhun, ShockTroopers, Wrastler, Wrastler2];
+
+                                        //models.forEach(model_factory);
 
     </script>
 </body>
