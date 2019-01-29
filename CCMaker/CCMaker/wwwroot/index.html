@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CC Maker</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
+    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="./js/site.js" asp-append-version="true"></script>
+
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+
+    <div style="position:absolute; top:0px; height:100%; width:100%; z-index:1;">
+        <svg id="svg" style="position:absolute; width:110%; height:110%; top:-5px;">
+
+        </svg>
+    </div>
+
+    <div style="position:absolute; top:5px; right:5px; cursor:pointer;z-index:5;">
+        <i class="fas fa-bars" data-toggle="collapse" data-target="#LoadDiv"></i>
+    </div>
+
+    <div id="LoadDiv" style="position:absolute; width:90%; z-index:9; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
+        Conflict Chamber URL: <input type="text" id="txtCCURL" /><button onclick="LoadFromCC(); ">Load!</button><br />
+        <button onclick="save();">Generate Save Link</button>
+        <div id="SaveLink"></div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajaxSetup({ cache: false });
+        });
+
+
+        $('#LoadDiv').collapse("show");
+
+        function save() {
+            exportSVG(document.getElementById('svg'));
+        }
+
+        function LoadFromCC() {
+            $('#LoadDiv').collapse("hide");
+            $("#svg").empty();
+            var url = txtCCURL.value;
+            var CCCode = url.split('?')[1];
+            $.get("https://api.conflictchamber.com/list/" + CCCode + ".txt", function (data) {
+
+                var AllModels;
+                $.getJSON("./Lookup.json", function (json) {
+                    var AllModels = json;
+
+                    console.log(AllModels.Factions);
+
+                    var lines = data.split('\n');
+                    var arrayLength = lines.length;
+                    var Faction;
+                    var ModelNames = [];
+
+                    for (var i = 1; i < arrayLength; i++) {
+                        var line = String(lines[i]);
+                        if (line.indexOf("[Theme]") == 0 || line.indexOf("!!!") == 0 || line == "") {
+                            //do nothing
+                        }
+                        else {
+
+                            var ModelName = "";
+                            if (line.indexOf("Army") >= 1) {
+                                //Faction
+                                Faction = line.split("Army")[0].trim();
+                            }
+                            else if (line.indexOf("[") == 0) {
+                                //warcaster
+                                var ModelName = line.split(']')[0].substr(1);
+                                ModelNames.push(ModelName);
+                            }
+                            else if (line.indexOf("-") == 1) {
+                                //attachment or beast/jack
+                                var ModelName = line.split('[')[0].substr(2).trim();
+                                ModelNames.push(ModelName);
+                            }
+                            else {
+                                //everything else
+                                var ModelName = line.split('[')[0].trim();
+                                ModelNames.push(ModelName);
+                            }
+                        }
+                    }
+
+                    for (var i = 0; i < ModelNames.length; i++) {
+                        var model = lookup(AllModels, Faction, ModelNames[i]);
+                        if (model != null) {
+                            model_factory(model);
+                        }
+                    }
+                });
+            });
+        }
+
+
+        function lookup(AllModels, Faction, TargetName) {
+            for (var i = 0; i < AllModels.Factions.length; i++) {
+                if (AllModels.Factions[i].Name == Faction) {
+                    for (key in AllModels.Factions[i].Models) {
+                        if (key == "Attachments" || key == "Beasts" || key == "Jacks" || key == "Casters" || key == "BattleEngines" || key == "Units" || key == "Solos") {
+                            value = AllModels.Factions[i].Models[key];
+                            for (var j = 0; j < value.length; j++) {
+                                if (value[j].CCName == TargetName) {
+                                    return value[j];
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+    </script>
+</body>
+</html>

@@ -8,11 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Home\Index2.xaml.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Views\Home\Index2.xaml" />
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="Views\**" />
+    <Compile Remove="wwwroot\lib\**" />
+    <Content Remove="Controllers\**" />
+    <Content Remove="Models\**" />
+    <Content Remove="Views\**" />
+    <Content Remove="wwwroot\lib\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Views\**" />
+    <EmbeddedResource Remove="wwwroot\lib\**" />
+    <None Remove="Controllers\**" />
+    <None Remove="Models\**" />
+    <None Remove="Views\**" />
+    <None Remove="wwwroot\lib\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,6 +35,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="wwwroot\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\Lookup.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

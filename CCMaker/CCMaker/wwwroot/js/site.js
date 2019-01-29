@@ -3,6 +3,7 @@
 var drag = d3.behavior.drag()
     .on("drag", function (d, i) {
         selected = d;
+        console.log(selected.data.CCName);
         d.x += d3.event.dx
         d.y += d3.event.dy
         d3.select(this).attr("transform", function (d, i) {
@@ -42,16 +43,37 @@ function AddLetter(parent, currentXOffset, currentYOffset, Letter) {
         .text(Letter);
 }
 
+
+
 function model_factory(data) {
     //data format
-    //{ Name: "Kodiak 10/20", Type: "S", Boxes: "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."}
-    console.log(data.Name);
+    /*
+        "Faction": "Khador",
+        "CCName": "Butcher 1",
+        "DisplayName": "Butcher 14/18",
+        "Type": "S",
+        "BoxFormats": [
+            {
+            "Name": "Horizontal",
+            "Boxes": "00000>00000>00000>00000"
+            },
+            {
+            "Name": "Horizontal Max 15",
+            "Boxes": "00000>00000>00000\n.....>.....>00000"
+            },
+            {
+            "Name": "Horizontal Max 10",
+            "Boxes": "00000>00000\n00000>00000"
+            }
+        ]
+     */
+    console.log(data.CCName);
     console.log("get text size");
     var svg = document.getElementById("svg");
     var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     text.setAttribute('fill', 'black');
     text.setAttribute("id", "textsize");
-    text.textContent = data.Name;
+    text.textContent = data.DisplayName;
     svg.appendChild(text);
     var textwidth = text.getComputedTextLength();
     d3.select("svg").empty();
@@ -61,13 +83,23 @@ function model_factory(data) {
         .append("svg:g")
         .data([{ "x": 50, "y": 50 }])
         .attr("transform", "translate(" + 50 + "," + 50 + ")")
-        .attr("class", data.Name)
+        .attr("class", data.CCName)
         .call(drag);
-    //
+
+    plate.model = data;
 
 
     console.log("parse data");
-    var lines = data.Boxes.split('\n');
+    var lines = [];
+    var Boxes;
+    if (data.SelectedBoxFormat == null) {
+        lines = data.BoxFormats[0].Boxes.split('\n');
+        Boxes = data.BoxFormats[0].Boxes;
+    } else {
+        lines = data.BoxFormats[data.SelectedBoxFormat].Boxes.split('\n');
+        Boxes = data.BoxFormats[data.SelectedBoxFormat].Boxes;
+    }
+         
     var LongestLine = 0
     lines.forEach(function (current_value) {
         var linewidth = 0;
@@ -120,15 +152,15 @@ function model_factory(data) {
         .attr("y", 11)
         .attr("x", (5 + LongestLine * 23 + 5 - textwidth) / 2)
         .attr("fill", "black")
-        .text(data.Name);
+        .text(data.DisplayName);
 
 
     var InitialXOffset = 5;
     var currentXOffset = 5;
     var currentYOffset = 16;
 
-    for (var i = 0; i < data.Boxes.length; i++) {
-        switch (data.Boxes.charAt(i)) {
+    for (var i = 0; i < Boxes.length; i++) {
+        switch (Boxes.charAt(i)) {
             case '0':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
@@ -260,18 +292,9 @@ function model_factory(data) {
                 currentYOffset += 23;
                 currentXOffset = InitialXOffset;
                 break;
-
         }
     }
-
-
 }
-
-
-
-
-
-
 
 var exportSVG = function (svg) {
     document.getElementById('SaveLink').innerHTML = "";
