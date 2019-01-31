@@ -21,7 +21,9 @@
 
     <div style="position:absolute; top:0px; height:100%; width:100%; z-index:1;">
         <svg id="svg" style="position:absolute; width:110%; height:110%; top:-5px;">
-
+            <text x="20" y="20" class="Perm" transform="translate(40,0) scale(-1,1)">R</text>
+            <text x="15" y="20" class="Perm" transform="">D</text>
+            <text x="2" y="30" class="Perm" transform="" font-size="10">RingDev</text>
         </svg>
     </div>
 
@@ -29,12 +31,32 @@
         <i class="fas fa-bars" data-toggle="collapse" data-target="#LoadDiv"></i>
     </div>
 
-    <div id="LoadDiv" style="position:absolute; width:90%; z-index:9; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
-        Conflict Chamber URL: <input type="text" id="txtCCURL" /><button onclick="LoadFromCC(); ">Load!</button><br />
+    <div id="LoadDiv" style="position:absolute; width:500px; z-index:9; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
+        Conflict Chamber URL: <input type="text" id="txtCCURL" /><button onclick="LoadFromCC(); " style="margin-left:10px">Load!</button><br />
         <button onclick="save();">Generate Save Link</button>
         <div id="SaveLink"></div>
     </div>
 
+    <div id="ModelOptions" class="collapse" style="position:absolute; top:20px; z-index:15; right:0px; width:200px; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
+        Display Name: <input type="text" id="txtDisplayName" style="width:170px;" /><br/>
+        Boxes Format: <select id="cboBoxFormat" style="width:170px;"></select><br />
+        Boxes Override: <input type="text" id="txtBoxFormat" style="width:170px;"/><br />
+        <button onclick="SVGModelChanges()">Update</button>
+        <ul>
+            <li>. - blank space</li>
+            <li>0 - box</li>
+            <li>L,R,M,C,A,S - box with system</li>
+            <li>1,2,3,4,5,6 - Unit model identifiers A-F</li>
+            <li>l,r - Left and Right indicators (L, R) for colossals</li>
+            <li>* - unit model identifier UA</li>
+            <li>W - unit model identifier WA</li>
+            <li>> - half box horizontal gap</li>
+            <li>^ - half box vertical (up)</li>
+            <li>- - half box vertical (down)</li>
+            <li>\n - new line</li>
+        </ul>
+        
+    </div>
 
     <script type="text/javascript">
         $(document).ready(function () {
@@ -43,6 +65,7 @@
 
 
         $('#LoadDiv').collapse("show");
+        $('#ModelOptions').collapse("hide");
 
         function save() {
             exportSVG(document.getElementById('svg'));
@@ -50,7 +73,13 @@
 
         function LoadFromCC() {
             $('#LoadDiv').collapse("hide");
-            $("#svg").empty();
+            d3.selectAll('.Model').remove();
+
+
+
+            
+
+
             var url = txtCCURL.value;
             var CCCode = url.split('?')[1];
             $.get("https://api.conflictchamber.com/list/" + CCCode + ".txt", function (data) {

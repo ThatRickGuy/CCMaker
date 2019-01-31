@@ -81,7 +81,7 @@
               },
               {
                 "Name": "Horizontal Max 10",
-                "Boxes": "00000>00000\\.....>00000"
+                "Boxes": "00000>00000\n.....>00000"
               }
             ]
           },
@@ -532,12 +532,12 @@
             "Type": "S",
             "BoxFormats": [
               {
-                "Name": "Vertical",
-                "Boxes": "...000>000...\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
+                "Name": "Horizontal",
+                "Boxes": "l..000>000..r\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
               },
               {
-                "Name": "Horizontal",
-                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
+                "Name": "Vertical",
+                "Boxes": "l.00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\nr.00RR"
               }
             ]
           },
@@ -772,12 +772,12 @@
             "Type": "S",
             "BoxFormats": [
               {
-                "Name": "Vertical",
-                "Boxes": "...000>000...\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
+                "Name": "Horizontal",
+                "Boxes": "l..000>000..r\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
               },
               {
-                "Name": "Horizontal",
-                "Boxes": "..00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\n..00RR"
+                "Name": "Vertical",
+                "Boxes": "l.00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\nr.00RR"
               }
             ]
           }
@@ -1707,24 +1707,25 @@
     {
       "Name": "Minions",
       "Models": {
-        "Beasts": [
-          {
-            "Faction": "Minions",
-            "CCName": "Blackhide Wrastler",
-            "DisplayName": "Wrastler 12/19",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Vertical",
-                "Boxes": "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0\n>0.0.0"
-              },
-              {
-                "Name": "Horizontal",
-                "Boxes": "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
-              }
-            ]
-          }
-        ]
+          "Beasts" :
+          [
+            {
+              "Faction": "Minions",
+              "CCName": "Blackhide Wrastler",
+              "DisplayName": "Wrastler 12/19",
+              "Type": "S",
+              "BoxFormats": [
+                {
+                  "Name": "Vertical",
+                  "Boxes": "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0\n>0.0.0"
+                },
+                {
+                  "Name": "Horizontal",
+                  "Boxes": "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
+                }
+              ]
+            }
+          ]
       }
     }
   ]

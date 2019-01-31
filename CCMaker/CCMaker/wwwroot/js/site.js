@@ -1,9 +1,9 @@
 ﻿var selected;
+var UID=0;
+
 
 var drag = d3.behavior.drag()
     .on("drag", function (d, i) {
-        selected = d;
-        console.log(selected.data.CCName);
         d.x += d3.event.dx
         d.y += d3.event.dy
         d3.select(this).attr("transform", function (d, i) {
@@ -43,7 +43,33 @@ function AddLetter(parent, currentXOffset, currentYOffset, Letter) {
         .text(Letter);
 }
 
+function GridClicked(d) {
+    console.log("clicked!" + d.model.CCName);
+    selected = d;
+    $('#ModelOptions').collapse("show");
+    $('#txtDisplayName').val(d.model.DisplayName);
+    $('#cboBoxFormat').empty();
+    $.each(d.model.BoxFormats, function (i, item) {
+        $('#cboBoxFormat').append($('<option>', {
+            value: item.Boxes,
+            text: item.Name
+        }));
+    });
+}
 
+
+
+function SVGModelChanges() {
+    $('#ModelOptions').collapse("hide");
+    var svg = document.getElementById("svg");
+    var data = selected.model;
+    data.DisplayName = $('#txtDisplayName').val();
+    data.SelectedBoxFormat = $('#cboBoxFormat').val();
+    if ($('#txtBoxFormat').val() <> '') data.SelectedBoxFormat = $('#txtBoxFormat').val();
+    d3.select('#' + selected.UID).remove();
+
+    model_factory(data);
+}
 
 function model_factory(data) {
     //data format
@@ -67,7 +93,9 @@ function model_factory(data) {
             }
         ]
      */
-    console.log(data.CCName);
+    UID += 1;
+    console.log(data.CCName + " " + UID);
+
     console.log("get text size");
     var svg = document.getElementById("svg");
     var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
@@ -81,13 +109,12 @@ function model_factory(data) {
 
     var plate = d3.select("#svg")
         .append("svg:g")
-        .data([{ "x": 50, "y": 50 }])
+        .data([{"x":50, "y":50, "model": data, "UID": "grid" + UID }])
         .attr("transform", "translate(" + 50 + "," + 50 + ")")
-        .attr("class", data.CCName)
-        .call(drag);
-
-    plate.model = data;
-
+        .attr("class", "Model")
+        .attr("id", "grid"+UID)
+        .call(drag)
+        .on("click", function (d) { GridClicked(d); });
 
     console.log("parse data");
     var lines = [];
@@ -96,8 +123,8 @@ function model_factory(data) {
         lines = data.BoxFormats[0].Boxes.split('\n');
         Boxes = data.BoxFormats[0].Boxes;
     } else {
-        lines = data.BoxFormats[data.SelectedBoxFormat].Boxes.split('\n');
-        Boxes = data.BoxFormats[data.SelectedBoxFormat].Boxes;
+        lines = data.SelectedBoxFormat.split('\n');
+        Boxes = data.SelectedBoxFormat;
     }
          
     var LongestLine = 0
@@ -230,6 +257,14 @@ function model_factory(data) {
                 if (data.Type == "C")
                     CreateCircle(plate, currentXOffset, currentYOffset);
                 AddLetter(plate, currentXOffset, currentYOffset, 'S');
+                currentXOffset += 23;
+                break;
+            case 'l':
+                AddLetter(plate, currentXOffset, currentYOffset, 'L');
+                currentXOffset += 23;
+                break;
+            case 'r':
+                AddLetter(plate, currentXOffset, currentYOffset, 'R');
                 currentXOffset += 23;
                 break;
             case '1':

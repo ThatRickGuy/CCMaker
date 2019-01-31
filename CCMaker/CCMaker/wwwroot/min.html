@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
+    <script type="text/javascript" >
+        var selected;
+
+        function clicked(d) {
+            selected = d;
+            console.log("clicked " + selected.title)
+        }
+
+        function removeSelected() {
+            console.log("remove " + selected.title)
+            d3.select("#test1").remove();
+            console.log("removed ")
+        }
+
+        function add() {
+            console.log("add");
+            var svg = d3.select("#svg")
+            var plate = svg
+                .append("svg:g")
+                .attr("id", "test1")
+                .data([{ "title":"test1" }])
+                .on("click", function (d) { clicked(d); });
+
+            var border = plate.append("svg:rect")
+                .attr("width", 100)
+                .attr("height", 100)
+                .attr("stroke", "black")
+                .attr("fill", "white");
+
+            var plate2 = svg
+                .append("svg:g")
+                .attr("id", "test2")
+                .data([{ "title": "test2" }])
+                .on("click", function (d) { clicked(d); });
+
+            var border2 = plate2.append("svg:rect")
+                .attr("x", 102)
+                .attr("width", 100)
+                .attr("height", 100)
+                .attr("stroke", "black")
+                .attr("fill", "white");
+        }
+    </script>
+
+</head>
+<body>
+    <button onClick="add();">add</button>
+    <button onClick="removeSelected();">remove</button>
+    <svg id="svg" style="width:110%; height:110%;">
+
+    </svg>
+</body>
+</html>
