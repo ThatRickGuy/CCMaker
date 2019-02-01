@@ -4,6 +4,7 @@ var UID=0;
 
 var drag = d3.behavior.drag()
     .on("drag", function (d, i) {
+        GridClicked(d);
         d.x += d3.event.dx
         d.y += d3.event.dy
         d3.select(this).attr("transform", function (d, i) {
@@ -44,7 +45,7 @@ function AddLetter(parent, currentXOffset, currentYOffset, Letter) {
 }
 
 function GridClicked(d) {
-    console.log("clicked!" + d.model.CCName);
+    //console.log("clicked!" + d.model.CCName);
     selected = d;
     $('#ModelOptions').collapse("show");
     $('#txtDisplayName').val(d.model.DisplayName);
@@ -65,13 +66,19 @@ function SVGModelChanges() {
     var data = selected.model;
     data.DisplayName = $('#txtDisplayName').val();
     data.SelectedBoxFormat = $('#cboBoxFormat').val();
-    if ($('#txtBoxFormat').val() <> '') data.SelectedBoxFormat = $('#txtBoxFormat').val();
+    if ($('#txtBoxFormat').val() != '') data.SelectedBoxFormat = $('#txtBoxFormat').val();
     d3.select('#' + selected.UID).remove();
 
-    model_factory(data);
+    model_factory(data, 50);
 }
 
-function model_factory(data) {
+
+function SVGModelRemove() {
+    $('#ModelOptions').collapse("hide");
+    d3.select('#' + selected.UID).remove();
+}
+
+function model_factory(data, xOffset) {
     //data format
     /*
         "Faction": "Khador",
@@ -94,9 +101,6 @@ function model_factory(data) {
         ]
      */
     UID += 1;
-    console.log(data.CCName + " " + UID);
-
-    console.log("get text size");
     var svg = document.getElementById("svg");
     var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
     text.setAttribute('fill', 'black');
@@ -109,8 +113,8 @@ function model_factory(data) {
 
     var plate = d3.select("#svg")
         .append("svg:g")
-        .data([{"x":50, "y":50, "model": data, "UID": "grid" + UID }])
-        .attr("transform", "translate(" + 50 + "," + 50 + ")")
+        .data([{ "x": xOffset, "y": 50, "model": data, "UID": "grid" + UID }])
+        .attr("transform", "translate(" + xOffset + "," + 50 + ")")
         .attr("class", "Model")
         .attr("id", "grid"+UID)
         .call(drag)
@@ -195,7 +199,7 @@ function model_factory(data) {
                     CreateCircle(plate, currentXOffset, currentYOffset);
                 currentXOffset += 23;
                 break;
-            case 'L':
+            case 'l':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
@@ -203,7 +207,7 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'L');
                 currentXOffset += 23;
                 break;
-            case 'R':
+            case 'r':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
@@ -211,7 +215,7 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'R');
                 currentXOffset += 23;
                 break;
-            case 'M':
+            case 'm':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
@@ -219,7 +223,7 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'M');
                 currentXOffset += 23;
                 break;
-            case 'C':
+            case 'c':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
@@ -227,7 +231,7 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'C');
                 currentXOffset += 23;
                 break;
-            case 'H':
+            case 'h':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
@@ -235,7 +239,7 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'H');
                 currentXOffset += 23;
                 break;
-            case 'A':
+            case 'a':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
@@ -243,7 +247,7 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'A');
                 currentXOffset += 23;
                 break;
-            case 'W':
+            case 'w':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
@@ -259,7 +263,7 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'S');
                 currentXOffset += 23;
                 break;
-            case 'l':
+            case 'L':
                 AddLetter(plate, currentXOffset, currentYOffset, 'L');
                 currentXOffset += 23;
                 break;
@@ -267,39 +271,39 @@ function model_factory(data) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'R');
                 currentXOffset += 23;
                 break;
-            case '1':
+            case 'A':
                 AddLetter(plate, currentXOffset, currentYOffset, 'A');
                 currentXOffset += 23;
                 break;
-            case '2':
+            case 'B':
                 AddLetter(plate, currentXOffset, currentYOffset, 'B');
                 currentXOffset += 23;
                 break;
-            case '3':
+            case 'C':
                 AddLetter(plate, currentXOffset, currentYOffset, 'C');
                 currentXOffset += 23;
                 break;
-            case '4':
+            case 'D':
                 AddLetter(plate, currentXOffset, currentYOffset, 'D');
                 currentXOffset += 23;
                 break;
-            case '5':
+            case 'E':
                 AddLetter(plate, currentXOffset, currentYOffset, 'E');
                 currentXOffset += 23;
                 break;
-            case '6':
+            case 'F':
                 AddLetter(plate, currentXOffset, currentYOffset, 'F');
                 currentXOffset += 23;
                 break;
-            case '7':
+            case 'G':
                 AddLetter(plate, currentXOffset, currentYOffset, 'G');
                 currentXOffset += 23;
                 break;
-            case '8':
+            case 'H':
                 AddLetter(plate, currentXOffset, currentYOffset, 'H');
                 currentXOffset += 23;
                 break;
-            case '9':
+            case 'I':
                 AddLetter(plate, currentXOffset, currentYOffset, 'I');
                 currentXOffset += 23;
                 break;
@@ -309,6 +313,30 @@ function model_factory(data) {
                 break;
             case 'W':
                 AddLetter(plate, currentXOffset, currentYOffset, 'W');
+                currentXOffset += 23;
+                break;
+            case '1':
+                AddLetter(plate, currentXOffset, currentYOffset, '1'); 
+                currentXOffset += 23;
+                break;
+            case '2':
+                AddLetter(plate, currentXOffset, currentYOffset, '2');
+                currentXOffset += 23;
+                break;
+            case '3':
+                AddLetter(plate, currentXOffset, currentYOffset, '3');
+                currentXOffset += 23;
+                break;
+            case '4':
+                AddLetter(plate, currentXOffset, currentYOffset, '4');
+                currentXOffset += 23;
+                break;
+            case '5':
+                AddLetter(plate, currentXOffset, currentYOffset, '5');
+                currentXOffset += 23;
+                break;
+            case '6':
+                AddLetter(plate, currentXOffset, currentYOffset, '6');
                 currentXOffset += 23;
                 break;
             case '.':

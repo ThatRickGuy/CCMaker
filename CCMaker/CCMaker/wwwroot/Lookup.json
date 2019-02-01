@@ -1,9 +1,72 @@
 {
   "Factions": [
     {
+      "Name": "Other",
+      "Models": {
+        "Other": [
+          {
+            "Faction": "Other",
+            "CCName": "Objective",
+            "DisplayName": "Objectives 5/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "A00000>00000>00000\n-B00000>00000>00000"
+              },
+              {
+                "Name": "Vertical max 10",
+                "Boxes": "A00000>00000\n......>00000\n-B00000>00000\n......>00000"
+              },
+              {
+                "Name": "Vertical max 5",
+                "Boxes": "A00000\n.00000\n.00000\n-B00000\n.00000\n.00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Other",
+            "CCName": "Scenario",
+            "DisplayName": "Scenario Score",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "A00000>00000>00000\n-B00000>00000>00000"
+              },
+              {
+                "Name": "Vertical max 10",
+                "Boxes": "A00000>00000\n......>00000\n-B00000>00000\n......>00000"
+              },
+              {
+                "Name": "Vertical max 5",
+                "Boxes": "A00000\n.00000\n.00000\n-B00000\n.00000\n.00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Other",
+            "CCName": "Round",
+            "DisplayName": "Round",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0000000"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0\n0\n0\n0\n0\n0\n0"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "Name": "Khador",
       "Models": {
-        "Casters": [
+        "Warcaster": [
           {
             "Faction": "Khador",
             "CCName": "Butcher 1",
@@ -52,15 +115,15 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000>00000>00000>00000\n-1000>00000\n2000>00000"
+                "Boxes": "00000>00000>00000>00000\n-A000>00000\nB000>00000"
               },
               {
                 "Name": "Horizontal Max 15",
-                "Boxes": "00000>00000>00000\n.....>.....>00000\n-1000>00000\n2000>00000"
+                "Boxes": "00000>00000>00000\n.....>.....>00000\n-A000>00000\nB000>00000"
               },
               {
                 "Name": "Horizontal Max 10",
-                "Boxes": "00000>00000\n00000>00000\n-1000>00000\n2000>00000"
+                "Boxes": "00000>00000\n00000>00000\n-A000>00000\nB000>00000"
               }
             ]
           },
@@ -342,15 +405,15 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00>00000>00000>00000\n-100000\n200000"
+                "Boxes": "00>00000>00000>00000\n-A00000\nB00000"
               },
               {
                 "Name": "Horizontal Max 15",
-                "Boxes": "00000>00000>00000\n.....>.....>...00\n-100000\n200000"
+                "Boxes": "00000>00000>00000\n.....>.....>...00\n-A00000\nB00000"
               },
               {
                 "Name": "Horizontal Max 10",
-                "Boxes": "00000>00000\n...00>00000\n-100000\n200000"
+                "Boxes": "00000>00000\n...00>00000\n-A00000\nB00000"
               }
             ]
           },
@@ -447,20 +510,20 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "0>00000>00000>00000\n-100000\n200000"
+                "Boxes": "0>00000>00000>00000\n-A00000\nB00000"
               },
               {
                 "Name": "Horizontal Max 15",
-                "Boxes": "00000>00000>00000\n.....>.....>....0\n-100000\n200000"
+                "Boxes": "00000>00000>00000\n.....>.....>....0\n-A00000\nB00000"
               },
               {
                 "Name": "Horizontal Max 10",
-                "Boxes": "00000>00000\n....0>00000\n-100000\n200000"
+                "Boxes": "00000>00000\n....0>00000\n-A00000\nB00000"
               }
             ]
           }
         ],
-        "Jacks": [
+        "Warjack": [
           {
             "Faction": "Khador",
             "CCName": "Beast 09",
@@ -469,11 +532,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -485,11 +548,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n00SS00\nLLMCRR\nLMMCCR"
+                "Boxes": "000000\n000000\n000000\n00ss00\nllmcrr\nlmmccr"
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000LL\n0000LM\n000SMM\n000SCC\n0000RC\n0000RR"
+                "Boxes": "0000ll\n0000lm\n000smm\n000scc\n0000rc\n0000rr"
               }
             ]
           },
@@ -501,11 +564,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "..00..\n.0000.\n000000\n0L00R0\nLLMCRR\n.MM.C."
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mm.c."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "..00L.\n.00LLM\n0000MM\n0000C.\n.00RRC\n..00R."
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000c.\n.00rrc\n..00r."
               }
             ]
           },
@@ -517,11 +580,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -533,11 +596,11 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "l..000>000..r\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
+                "Boxes": "l..000>000..r\n..0000>0000..\n0000ss>ss0000\n0lllsc>csrrr0\nllcccc>ccccrr\nlcmmmm>mmmmcr"
               },
               {
                 "Name": "Vertical",
-                "Boxes": "l.00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\nr.00RR"
+                "Boxes": "l.00ll\n..0llc\n.00lcm\n000lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n000rcm\n.00rcm\n..0rrc\nr.00rr"
               }
             ]
           },
@@ -549,11 +612,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -565,11 +628,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -581,11 +644,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -597,11 +660,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -613,11 +676,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": ".0000.\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": ".0000.\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": ".000L.\n000LLM\n0000MM\n0000CC\n000RRC\n.000R."
+                "Boxes": ".000l.\n000llm\n0000mm\n0000cc\n000rrc\n.000r."
               }
             ]
           },
@@ -629,11 +692,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -645,11 +708,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -661,11 +724,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -677,11 +740,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "..00..\n.0000.\n000000\n0L00R0\nLLMCRR\n.MM.C."
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mm.c."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "..00L.\n.00LLM\n0000MM\n0000C.\n.00RRC\n..00R."
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000c.\n.00rrc\n..00r."
               }
             ]
           },
@@ -693,11 +756,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -709,11 +772,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "..00..\n.0000.\n000000\n0L00R0\nLLMCRR\n.MM.C."
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mm.c."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "..00L.\n.00LLM\n0000MM\n0000C.\n.00RRC\n..00R."
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000c.\n.00rrc\n..00r."
               }
             ]
           },
@@ -725,11 +788,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -741,11 +804,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -757,11 +820,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "000000\n000000\n000000\n0L00R0\nLLMCRR\n.MMCC."
+                "Boxes": "000000\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "0000L.\n000LLM\n0000MM\n0000CC\n000RRC\n0000R."
+                "Boxes": "0000l.\n000llm\n0000mm\n0000cc\n000rrc\n0000r."
               }
             ]
           },
@@ -773,16 +836,16 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "l..000>000..r\n..0000>0000..\n0000SS>SS0000\n0LLLSC>CSRRR0\nLLCCCC>CCCCRR\nLCMMMM>MMMMCR"
+                "Boxes": "l..000>000..r\n..0000>0000..\n0000ss>ss0000\n0lllsc>csrrr0\nllcccc>ccccrr\nlcmmmm>mmmmcr"
               },
               {
                 "Name": "Vertical",
-                "Boxes": "l.00LL\n..0LLC\n.00LCM\n000LCM\n00SSCM\n00SCCM\n-00SCCM\n00SSCM\n000RCM\n.00RCM\n..0RRC\nr.00RR"
+                "Boxes": "l.00ll\n..0llc\n.00lcm\n000lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n000rcm\n.00rcm\n..0rrc\nr.00rr"
               }
             ]
           }
         ],
-        "Units": [
+        "Unit": [
           {
             "Faction": "Khador",
             "CCName": "Great Bears of the Gallowswood",
@@ -791,7 +854,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
+                "Boxes": "A00000\nB00000\nC00000"
               }
             ]
           },
@@ -803,7 +866,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
+                "Boxes": "A00000\nB00000\nC00000"
               }
             ]
           },
@@ -815,7 +878,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
               }
             ]
           },
@@ -827,7 +890,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
+                "Boxes": "A00000\nB00000\nC00000"
               }
             ]
           },
@@ -839,7 +902,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
               }
             ]
           },
@@ -851,7 +914,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000"
+                "Boxes": "A000>00000\nB000>00000\nC000>00000"
               }
             ]
           },
@@ -863,7 +926,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000\n4000>00000\n5000>00000"
+                "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
               }
             ]
           },
@@ -875,7 +938,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000"
+                "Boxes": "A000>00000\nB000>00000\nC000>00000"
               }
             ]
           },
@@ -887,7 +950,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000\n4000>00000\n5000>00000"
+                "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
               }
             ]
           },
@@ -899,7 +962,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000"
+                "Boxes": "A000>00000\nB000>00000\nC000>00000"
               }
             ]
           },
@@ -911,7 +974,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000\n4000>00000\n5000>00000"
+                "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
               }
             ]
           },
@@ -928,7 +991,7 @@
             ]
           }
         ],
-        "Attachments": [
+        "Attachment": [
           {
             "Faction": "Khador",
             "CCName": "Battle Mechanic Officer",
@@ -961,7 +1024,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -985,7 +1048,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -997,7 +1060,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
+                "Boxes": "A00000\nB00000\nC00000"
               }
             ]
           },
@@ -1009,7 +1072,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000"
               }
             ]
           },
@@ -1021,7 +1084,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
               }
             ]
           },
@@ -1033,7 +1096,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000"
               }
             ]
           },
@@ -1045,7 +1108,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000\nG00000"
               }
             ]
           },
@@ -1057,7 +1120,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000\n800000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000\nG00000\nH00000"
               }
             ]
           },
@@ -1069,7 +1132,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000\n800000\n900000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000\nG00000\nH00000\nI00000"
               }
             ]
           },
@@ -1093,7 +1156,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -1105,7 +1168,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
+                "Boxes": "A00000\nB00000\nC00000"
               }
             ]
           },
@@ -1129,7 +1192,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -1213,7 +1276,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -1225,7 +1288,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
+                "Boxes": "A00000\nB00000\nC00000"
               }
             ]
           },
@@ -1237,12 +1300,12 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
+                "Boxes": "A00000\nB00000\nC00000\nD00000"
               }
             ]
           }
         ],
-        "Solos": [
+        "Solo": [
           {
             "Faction": "Khador",
             "CCName": "Fenris",
@@ -1277,7 +1340,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
+                "Boxes": "A000>00000\nB000>00000"
               }
             ]
           },
@@ -1303,7 +1366,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -1342,7 +1405,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -1394,7 +1457,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000>00000\n....000>00000\n200000>00000\n....000>00000"
+                "Boxes": "A00000>00000\n....000>00000\nB00000>00000\n....000>00000"
               }
             ]
           },
@@ -1420,7 +1483,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
+                "Boxes": "A000>00000\nB000>00000"
               }
             ]
           },
@@ -1446,7 +1509,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
+                "Boxes": "A00000>00000\nB00000>00000"
               }
             ]
           },
@@ -1471,7 +1534,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
+                "Boxes": "A00000>00000\nB00000>00000"
               }
             ]
           },
@@ -1497,7 +1560,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -1562,7 +1625,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "A00000\nB00000"
               }
             ]
           },
@@ -1580,7 +1643,7 @@
             ]
           }
         ],
-        "BattleEngines": [
+        "BattleEngine": [
           {
             "Faction": "Khador",
             "CCName": "Man-O-War Assault Chariot",
@@ -1609,15 +1672,15 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000>00000>00000\n2000>00000>00000>00000"
+                "Boxes": "A000>00000>00000>00000\nB000>00000>00000>00000"
               },
               {
                 "Name": "Horizontal 15 max",
-                "Boxes": "100000>00000>00000\n......>.....>..000\n200000>00000>00000\n......>.....>..000"
+                "Boxes": "A00000>00000>00000\n......>.....>..000\nB00000>00000>00000\n......>.....>..000"
               },
               {
                 "Name": "Horizontal 10 max",
-                "Boxes": "100000>00000\n...000>00000\n200000>00000\n...000>00000"
+                "Boxes": "A00000>00000\n...000>00000\nB00000>00000\n...000>00000"
               }
             ]
           },
@@ -1649,15 +1712,15 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000>00000>00000\n2000>00000>00000>00000"
+                "Boxes": "A000>00000>00000>00000\nB000>00000>00000>00000"
               },
               {
                 "Name": "Horizontal 15 max",
-                "Boxes": "100000>00000>00000\n......>.....>..000\n200000>00000>00000\n......>.....>..000"
+                "Boxes": "A00000>00000>00000\n......>.....>..000\nB00000>00000>00000\n......>.....>..000"
               },
               {
                 "Name": "Horizontal 10 max",
-                "Boxes": "100000>00000\n...000>00000\n200000>00000\n...000>00000"
+                "Boxes": "A00000>00000\n...000>00000\nB00000>00000\n...000>00000"
               }
             ]
           },
@@ -1689,15 +1752,15 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "1000>00000>00000>00000>00000>00000\n2000>00000>00000>00000>00000>00000"
+                "Boxes": "A000>00000>00000>00000>00000>00000\nB000>00000>00000>00000>00000>00000"
               },
               {
                 "Name": "Horizontal 15 max",
-                "Boxes": "100000>00000>00000\n.00000>00000>00000\n......>.....>..000\n200000>00000>00000\n.00000>00000>00000\n......>.....>..000"
+                "Boxes": "A00000>00000>00000\n.00000>00000>00000\n......>.....>..000\nB00000>00000>00000\n.00000>00000>00000\n......>.....>..000"
               },
               {
                 "Name": "Horizontal 10 max",
-                "Boxes": "100000>00000\n.00000>00000\n.00000>00000\n...000>00000\n200000>00000\n.00000>00000\n.00000>00000\n...000>00000"
+                "Boxes": "A00000>00000\n.00000>00000\n.00000>00000\n...000>00000\nB00000>00000\n.00000>00000\n.00000>00000\n...000>00000"
               }
             ]
           }
@@ -1706,26 +1769,1067 @@
     },
     {
       "Name": "Minions",
+      "ThemeOverrides": [
+        {
+          "ThemeName": "The Blindwater Congregation",
+          "Models": 
+            [
+              {
+                "Faction": "Minions",
+                "CCName": "Gatorman Posse (min)",
+                "DisplayName": "GMP 12/16",
+                "Type": "S",
+                "BoxFormats": [
+                  {
+                    "Name": "Horizontal",
+                    "Boxes": "A000>00000\nB000>00000\nC000>00000"
+                  }
+                ]
+              },
+              {
+                "Faction": "Minions",
+                "CCName": "Gatorman Posse (max)",
+                "DisplayName": "GMP 12/16",
+                "Type": "S",
+                "BoxFormats": [
+                  {
+                    "Name": "Horizontal",
+                    "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
+                  }
+                ]
+              }
+            ]
+        }
+      ],
       "Models": {
-          "Beasts" :
-          [
-            {
-              "Faction": "Minions",
-              "CCName": "Blackhide Wrastler",
-              "DisplayName": "Wrastler 12/19",
-              "Type": "S",
-              "BoxFormats": [
-                {
-                  "Name": "Vertical",
-                  "Boxes": "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0\n>0.0.0"
-                },
-                {
-                  "Name": "Horizontal",
-                  "Boxes": "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
-                }
-              ]
-            }
-          ]
+        "Warlock": [
+          {
+            "Faction": "Minions",
+            "CCName": "Arkadius 1",
+            "DisplayName": "Arkadius 15/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n......>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Barnabas 1",
+            "DisplayName": "Barnabas 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Barnabas 2",
+            "DisplayName": "Barnabas 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Calaban 1",
+            "DisplayName": "Calaban 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n......>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Carver 1",
+            "DisplayName": "Caver 15/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....00>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Helga 1",
+            "DisplayName": "Helga 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n......>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Jaga-Jaga 1",
+            "DisplayName": "Jaga-Jaga 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Maelok 1",
+            "DisplayName": "Maelok 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....00>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Midas 1",
+            "DisplayName": "Midas 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Rask 1",
+            "DisplayName": "Rask 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Sturm & Drang 1",
+            "DisplayName": "Sturm & Drang 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...000>00000"
+              }
+            ]
+          }
+
+        ],
+        "Warbeast": [
+          {
+            "Faction": "Minions",
+            "CCName": "Battle Boar",
+            "DisplayName": "Battle Boar 12/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00\n..00^00-\n0000\n0000^00-\n..00\n..00^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Blackhide Wrastler",
+            "DisplayName": "Wrastler 12/19",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Blind Walker",
+            "DisplayName": "Blind Walker 10/20",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..0000\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....00\n.....0^00-\n000000\n000000^00-\n..0000\n..0000^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Boneswarm",
+            "DisplayName": "Boneswarm 13/15",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0...\n..00..\n0.0000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00\n...0^00-\n0000\n..000^00-\n..00\n.00^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Bull Snapper",
+            "DisplayName": "Bull Snapper 13/14",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0...\n..000.\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00\n...0^00-\n0000\n..000^00-\n..00\n.00^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Dracodile",
+            "DisplayName": "Dracodile 10/20",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical-Compressed",
+                "Boxes": "-1^>.000\n..0000\n-2^.0000^00-\n>..000\n-3^>0000\n.00000\n-4^00000^00-\n>.0000\n-5^>0000\n..0000\n-6^.0000^00-\n>.0000"
+              },
+              {
+                "Name": "Vertical",
+                "Boxes": "..0000000\n..0000000^00-\n000000000\n000000000^00-\n.00000000\n.00000000^00-"
+              },
+              {
+                "Name": "Horizontal-Compressed",
+                "Boxes": ">1.2.3.4.5.6\n-.^..-.0^00-00^..-0^\n-0^00-00^00-00^00-0^\n-0^00-00^00-00^00-0^\n-0^00-00^00-00^00-0^\n-.^00-..^00-..^00-.^\n>.0...0...0\n>.0...0...0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00..\n..0000\n000000\n000000\n000000\n000000\n000000\n000000\n000000\n>0.0.0\n>0.0.0"
+              }
+
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gorax Rager",
+            "DisplayName": "Gorax 12/16",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0.000.\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n.00^00-\n000\n000^00-\n000\n.00^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gun Boar",
+            "DisplayName": "Battle Boar 12/16",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00\n..00^00-\n0000\n0000^00-\n..00\n..00^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Ironback Spitter",
+            "DisplayName": "Spitter 10/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0...\n0.000.\n000000\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0000\n..000^00-\n00000\n.0000^00-\n.0000\n..000^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Razor Boars (2)",
+            "DisplayName": "Razor Boars 13/13",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "1..00..\n.000000\n.>0.0.0\n.>0.0.0\n-1..00..\n.000000\n.>0.0.0\n.>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "1.0\n..0^00-\n.00\n.00^00-\n..0\n..0^00-\n-2.0\n..0^00-\n.00\n.00^00-\n..0\n..0^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Road Hog",
+            "DisplayName": "Road Hog 12/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..000.\n0.0000\n000000\n.>0.0.0\n.>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000\n...00^00-\n00000\n00000^00-\n.0000\n..000^00"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Splatter Boar",
+            "DisplayName": "Splatter Boar 12/16",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00\n..00^00-\n0000\n0000^00-\n..00\n..00^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Swamp Horror",
+            "DisplayName": "Swamp Horror 10/15",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n0.000.\n000000\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0000\n..000^00-\n00000\n00000^00-\n.0000\n..000^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Swamp Troll",
+            "DisplayName": "Swamp Troll 12/16",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0.000.\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n.00^00-\n000\n000^00-\n000\n.00^00-"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "War Hog",
+            "DisplayName": "War Hog 12/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..000.\n0.0000\n000000\n.>0.0.0\n.>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "...000\n....00^00-\n000000\n000000^00-\n..0000\n...000^00"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Lug",
+            "DisplayName": "Lug 12/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0...\n..00..\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000\n..000^00-\n00000\n.0000^00-\n..000\n..000^00"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Skarath",
+            "DisplayName": "Skarath 14/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0...\n..000.\n0.0000\n000000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000\n...00^00-\n00000\n.0000^00-\n..0000\n...000^00"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Brine",
+            "DisplayName": "Brine 12/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..000.\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "...00\n....0^00-\n00000\n00000^00-\n.0000\n..000^00"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Snapjaw",
+            "DisplayName": "Snapjaw 12/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..00..\n..0000\n0.0000\n000000\n>0.0.0\n>0.0.0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....00\n.....0^00-\n000000\n000000^00-\n...000\n...000^00"
+              }
+            ]
+          }
+        ],
+
+        "Unit": [
+          {
+            "Faction": "Minions",
+            "CCName": "Boil Master & Spirit Cauldron",
+            "DisplayName": "Cauldron 5/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000>00000\nB.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Valkyries",
+            "DisplayName": "Valkyries 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gatorman Bokor & Bog Trog Swamp Shamblers",
+            "DisplayName": "Bokor 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gatorman Posse (min)",
+            "DisplayName": "GMP 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gatorman Posse (max)",
+            "DisplayName": "GMP 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Lynus Wesselbaum & Edrea Lloryrr",
+            "DisplayName": "Lynus & Edrea 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000"
+              }
+            ]
+          }
+
+        ],
+        "Attachment": [
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Brigand Warlord",
+            "DisplayName": "Warlord 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gatorman Soul Slave",
+            "DisplayName": "Soul Slave 10/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Targ",
+            "DisplayName": "Targ 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          }
+        ],
+
+        "Solo": [
+          {
+            "Faction": "Minions",
+            "CCName": "Agata, Queen of Carnage",
+            "DisplayName": "Agata 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Alten Ashley",
+            "DisplayName": "Alten 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Bog Trog Mist Speaker",
+            "DisplayName": "Mist Speaker 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Bog Trog Trawler",
+            "DisplayName": "Trawler 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Bone Shrine",
+            "DisplayName": "Shrine 5/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Brun Cragback & Lug",
+            "DisplayName": "Brun 13/15",
+            "Include": "Lug",
+            "IncludeType": "Warbeast",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical 6",
+                "Boxes": ".0000.\n.0000."
+              },
+              {
+                "Name": "Vertical",
+                "Boxes": "000>00000"
+              },
+              {
+                "Name": "Vertical 5",
+                "Boxes": "00000\n..000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Croak Hunter",
+            "DisplayName": "Croak Hunter 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Dahlia Hallyr & Skarath",
+            "DisplayName": "Dahlia 16/12",
+            "Include": "Skarath",
+            "IncludeType": "Warbeast",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical 6",
+                "Boxes": ">00000>"
+              },
+              {
+                "Name": "Vertical",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Efaarit Scouts",
+            "DisplayName": "Efaarit Scouts 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gatorman Husk",
+            "DisplayName": "Gatorman Husk 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gatorman Witch Doctor",
+            "DisplayName": "Witch Doc 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gobber Tinker",
+            "DisplayName": "Tinker 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gremlin Swarm",
+            "DisplayName": "Gremlin 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gundrun the Wanderer",
+            "DisplayName": "Gundrun 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Hutchuck, Ogrun Bounty Hunter",
+            "DisplayName": "Hutchuck 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Kwaak Slickspin & Gub, Croak Sorcerers",
+            "DisplayName": "Kwaak & Gub 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Lanyssa Ryssyl, Nyss Sorceress",
+            "DisplayName": "Lanyssa 15/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Longchops",
+            "DisplayName": "Longchops 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Maximus",
+            "DisplayName": "Maximus 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Rorsh & Brine",
+            "DisplayName": "Rorsh 13/16",
+            "Type": "S",
+            "Include": "Brine",
+            "IncludeType": "Warbeast",
+            "BoxFormats": [
+              {
+                "Name": "Vertical 6",
+                "Boxes": ">00000>"
+              },
+              {
+                "Name": "Vertical",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Saxon Orrik",
+            "DisplayName": "Saxon 15/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Thrullg",
+            "DisplayName": "Thrullg 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Totem Hunter",
+            "DisplayName": "Totem Hunter 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Underchief Mire",
+            "DisplayName": "Mire 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Viktor Pendrake",
+            "DisplayName": "Pendrake 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Wrong Eye & Snapjaw",
+            "DisplayName": "Wrong Eye 12/17",
+            "Include": "Snapjaw",
+            "IncludeType": "Warbeast",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical 6",
+                "Boxes": ".0000.\n.0000."
+              },
+              {
+                "Name": "Vertical",
+                "Boxes": "000>00000"
+              },
+              {
+                "Name": "Vertical 5",
+                "Boxes": "00000\n..000"
+              }
+
+            ]
+          }
+
+        ],
+        "BattleEngine": [
+          {
+            "Faction": "Minions",
+            "CCName": "Meat Thresher",
+            "DisplayName": "Thresher 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000\n....0\n00000\n00000\n00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Sacral Vault",
+            "DisplayName": "Vault 9/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000\n....0\n....\n00000\n00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n00000>00000"
+              }
+            ]
+          }
+        ]
+
       }
     }
   ]
