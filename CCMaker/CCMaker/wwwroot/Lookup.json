@@ -64,6 +64,1289 @@
       }
     },
     {
+      "Name": "Cygnar",
+      "Models": {
+        "Warcaster": [
+          {
+            "Faction": "Cygnar",
+            "CCName": "Blaize 1",
+            "DisplayName": "Blaize 15/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Brisbane 1",
+            "DisplayName": "Brisbane 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Brisbane 2",
+            "DisplayName": "Blaize 14/18",
+            "Include": "Rocket Turret",
+            "IncludeType": "Solo",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Caine 1",
+            "DisplayName": "Caine 17/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Caine 2",
+            "DisplayName": "Caine 17/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Caine 3",
+            "DisplayName": "Caine 17/13",
+            "Include": "Caine's Hellsingers",
+            "IncludeType": "Unit",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Darius 1",
+            "DisplayName": "Darius 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>...00>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n.....>..00"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Haley 1",
+            "DisplayName": "Haley 16/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Haley 3",
+            "DisplayName": "Haley 16/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000\n-.....>....A>00000\n-.....>....B>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000\n-....A>00000\n-....B>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Jakes 2",
+            "DisplayName": "Jakes 16/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Kraye 1",
+            "DisplayName": "Kraye 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Maddox 1",
+            "DisplayName": "Maddox 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Nemo 1",
+            "DisplayName": "Nemo 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>.0000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Nemo 2",
+            "DisplayName": "Nemo 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>.0000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Nemo 3",
+            "DisplayName": "Nemo 14/16",
+            "Include": "Storm Chaser Finch",
+            "IncludeType": "Solo",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>.0000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Sloan 1",
+            "DisplayName": "Sloan 16/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stryker 1",
+            "DisplayName": "Stryker 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stryker 2",
+            "DisplayName": "Stryker 16/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stryker 3",
+            "DisplayName": "Stryker 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Sturgis 1",
+            "DisplayName": "Sturgis 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          }
+        ],
+        "Warjack": [
+          {
+            "Faction": "Cygnar",
+            "CCName": "Ace",
+            "DisplayName": "Ace 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n.0llm\n000mm\n000cc\n.0rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Avenger",
+            "DisplayName": "Avenger 11/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Brickhouse",
+            "DisplayName": "Brickhouse 11/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Centurion",
+            "DisplayName": "Centurion 11/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Charger",
+            "DisplayName": "Charger 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n000mm\n000cc\n00rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Cyclone",
+            "DisplayName": "Cyclone 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Defender",
+            "DisplayName": "Defender 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Dynamo",
+            "DisplayName": "Dynamo 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Firefly",
+            "DisplayName": "Firefly 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n000mm\n000cc\n00rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Gallant",
+            "DisplayName": "Gallant 13/18(19)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Grenadier",
+            "DisplayName": "Grenadier 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n.0llm\n000mm\n000cc\n.0rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Hammersmith",
+            "DisplayName": "Hammersmith 11/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Hunter",
+            "DisplayName": "Hunter 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n.0llm\n000mm\n000cc\n.0rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Hurricane",
+            "DisplayName": "Hurricane 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "L....0>0....R\n...000>000...\n0000aa>aa0000\n00llac>carr00\nllcccc>ccccrr\nlcmmmm>mmmmcr"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "L.00ll\n..00lc\n..0lcm\n.00lcm\n.0aacm\n00accm\n-00accm\n.0aacm\n.00rcm\n..0rcm\n..00rc\nR.00rr"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Ironclad",
+            "DisplayName": "Ironclad 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Lancer",
+            "DisplayName": "Lancer 13/16(18)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n000mm\n000cc\n00rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Minuteman",
+            "DisplayName": "Minuteman 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n.0llm\n000mm\n000cc\n.0rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Ol'Rowdy",
+            "DisplayName": "Ol'Rowdy 12/19(20)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Reliant",
+            "DisplayName": "Reliant 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Sentinel",
+            "DisplayName": "Sentinel 13/16(18)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n000mm\n000cc\n00rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormclad",
+            "DisplayName": "Stormclad 12/18(19)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormwall",
+            "DisplayName": "Stormwall 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "L....0>0....R\n...000>000...\n0000aa>aa0000\n00llac>carr00\nllcccc>ccccrr\nlcmmmm>mmmmcr"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "L.00ll\n..00lc\n..0lcm\n.00lcm\n.0aacm\n00accm\n-00accm\n.0aacm\n.00rcm\n..0rcm\n..00rc\nR.00rr"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Thorn",
+            "DisplayName": "Thorn 13/16(18)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n0laar0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n00amm\n00acc\n00rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Thunderhead",
+            "DisplayName": "Thunderhead 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n000llm\n0000mm\n0000cc\n000rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Triumph",
+            "DisplayName": "Triumph 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          }
+        ],
+        "Unit": [
+          {
+            "Faction": "Cygnar",
+            "CCName": "Caine's Hellsingers",
+            "DisplayName": "Hellsingers 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Black 13th Strike Force",
+            "DisplayName": "Black 13 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Storm Lances (min)",
+            "DisplayName": "Storm Lances 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Storm Lances (max)",
+            "DisplayName": "Storm Lances 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Tempest Blazers (min)",
+            "DisplayName": "Tempest Blazers 14/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Tempest Blazers (max)",
+            "DisplayName": "Tempest Blazers 14/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Express Team",
+            "DisplayName": "Express Gunner 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000"
+              }
+            ]
+          }
+        ],
+        "Attachment": [
+          {
+            "Faction": "Cygnar",
+            "CCName": "Arcane Tempest Gun Mage Officer",
+            "DisplayName": "ATGM UA 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Captain Jonas Murdoch",
+            "DisplayName": "Murdoch 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Long Gunner Infantry Officer & Standard",
+            "DisplayName": "Long Gunner UA 12/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormblade Infantry Officer & Standard",
+            "DisplayName": "Stormblade UA 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Sword Knight Officer & Standard",
+            "DisplayName": "Sword Knight UA 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Commando Officer",
+            "DisplayName": "Commando UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Infantry Officer & Sniper",
+            "DisplayName": "Trencher UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Long Gunner Officer",
+            "DisplayName": "Trencher LG UA 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          }
+        ],
+        "Solo": [
+          {
+            "Faction": "Cygnar",
+            "CCName": "Rocket Turret",
+            "DisplayName": "Turret 5/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Storm Chaser Finch",
+            "DisplayName": "Finch 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Arcane Tempest Rifleman",
+            "DisplayName": "AT Rifleman 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Arcane Tempest Rifleman",
+            "DisplayName": "AT Rifleman 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Archduke Alain Runewood, Lord of Fharin",
+            "DisplayName": "Runewood 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Captain Arlan Strangeways",
+            "DisplayName": "Strangeways 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Captain Maxwell Finn",
+            "DisplayName": "Finn 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Commander Anson Hitch",
+            "DisplayName": "Hitch 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Gun Mage Captain Adept",
+            "DisplayName": "GM Captain 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Gun Mage Captain Adept",
+            "DisplayName": "GM Captain 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Journeyman Lieutenant Allister Caine",
+            "DisplayName": "Caine 15/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": ">00000>"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Journeyman Warcaster",
+            "DisplayName": "Jr 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": ">00000>"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Lieutenant Allison Jakes",
+            "DisplayName": "Jakes 15/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": ">00000>"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Lieutenant Bastian Falk",
+            "DisplayName": "Falk 15/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Lieutenant Gwen Keller",
+            "DisplayName": "Keller 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Major Katherine Laddermore",
+            "DisplayName": "Laddermore 13/17(5)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000\n-.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormblade Captain",
+            "DisplayName": "Sb Captain 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Stormblade Captain",
+            "DisplayName": "Sb Captain 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trench Buster",
+            "DisplayName": "Buster 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trench Buster",
+            "DisplayName": "Buster 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Master Gunner",
+            "DisplayName": "Gunner 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Master Gunner",
+            "DisplayName": "Gunner 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Warcaster Lieutenant",
+            "DisplayName": "Trench Lt WC 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": ">00000>"
+              }
+            ]
+          }
+        ],
+        "BattleEngine": [
+          {
+            "Faction": "Cygnar",
+            "CCName": "Storm Strider",
+            "DisplayName": "Storm Strider 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n..000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Blockhouse",
+            "DisplayName": "Blockhouse 5/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n00000>00000"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "Name": "Khador",
       "Models": {
         "Warcaster": [
@@ -1024,7 +2307,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1048,7 +2331,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1060,7 +2343,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000"
+                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -1072,7 +2355,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000\nD00000"
+                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           },
@@ -1084,7 +2367,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+                "Boxes": "100000\n200000\n300000\n400000\n500000"
               }
             ]
           },
@@ -1096,7 +2379,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000"
+                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000"
               }
             ]
           },
@@ -1108,31 +2391,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000\nG00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "8Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000\nG00000\nH00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "9Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000\nF00000\nG00000\nH00000\nI00000"
+                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000"
               }
             ]
           },
@@ -1156,7 +2415,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1168,7 +2427,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000"
+                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -1192,7 +2451,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1276,7 +2535,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1288,7 +2547,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000"
+                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -1300,7 +2559,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000\nC00000\nD00000"
+                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           }
@@ -1340,7 +2599,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A000>00000\nB000>00000"
+                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -1366,7 +2625,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1405,7 +2664,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1457,7 +2716,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000>00000\n....000>00000\nB00000>00000\n....000>00000"
+                "Boxes": "100000>00000\n....000>00000\n200000>00000\n....000>00000"
               }
             ]
           },
@@ -1483,7 +2742,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A000>00000\nB000>00000"
+                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -1509,7 +2768,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000>00000\nB00000>00000"
+                "Boxes": "100000>00000\n200000>00000"
               }
             ]
           },
@@ -1534,7 +2793,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000>00000\nB00000>00000"
+                "Boxes": "100000>00000\n200000>00000"
               }
             ]
           },
@@ -1560,7 +2819,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1577,20 +2836,6 @@
               }
             ]
           },
-
-          {
-            "Faction": "Khador",
-            "CCName": "",
-            "DisplayName": "",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000>00000"
-              }
-            ]
-          },
-
           {
             "Faction": "Khador",
             "CCName": "Widowmaker Marksman",
@@ -1603,7 +2848,6 @@
               }
             ]
           },
-
           {
             "Faction": "Khador",
             "CCName": "Winter Guard Artillery Kapitan",
@@ -1625,11 +2869,10 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A00000\nB00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
-
           {
             "Faction": "Khador",
             "CCName": "Yuri the Axe",

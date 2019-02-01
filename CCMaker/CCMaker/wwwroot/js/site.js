@@ -110,7 +110,6 @@ function model_factory(data, xOffset) {
     var textwidth = text.getComputedTextLength();
     d3.select("svg").empty();
 
-
     var plate = d3.select("#svg")
         .append("svg:g")
         .data([{ "x": xOffset, "y": 50, "model": data, "UID": "grid" + UID }])
@@ -267,7 +266,7 @@ function model_factory(data, xOffset) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'L');
                 currentXOffset += 23;
                 break;
-            case 'r':
+            case 'R':
                 AddLetter(plate, currentXOffset, currentYOffset, 'R');
                 currentXOffset += 23;
                 break;

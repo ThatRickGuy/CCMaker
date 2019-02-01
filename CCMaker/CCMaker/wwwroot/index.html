@@ -88,7 +88,6 @@
 
 
 
-
             var url = txtCCURL.value;
             var CCCode = url.split('?')[1];
             $.getJSON("https://api.conflictchamber.com/list/" + CCCode + ".JSON", function (CCjson) {
@@ -99,10 +98,18 @@
                 $.getJSON("./Lookup.json", function (json) {
                     var AllModels = json;
 
-                    console.log(AllModels.Factions);
+                    var ModelsToRender = [];
+
+
+
                     var X = -150;
                     for (var i = 0; i < lists.length; i++) {
                         var list = lists[i];
+
+
+
+
+
                         X += 200;
                         var OverrideModels = CheckForThemeOverrides(AllModels, faction, list.theme);
                         for (var j = 0; j < list.models.length; j++) {
@@ -115,11 +122,19 @@
                                     if (OverrideModels[l].CCName == TargetName) {
                                         model = OverrideModels[l];
                                         if (model != null) {
-                                            model_factory(model, X);
+                                            model.SourceData = list.models[j];
+                                            model.XOffset = X;
+                                            ModelsToRender.push(model);
+                                            //model_factory(model, X);
                                             if (model.Include != null) {
-                                                var model = lookup(AllModels, faction, model.Include, model.IncludeType);
+                                                var IncludeType = model.IncludeType
+                                                var model = lookup(AllModels, faction, model.Include, IncludeType);
                                                 if (model != null) {
-                                                    model_factory(model, X);
+                                                    model.SourceData = list.models[j];
+                                                    model.SourceData.type = IncludeType;
+                                                    model.XOffset = X;
+                                                    ModelsToRender.push(model);
+                                                    //model_factory(model, X);
                                                 }
                                             }
                                         }
@@ -129,30 +144,99 @@
                             if (model == null) {
                                 model = lookup(AllModels, faction, TargetName, list.models[j].type);
                                 if (model != null) {
-                                    model_factory(model, X);
+                                    model.SourceData = list.models[j];
+                                    model.XOffset = X;
+                                    ModelsToRender.push(model);
+                                    //model_factory(model, X);
                                     if (model.Include != null) {
-                                        var model = lookup(AllModels, faction, model.Include, model.IncludeType);
+                                        var IncludeType = model.IncludeType
+                                        var model = lookup(AllModels, faction, model.Include, IncludeType);
                                         if (model != null) {
-                                            model_factory(model, X);
+                                            model.SourceData = list.models[j];
+                                            model.SourceData.type = IncludeType;
+                                            model.XOffset = X;
+                                            ModelsToRender.push(model);
+                                            //model_factory(model, X);
                                         }
                                     }
                                 }
                             }
                             var attached = list.models[j].attached;
-                            if (attached != null) {
-                                for (var k = 0; k < attached.length; k++) {
+                            if (model == null) {
+                                //Attached to a single wound infantry unit, treat like solo
+                                if (attached != null) {
+                                    for (var k = 0; k < attached.length; k++) {
 
-                                    TargetName = attached[k].desc;
-                                    if (TargetName == null) TargetName = attached[k].name;
-                                    
-                                    var model = lookup(AllModels, faction, TargetName, attached[k].type);
-                                    if (model != null) {
-                                        model_factory(model, X);
+                                        TargetName = attached[k].desc;
+                                        if (TargetName == null) TargetName = attached[k].name;
+
+                                        var model = lookup(AllModels, faction, TargetName, attached[k].type);
+                                        if (model != null) {
+                                            model.SourceData = list.models[j].attached[k];
+                                            model.XOffset = X;
+                                            ModelsToRender.push(model);
+                                            //model_factory(model, X);
+                                        }
+                                    }
+                                }
+                            } else if (list.models[j].type == "Unit") {
+                                //attached to a unit with box models
+                                if (attached != null) {
+                                    for (var k = 0; k < attached.length; k++) {
+
+                                        TargetName = attached[k].desc;
+                                        if (TargetName == null) TargetName = attached[k].name;
+
+                                        var Attached = lookup(AllModels, faction, TargetName, attached[k].type);
+                                        if (Attached != null) {
+                                            model.BoxFormats[0].Boxes += '\n' + Attached.BoxFormats[0].Boxes;
+                                        }
                                     }
                                 }
                             }
                         }
+
+
+
+                        //consolidate solos and Attachments
+                        if ($('#chkCombine').val()) {
+                            var dict = {};
+                            var IndexToRemove = [];
+                            for (var m = 0; m < ModelsToRender.length; m++) {
+                                if (ModelsToRender[m].SourceData.type == "Solo" || ModelsToRender[m].SourceData.type == "Attachment") {
+                                    if (dict["'" + ModelsToRender[m].CCName + "'"] == null) {
+                                        dict["'" + ModelsToRender[m].CCName + "'"] = 1;
+                                    } else {
+                                        dict["'" + ModelsToRender[m].CCName + "'"]++;
+                                        IndexToRemove.push(m);
+                                    }
+                                }
+                            }
+                            for (var n = IndexToRemove.length - 1; n >= 0; n--) {
+                                ModelsToRender.splice(IndexToRemove[n], 1);
+                            }
+                            for (var m = 0; m < ModelsToRender.length; m++) {
+                                if (dict["'" + ModelsToRender[m].CCName + "'"] != null) {
+                                    TargetName = dict["'" + ModelsToRender[m].CCName + "'"] + ModelsToRender[m].CCName;
+                                    var XOffset = ModelsToRender[m].XOffset;
+                                    var model = lookup(AllModels, faction, TargetName, ModelsToRender[m].SourceData.type);
+                                    if (model != null) {
+                                        ModelsToRender[m] = model;
+                                        ModelsToRender[m].XOffset = XOffset;
+                                    }
+                                }
+                            }
+                        }
+
+                        for (var z = 0; z < ModelsToRender.length; z++) {
+                            model_factory(ModelsToRender[z], ModelsToRender[z].XOffset)
+                        }
+
+                        ModelsToRender = [];
                     }
+
+                    
+
                     if ($('#chkIncludeObjectives').val()) {
                         var model = lookup(AllModels, "Other", "Objective", "Other");
                         if (model != null) {
@@ -178,16 +262,18 @@
         function CheckForThemeOverrides(AllModels, Faction, ThemeName) {
             for (var i = 0; i < AllModels.Factions.length; i++) {
                 if (AllModels.Factions[i].Name == Faction) {
-                    for (var j = 0; j < AllModels.Factions[i].ThemeOverrides.length; j++) {
-                        if (AllModels.Factions[i].ThemeOverrides[j].ThemeName == ThemeName) {
-                            return AllModels.Factions[i].ThemeOverrides[j].Models;
+                    if (AllModels.Factions[i].ThemeOverrides != null) {
+                        for (var j = 0; j < AllModels.Factions[i].ThemeOverrides.length; j++) {
+                            if (AllModels.Factions[i].ThemeOverrides[j].ThemeName == ThemeName) {
+                                return AllModels.Factions[i].ThemeOverrides[j].Models;
+                            }
                         }
                     }
                 }
             }
             return false;
         }
-        
+
         function lookup(AllModels, Faction, TargetName, TargetKey) {
             for (var i = 0; i < AllModels.Factions.length; i++) {
                 if (AllModels.Factions[i].Name == Faction) {
@@ -195,13 +281,17 @@
                     if (models != null) {
                         for (var j = 0; j < models.length; j++) {
                             if (models[j].CCName == TargetName) {
-                                return models[j];
+                                return clone(models[j]);
                             }
                         }
                     }
                 }
             }
             return null;
+        }
+
+        function clone(object) {
+            return JSON.parse(JSON.stringify(object));
         }
     </script>
 </body>
