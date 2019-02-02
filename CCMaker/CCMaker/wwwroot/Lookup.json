@@ -110,7 +110,7 @@
           {
             "Faction": "Cygnar",
             "CCName": "Brisbane 2",
-            "DisplayName": "Blaize 14/18",
+            "DisplayName": "Brisbane 14/18",
             "Include": "Rocket Turret",
             "IncludeType": "Solo",
             "Type": "S",
@@ -916,7 +916,7 @@
           {
             "Faction": "Cygnar",
             "CCName": "Trencher Express Team",
-            "DisplayName": "Express Gunner 13/13",
+            "DisplayName": "Express Gunner 13/15",
             "Type": "S",
             "BoxFormats": [
               {
@@ -1244,7 +1244,7 @@
           {
             "Faction": "Cygnar",
             "CCName": "Trench Buster",
-            "DisplayName": "Buster 13/16",
+            "DisplayName": "Buster 13/16(18)",
             "Type": "S",
             "BoxFormats": [
               {
@@ -1302,7 +1302,7 @@
             ]
           }
         ],
-        "BattleEngine": [
+        "Battle Engine": [
           {
             "Faction": "Cygnar",
             "CCName": "Storm Strider",
@@ -1558,6 +1558,8 @@
             "Faction": "Khador",
             "CCName": "Old Witch 1",
             "DisplayName": "Old Witch 15/14",
+            "Include": "Scrap Jack",
+            "IncludeType": "Warjack",
             "Type": "S",
             "BoxFormats": [
               {
@@ -1787,7 +1789,7 @@
 
           {
             "Faction": "Khador",
-            "CCName": "Zerkova 1",
+            "CCName": "Zerkova 2",
             "DisplayName": "Zerkova 15/15",
             "Type": "S",
             "BoxFormats": [
@@ -1807,6 +1809,22 @@
           }
         ],
         "Warjack": [
+          {
+            "Faction": "Khador",
+            "CCName": "Scrap Jack",
+            "DisplayName": "Scrapy 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\nmcaacm\n.mccm."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0m.\n.00cm\n000ac\n000ac\n.00cm\n..0m."
+              }
+            ]
+          },
           {
             "Faction": "Khador",
             "CCName": "Beast 09",
@@ -2499,7 +2517,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "000>00000"
+                "Boxes": "*000>00000"
               }
             ]
           },
@@ -2886,7 +2904,7 @@
             ]
           }
         ],
-        "BattleEngine": [
+        "Battle Engine": [
           {
             "Faction": "Khador",
             "CCName": "Man-O-War Assault Chariot",
@@ -3011,37 +3029,1277 @@
       }
     },
     {
+      "Name": "Retribution of Scyrah",
+      "Models": {
+        "Warcaster": [
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Elara 2",
+            "DisplayName": "Elara 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Garryth 1",
+            "DisplayName": "Garryth 17/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Goreshade 4",
+            "DisplayName": "Goreshade 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Helynna 1",
+            "DisplayName": "Helynna 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Issyria 1",
+            "DisplayName": "Issyria 16/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Kaelyssa 1",
+            "DisplayName": "Kaelyssa 16/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Ossyan 1",
+            "DisplayName": "Ossyan 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Rahn 1",
+            "DisplayName": "Rahn 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Ravyn 1",
+            "DisplayName": "Ravyn 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Thyron 1",
+            "DisplayName": "Thyron 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Vyros 1",
+            "DisplayName": "Vyros 15/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Vyros 2",
+            "DisplayName": "Vyros 15/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          }
+        ],
+        "Warjack": [
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Aspis",
+            "DisplayName": "Aspis 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0l.\n0llm\n0gmm\n0gcc\n0rrc\n.0r.\n-.000\n.000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Banshee",
+            "DisplayName": "Banshee 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Chimera",
+            "DisplayName": "Chimera 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0aa0.\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0l.\n0llm\nagmm\nagcc\n0rrc\n.0r.\n-.000\n.000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Daemon",
+            "DisplayName": "Daemon 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Discordia",
+            "DisplayName": "Discordia 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..>00\n.0000.>00\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0l.\n.0llm\n00gmm\n00gcc\n.0rrc\n..0r.\n-00000\n00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Gorgon",
+            "DisplayName": "Gorgon 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0l.\n0llm\n0gmm\n0gcc\n0rrc\n.0r.\n-.000\n.000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Griffon",
+            "DisplayName": "Griffon 12/16(18)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0l.\n0llm\n0gmm\n0gcc\n0rrc\n.0r.\n-.000\n.000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Harpy",
+            "DisplayName": "Harpy 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n000mm\n000cc\n00rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Helios",
+            "DisplayName": "Helios 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "L.....>00>.....R\n...000>00>000...\n.000gg>00>gg000.\n00llgc>00>cgrr00\nllcccc>00>ccccrr\nlcmmmm>00>mmmmcr"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "L..0ll\n..00lc\n..0lcm\n.00lcm\n.0ggcm\n.0gccm\n-000000\n000000-\n.0gccm\n.0ggcm\n.00rcm\n..0rcm\n..00rc\nR..0rr"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Hemera",
+            "DisplayName": "Hemera 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..>00\n.0000.>00\n0lgga0>00\nllmcaa>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0l.\n.0llm\n00gmm\n00gcc\n.0aac\n..0a.\n-00000\n00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Hydra",
+            "DisplayName": "Hydra 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..>00\n.0000.>00\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0l.\n.0llm\n00gmm\n00gcc\n.0rrc\n..0r.\n-00000\n00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Hyperion",
+            "DisplayName": "Hyperion 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "L.....>00>.....R\n...000>00>000...\n.000gg>00>gg000.\n00llgc>00>cgrr00\nllcccc>00>ccccrr\nlcmmmm>00>mmmmcr"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "L..0ll\n..00lc\n..0lcm\n.00lcm\n.0ggcm\n.0gccm\n-000000\n000000-\n.0gccm\n.0ggcm\n.00rcm\n..0rcm\n..00rc\nR..0rr"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Hypnos",
+            "DisplayName": "Hypnos 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0laar0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n000amm\n000acc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Imperatus",
+            "DisplayName": "Imperatus 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "......>00\n..00..>00\n.0000.>00\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "...0l.\n..0llm\n.00gmm\n.00gcc\n..0rrc\n...0r.\n-000000\n000000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Manticore",
+            "DisplayName": "Manticore 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..>00\n.0000.>00\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0l.\n.0llm\n00gmm\n00gcc\n.0rrc\n..0r.\n-00000\n00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Gorgon",
+            "DisplayName": "Gorgon 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0l.\n0llm\n0gmm\n0gcc\n0rrc\n.0r.\n-.000\n.000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Pheonix",
+            "DisplayName": "Pheonix 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..>00\n.0aa0.>00\n0lggr0>00\nllmcrr>00\n.mmcc.>00"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0l.\n.0llm\n0agmm\n0agcc\n.0rrc\n..0r.\n-00000\n00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Siren",
+            "DisplayName": "Siren 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n000mm\n000cc\n00rrc\n.00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Sphinx",
+            "DisplayName": "Sphinx 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          }
+        ],
+        "Unit": [
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Destors (min)",
+            "DisplayName": "Destors 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Destors (max)",
+            "DisplayName": "Destors 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Spears of Scyrah",
+            "DisplayName": "Spears 15/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          }
+        ],
+        "Attachment": [
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Invictor Officer & Standard",
+            "DisplayName": "Invictor Officer 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Dawnguard Invictor Officer & Standard",
+            "DisplayName": "Invictor Officer 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Sentinel Officer & Standard",
+            "DisplayName": "Sentinel Officer 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Dawnguard Sentinel Officer & Standard",
+            "DisplayName": "Sentinel Officer 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Eiryss, Mage Hunter Commander",
+            "DisplayName": "Eiryss 16/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Ellowuyr Swordsman Officer & Standard",
+            "DisplayName": "Swordsman Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2House Ellowuyr Swordsman Officer & Standard",
+            "DisplayName": "Swordsman Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Houseguard Halberdier Officer & Standard",
+            "DisplayName": "Halberdier Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Houseguard Halberdier Officer & Standard",
+            "DisplayName": "Halberdier Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "3Houseguard Halberdier Officer & Standard",
+            "DisplayName": "Halberdier Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "4Houseguard Halberdier Officer & Standard",
+            "DisplayName": "Halberdier Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Houseguard Rifleman Officer & Standard",
+            "DisplayName": "Rifleman Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Houseguard Rifleman Officer & Standard",
+            "DisplayName": "Rifleman Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "3Houseguard Rifleman Officer & Standard",
+            "DisplayName": "Rifleman Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "4Houseguard Rifleman Officer & Standard",
+            "DisplayName": "Rifleman Officer 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Mage Hunter Strike Force Commander",
+            "DisplayName": "MHSF Commander 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Mage Hunter Strike Force Commander",
+            "DisplayName": "MHSF Commander 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          }
+        ],
+
+        "Solo": [
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Elara, Tyro of the Third Chamber",
+            "DisplayName": "Elara 15/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Fane Knight Guardian",
+            "DisplayName": "Fane Knight 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Aelyth Vyr, Blade of Nyssor",
+            "DisplayName": "Aelyth 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Destor Thane",
+            "DisplayName": "Destor Thane 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Dawnguard Destor Thane",
+            "DisplayName": "Destor Thane 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000>00000\n200000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Sentinel Scyir",
+            "DisplayName": "Scyir 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Dawnguard Sentinel Scyir",
+            "DisplayName": "Scyir 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Fane Knight Skeryth Issyen",
+            "DisplayName": "Skeryth 13/18(16)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000\n-.....>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Ghost Sniper",
+            "DisplayName": "Ghost 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Ghost Sniper",
+            "DisplayName": "Ghost 14/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Shyeel Artificer",
+            "DisplayName": "Artificer 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2House Shyeel Artificer",
+            "DisplayName": "Artificer 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Shyeel Magister",
+            "DisplayName": "Magister 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2House Shyeel Magister",
+            "DisplayName": "Magister 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Houseguard Thane",
+            "DisplayName": "HG Thane 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Houseguard Thane",
+            "DisplayName": "HG Thane 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Lys Healer",
+            "DisplayName": "Healer 13/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Lys Healer",
+            "DisplayName": "Healer 13/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Mage Hunter Assassin",
+            "DisplayName": "Assassin 15/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Mage Hunter Assassin",
+            "DisplayName": "Assassin 15/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Narn, Mage Hunter of Ios",
+            "DisplayName": "Narn 15/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Nayl",
+            "DisplayName": "Nayl 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Priest of Nyssor",
+            "DisplayName": "Priest 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "2Priest of Nyssor",
+            "DisplayName": "Priest 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          }
+        ],
+        "Battle Engine": [
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Arcantrik Force Generator",
+            "DisplayName": "Arcantrik Force Generator 10/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n.....>.0000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n.....>.0000"
+              }
+            ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Trident",
+            "DisplayName": "Dawnguard Trident 12/18(20)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n00000>00000"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "Name": "Trollbloods",
+      "Models": {
+        "Warlock": {
+
+        },
+        "Warbeast": {
+
+        },
+        "Unit": {
+
+        },
+        "Attachment": {
+
+        },
+        "Solo": {
+
+        },
+        "Battle Engine": {
+
+        }
+      }
+    },
+    {
+      "Name": "Circle Orboros",
+      "Models": {
+        "Warlock": {
+
+        },
+        "Warbeast": {
+
+        },
+        "Unit": {
+
+        },
+        "Attachment": {
+
+        },
+        "Solo": {
+
+        },
+        "Battle Engine": {
+
+        }
+      }
+    },
+    {
+      "Name": "Skorne",
+      "Models": {
+        "Warlock": {
+
+        },
+        "Warbeast": {
+
+        },
+        "Unit": {
+
+        },
+        "Attachment": {
+
+        },
+        "Solo": {
+
+        },
+        "Battle Engine": {
+
+        }
+      }
+    },
+    {
+      "Name": "Legion of Everblight",
+      "Models": {
+        "Warlock": {
+
+        },
+        "Warbeast": {
+
+        },
+        "Unit": {
+
+        },
+        "Attachment": {
+
+        },
+        "Solo": {
+
+        },
+        "Battle Engine": {
+
+        }
+      }
+    },
+    {
+      "Name": "Grymkin",
+      "Models": {
+        "Warlock": {
+
+        },
+        "Warbeast": {
+
+        },
+        "Unit": {
+
+        },
+        "Attachment": {
+
+        },
+        "Solo": {
+
+        },
+        "Battle Engine": {
+
+        }
+      }
+    },
+    {
       "Name": "Minions",
       "ThemeOverrides": [
         {
           "ThemeName": "The Blindwater Congregation",
-          "Models": 
-            [
-              {
-                "Faction": "Minions",
-                "CCName": "Gatorman Posse (min)",
-                "DisplayName": "GMP 12/16",
-                "Type": "S",
-                "BoxFormats": [
-                  {
-                    "Name": "Horizontal",
-                    "Boxes": "A000>00000\nB000>00000\nC000>00000"
-                  }
-                ]
-              },
-              {
-                "Faction": "Minions",
-                "CCName": "Gatorman Posse (max)",
-                "DisplayName": "GMP 12/16",
-                "Type": "S",
-                "BoxFormats": [
-                  {
-                    "Name": "Horizontal",
-                    "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
-                  }
-                ]
-              }
-            ]
+          "Models": [
+            {
+              "Faction": "Minions",
+              "CCName": "Gatorman Posse (min)",
+              "DisplayName": "GMP 12/16",
+              "Type": "S",
+              "BoxFormats": [
+                {
+                  "Name": "Horizontal",
+                  "Boxes": "A000>00000\nB000>00000\nC000>00000"
+                }
+              ]
+            },
+            {
+              "Faction": "Minions",
+              "CCName": "Gatorman Posse (max)",
+              "DisplayName": "GMP 12/16",
+              "Type": "S",
+              "BoxFormats": [
+                {
+                  "Name": "Horizontal",
+                  "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
+                }
+              ]
+            }
+          ]
         }
       ],
       "Models": {
@@ -3141,7 +4399,7 @@
           {
             "Faction": "Minions",
             "CCName": "Helga 1",
-            "DisplayName": "Helga 13/18",
+            "DisplayName": "Helga 15/15",
             "Type": "S",
             "BoxFormats": [
               {
@@ -3197,7 +4455,7 @@
           {
             "Faction": "Minions",
             "CCName": "Midas 1",
-            "DisplayName": "Midas 13/18",
+            "DisplayName": "Midas 14/16",
             "Type": "S",
             "BoxFormats": [
               {
@@ -3232,7 +4490,7 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "Sturm & Drang 1",
+            "CCName": "Sturm 1 & Drang 1",
             "DisplayName": "Sturm & Drang 14/16",
             "Type": "S",
             "BoxFormats": [
@@ -3377,7 +4635,7 @@
           {
             "Faction": "Minions",
             "CCName": "Gun Boar",
-            "DisplayName": "Battle Boar 12/16",
+            "DisplayName": "Gun Boar 12/16",
             "Type": "C",
             "BoxFormats": [
               {
@@ -3408,17 +4666,17 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "Razor Boars (2)",
+            "CCName": "Razor Boar (2)",
             "DisplayName": "Razor Boars 13/13",
             "Type": "C",
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "1..00..\n.000000\n.>0.0.0\n.>0.0.0\n-1..00..\n.000000\n.>0.0.0\n.>0.0.0"
+                "Boxes": "..00..\n000000\n>0.0.0\n>0.0.0\n-..00..\n000000\n>0.0.0\n>0.0.0"
               },
               {
                 "Name": "Horizontal",
-                "Boxes": "1.0\n..0^00-\n.00\n.00^00-\n..0\n..0^00-\n-2.0\n..0^00-\n.00\n.00^00-\n..0\n..0^00-"
+                "Boxes": ".0\n.0^00-\n00\n00^00-\n.0\n.0^00-\n-.0\n.0^00-\n00\n00^00-\n.0\n.0^00-"
               }
             ]
           },
@@ -3430,7 +4688,7 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "..00..\n..000.\n0.0000\n000000\n.>0.0.0\n.>0.0.0"
+                "Boxes": "..00..\n..000.\n0.0000\n000000\n000000\n>0.0.0\n>0.0.0"
               },
               {
                 "Name": "Horizontal",
@@ -3494,7 +4752,7 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "..00..\n..00..\n..000.\n0.0000\n000000\n.>0.0.0\n.>0.0.0"
+                "Boxes": "..00..\n..00..\n..000.\n0.0000\n000000\n000000\n>0.0.0\n>0.0.0"
               },
               {
                 "Name": "Horizontal",
@@ -3510,7 +4768,7 @@
             "BoxFormats": [
               {
                 "Name": "Vertical",
-                "Boxes": "..0...\n..00..\n000000\n000000\n>0.0.0\n>0.0.0"
+                "Boxes": "..0...\n..00..\n000000\n000000\n000000\n>0.0.0\n>0.0.0"
               },
               {
                 "Name": "Horizontal",
@@ -3658,25 +4916,25 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "Gatorman Soul Slave",
-            "DisplayName": "Soul Slave 10/17",
+            "CCName": "2Farrow Brigand Warlord",
+            "DisplayName": "Warlord 12/14",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "000>00000"
+                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
           {
             "Faction": "Minions",
-            "CCName": "Targ",
-            "DisplayName": "Targ 13/14",
+            "CCName": "3Farrow Brigand Warlord",
+            "DisplayName": "Warlord 12/14",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "1000>00000\n2000>00000\n3000>00000"
               }
             ]
           }
@@ -3710,12 +4968,24 @@
           {
             "Faction": "Minions",
             "CCName": "Bog Trog Mist Speaker",
-            "DisplayName": "Mist Speaker 14/14",
+            "DisplayName": "Mist Speaker 13/14",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "2Bog Trog Mist Speaker",
+            "DisplayName": "Mist Speaker 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -3733,6 +5003,30 @@
           },
           {
             "Faction": "Minions",
+            "CCName": "2Bog Trog Trawler",
+            "DisplayName": "Trawler 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "3Bog Trog Trawler",
+            "DisplayName": "Trawler 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
             "CCName": "Bone Shrine",
             "DisplayName": "Shrine 5/18",
             "Type": "S",
@@ -3740,6 +5034,18 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "2Bone Shrine",
+            "DisplayName": "Shrine 5/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -3779,6 +5085,30 @@
           },
           {
             "Faction": "Minions",
+            "CCName": "Croak Hunter",
+            "DisplayName": "2Croak Hunter 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Croak Hunter",
+            "DisplayName": "3Croak Hunter 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
             "CCName": "Dahlia Hallyr & Skarath",
             "DisplayName": "Dahlia 16/12",
             "Include": "Skarath",
@@ -3809,6 +5139,18 @@
           },
           {
             "Faction": "Minions",
+            "CCName": "2Efaarit Scouts",
+            "DisplayName": "Efaarit Scouts 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
             "CCName": "Gatorman Husk",
             "DisplayName": "Gatorman Husk 12/16",
             "Type": "S",
@@ -3816,6 +5158,30 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "2Gatorman Husk",
+            "DisplayName": "Gatorman Husk 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "3Gatorman Husk",
+            "DisplayName": "Gatorman Husk 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000"
               }
             ]
           },
@@ -3833,6 +5199,18 @@
           },
           {
             "Faction": "Minions",
+            "CCName": "2Gatorman Witch Doctor",
+            "DisplayName": "Witch Doc 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
             "CCName": "Gobber Tinker",
             "DisplayName": "Tinker 14/12",
             "Type": "S",
@@ -3840,6 +5218,18 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "2Gobber Tinker",
+            "DisplayName": "Tinker 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -3857,7 +5247,19 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "Gundrun the Wanderer",
+            "CCName": "2Gremlin Swarm",
+            "DisplayName": "Gremlin 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gudrun the Wanderer",
             "DisplayName": "Gundrun 13/15",
             "Type": "S",
             "BoxFormats": [
@@ -3869,7 +5271,7 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "Hutchuck, Ogrun Bounty Hunter",
+            "CCName": "Hutchuk, Ogrun Bounty Hunter",
             "DisplayName": "Hutchuck 13/16",
             "Type": "S",
             "BoxFormats": [
@@ -3881,7 +5283,7 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "Kwaak Slickspin & Gub, Croak Sorcerers",
+            "CCName": "Kwaak Slickspine & Gub, Croak Sorcerers",
             "DisplayName": "Kwaak & Gub 12/15",
             "Type": "S",
             "BoxFormats": [
@@ -3937,11 +5339,11 @@
             "BoxFormats": [
               {
                 "Name": "Vertical 6",
-                "Boxes": ">00000>"
+                "Boxes": ">00000>\n>..000>"
               },
               {
                 "Name": "Vertical",
-                "Boxes": "00000"
+                "Boxes": "000>00000"
               }
             ]
           },
@@ -3966,6 +5368,18 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "2Thrullg",
+            "DisplayName": "Thrullg 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -4027,10 +5441,34 @@
               }
 
             ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Targ",
+            "DisplayName": "Targ 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Gatorman Soul Slave",
+            "DisplayName": "Soul Slave 10/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
           }
 
         ],
-        "BattleEngine": [
+        "Battle Engine": [
           {
             "Faction": "Minions",
             "CCName": "Meat Thresher",
@@ -4039,7 +5477,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000>00000>00000>00000\n....0\n00000\n00000\n00000"
+                "Boxes": "0>00000>00000>00000>00000>00000>00000>00000"
               },
               {
                 "Name": "Horizontal Max 15",
@@ -4059,7 +5497,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000>00000>00000>00000\n....0\n....\n00000\n00000"
+                "Boxes": "00000>00000>00000>00000>00000>00000"
               },
               {
                 "Name": "Horizontal Max 15",

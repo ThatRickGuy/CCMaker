@@ -70,6 +70,8 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $.ajaxSetup({ cache: false });
+
+            $('txtCCURL').value = localStorage.LastList;
         });
 
 
@@ -85,10 +87,8 @@
             d3.selectAll('.Model').remove();
 
 
-
-
-
             var url = txtCCURL.value;
+            localStorage.LastList = url;
             var CCCode = url.split('?')[1];
             $.getJSON("https://api.conflictchamber.com/list/" + CCCode + ".JSON", function (CCjson) {
                 var faction = CCjson.faction;
@@ -102,7 +102,7 @@
 
 
 
-                    var X = -150;
+                    var X = -250;
                     for (var i = 0; i < lists.length; i++) {
                         var list = lists[i];
 
@@ -110,7 +110,7 @@
 
 
 
-                        X += 200;
+                        X += 300;
                         var OverrideModels = CheckForThemeOverrides(AllModels, faction, list.theme);
                         for (var j = 0; j < list.models.length; j++) {
                             var TargetName = "";
@@ -162,8 +162,8 @@
                                 }
                             }
                             var attached = list.models[j].attached;
-                            if (model == null) {
-                                //Attached to a single wound infantry unit, treat like solo
+                            if (model == null || list.models[j].type == "Warcaster" || list.models[j].type == "Warlock") {
+                                //Attached to a single wound infantry unit or to the caster, treat like solo
                                 if (attached != null) {
                                     for (var k = 0; k < attached.length; k++) {
 
@@ -193,13 +193,29 @@
                                         }
                                     }
                                 }
+                            } else {
+                                //Attached to something else
+                                if (attached != null) {
+                                    for (var k = 0; k < attached.length; k++) {
+
+                                        TargetName = attached[k].desc;
+                                        if (TargetName == null) TargetName = attached[k].name;
+
+                                        var Attached = lookup(AllModels, faction, TargetName, attached[k].type);
+                                        if (Attached != null) {
+                                            Attached.SourceData = list.models[j].attached[k];
+                                            Attached.XOffset = X;
+                                            ModelsToRender.push(Attached);
+                                        }
+                                    }
+                                }
                             }
                         }
 
 
 
                         //consolidate solos and Attachments
-                        if ($('#chkCombine').val()) {
+                        if ($('#chkCombine').checked) {
                             var dict = {};
                             var IndexToRemove = [];
                             for (var m = 0; m < ModelsToRender.length; m++) {
@@ -237,22 +253,22 @@
 
                     
 
-                    if ($('#chkIncludeObjectives').val()) {
+                    if ($('#chkIncludeObjectives').checked) {
                         var model = lookup(AllModels, "Other", "Objective", "Other");
                         if (model != null) {
-                            model_factory(model, 450);
+                            model_factory(model, 650);
                         }
                     }
-                    if ($('#chkIncludeScenarios').val()) {
+                    if ($('#chkIncludeScenarios').checked) {
                         var model = lookup(AllModels, "Other", "Scenario", "Other");
                         if (model != null) {
-                            model_factory(model, 450);
+                            model_factory(model, 650);
                         }
                     }
-                    if ($('#chkIncludeRound').val()) {
+                    if ($('#chkIncludeRound').checked) {
                         var model = lookup(AllModels, "Other", "Round", "Other");
                         if (model != null) {
-                            model_factory(model, 450);
+                            model_factory(model, 650);
                         }
                     }
                 });

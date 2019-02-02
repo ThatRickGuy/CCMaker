@@ -66,7 +66,7 @@ function SVGModelChanges() {
     var data = selected.model;
     data.DisplayName = $('#txtDisplayName').val();
     data.SelectedBoxFormat = $('#cboBoxFormat').val();
-    if ($('#txtBoxFormat').val() != '') data.SelectedBoxFormat = $('#txtBoxFormat').val();
+    if ($('#txtBoxFormat').val() !== '') data.SelectedBoxFormat = $('#txtBoxFormat').val();
     d3.select('#' + selected.UID).remove();
 
     model_factory(data, 50);
@@ -178,7 +178,7 @@ function model_factory(data, xOffset) {
         .attr("fill", "white");
 
     console.log("Add Title");
-    var text = plate.append("svg:text")
+    text = plate.append("svg:text")
         .attr("y", 11)
         .attr("x", (5 + LongestLine * 23 + 5 - textwidth) / 2)
         .attr("fill", "black")
@@ -254,12 +254,20 @@ function model_factory(data, xOffset) {
                 AddLetter(plate, currentXOffset, currentYOffset, 'W');
                 currentXOffset += 23;
                 break;
-            case 'S':
+            case 's':
                 if (data.Type == "S")
                     CreateSquare(plate, currentXOffset, currentYOffset);
                 if (data.Type == "C")
                     CreateCircle(plate, currentXOffset, currentYOffset);
                 AddLetter(plate, currentXOffset, currentYOffset, 'S');
+                currentXOffset += 23;
+                break;
+            case 'g':
+                if (data.Type == "S")
+                    CreateSquare(plate, currentXOffset, currentYOffset);
+                if (data.Type == "C")
+                    CreateCircle(plate, currentXOffset, currentYOffset);
+                AddLetter(plate, currentXOffset, currentYOffset, 'G');
                 currentXOffset += 23;
                 break;
             case 'L':
