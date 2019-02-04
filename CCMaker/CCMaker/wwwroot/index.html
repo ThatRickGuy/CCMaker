@@ -36,10 +36,10 @@
 
     <div id="LoadDiv" style="position:absolute; width:500px; z-index:9; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
         Conflict Chamber URL: <input type="text" id="txtCCURL" /><button onclick="LoadFromCC(); " style="margin-left:10px">Load!</button><br />
-        <input type="checkbox" id="chkIncludeObjectives" checked />Include Objectives<br />
-        <input type="checkbox" id="chkIncludeScenarios" checked />Include Scenarios<br />
-        <input type="checkbox" id="chkIncludeRound" checked />Include Round<br />
-        <input type="checkbox" id="chkCombine" checked />Combine Like Models<br />
+        <input type="checkbox" id="chkIncludeObjectives" name="IncludeObjectives" checked />Include Objectives<br />
+        <input type="checkbox" id="chkIncludeScenarios" name="IncludeScenarios" checked />Include Scenarios<br />
+        <input type="checkbox" id="chkIncludeRound" name="IncludeRound" checked />Include Round<br />
+        <input type="checkbox" id="chkCombine" name="Combine" checked />Combine Like Models<br />
         <button onclick="save();">Generate Save Link</button>
         <div id="SaveLink"></div>
     </div>
@@ -117,6 +117,8 @@
                             TargetName = list.models[j].desc;
                             if (TargetName == null) TargetName = list.models[j].name;
                             var model = null;
+
+                            //Theme override models, currently only used for Minion Blindwater Gatorman Posse
                             if (OverrideModels != null) {
                                 for (var l = 0; l < OverrideModels.length; l++) {
                                     if (OverrideModels[l].CCName == TargetName) {
@@ -125,7 +127,6 @@
                                             model.SourceData = list.models[j];
                                             model.XOffset = X;
                                             ModelsToRender.push(model);
-                                            //model_factory(model, X);
                                             if (model.Include != null) {
                                                 var IncludeType = model.IncludeType
                                                 var model = lookup(AllModels, faction, model.Include, IncludeType);
@@ -134,20 +135,21 @@
                                                     model.SourceData.type = IncludeType;
                                                     model.XOffset = X;
                                                     ModelsToRender.push(model);
-                                                    //model_factory(model, X);
                                                 }
                                             }
                                         }
                                     }
                                 }
                             }
+
+                            //Not overridden, normal stuff
                             if (model == null) {
                                 model = lookup(AllModels, faction, TargetName, list.models[j].type);
                                 if (model != null) {
                                     model.SourceData = list.models[j];
                                     model.XOffset = X;
                                     ModelsToRender.push(model);
-                                    //model_factory(model, X);
+                                    
                                     if (model.Include != null) {
                                         var IncludeType = model.IncludeType
                                         var model = lookup(AllModels, faction, model.Include, IncludeType);
@@ -156,7 +158,6 @@
                                             model.SourceData.type = IncludeType;
                                             model.XOffset = X;
                                             ModelsToRender.push(model);
-                                            //model_factory(model, X);
                                         }
                                     }
                                 }
@@ -189,7 +190,13 @@
 
                                         var Attached = lookup(AllModels, faction, TargetName, attached[k].type);
                                         if (Attached != null) {
-                                            model.BoxFormats[0].Boxes += '\n' + Attached.BoxFormats[0].Boxes;
+                                            if (model.SingleWound == true) {
+                                                if (Attached.BoxFormats != null) {
+                                                    model.BoxFormats[0].Boxes = Attached.BoxFormats[0].Boxes;
+                                                }
+                                            } else {
+                                                model.BoxFormats[0].Boxes += '\n' + Attached.BoxFormats[0].Boxes;
+                                            }
                                         }
                                     }
                                 }
@@ -215,7 +222,7 @@
 
 
                         //consolidate solos and Attachments
-                        if ($('#chkCombine').checked) {
+                        if ($('input[name="Combine"]').is(':checked')) {
                             var dict = {};
                             var IndexToRemove = [];
                             for (var m = 0; m < ModelsToRender.length; m++) {
@@ -251,21 +258,21 @@
                         ModelsToRender = [];
                     }
 
-                    
 
-                    if ($('#chkIncludeObjectives').checked) {
+
+                    if ($('input[name="IncludeObjectives"]').is(':checked')) {
                         var model = lookup(AllModels, "Other", "Objective", "Other");
                         if (model != null) {
                             model_factory(model, 650);
                         }
                     }
-                    if ($('#chkIncludeScenarios').checked) {
+                    if ($('input[name="IncludeScenarios"]').is(':checked')) {
                         var model = lookup(AllModels, "Other", "Scenario", "Other");
                         if (model != null) {
                             model_factory(model, 650);
                         }
                     }
-                    if ($('#chkIncludeRound').checked) {
+                    if ($('input[name="IncludeRound"]').is(':checked')) {
                         var model = lookup(AllModels, "Other", "Round", "Other");
                         if (model != null) {
                             model_factory(model, 650);
@@ -297,6 +304,43 @@
                     if (models != null) {
                         for (var j = 0; j < models.length; j++) {
                             if (models[j].CCName == TargetName) {
+
+                                //Stop single wound models from returning
+                                if (models[j].SingleWound == true) {
+                                    return null;
+                                }
+                                return clone(models[j]);
+                            }
+                        }
+                    }
+                }
+            }
+            for (var i = 0; i < AllModels.Factions.length; i++) {
+                if (AllModels.Factions[i].Name == "Mercenaries") {
+                    var models = AllModels.Factions[i].Models[TargetKey];
+                    if (models != null) {
+                        for (var j = 0; j < models.length; j++) {
+                            if (models[j].CCName == TargetName) {
+                                //Stop single wound models from returning
+                                if (models[j].SingleWound == true) {
+                                    return null;
+                                }
+                                return clone(models[j]);
+                            }
+                        }
+                    }
+                }
+            }
+            for (var i = 0; i < AllModels.Factions.length; i++) {
+                if (AllModels.Factions[i].Name == "Minions") {
+                    var models = AllModels.Factions[i].Models[TargetKey];
+                    if (models != null) {
+                        for (var j = 0; j < models.length; j++) {
+                            if (models[j].CCName == TargetName) {
+                                //Stop single wound models from returning
+                                if (models[j].SingleWound == true) {
+                                    return null;
+                                }
                                 return clone(models[j]);
                             }
                         }

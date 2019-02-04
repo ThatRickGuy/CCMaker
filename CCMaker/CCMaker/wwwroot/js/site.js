@@ -121,40 +121,43 @@ function model_factory(data, xOffset) {
 
     console.log("parse data");
     var lines = [];
-    var Boxes;
-    if (data.SelectedBoxFormat == null) {
-        lines = data.BoxFormats[0].Boxes.split('\n');
-        Boxes = data.BoxFormats[0].Boxes;
-    } else {
-        lines = data.SelectedBoxFormat.split('\n');
-        Boxes = data.SelectedBoxFormat;
-    }
-         
-    var LongestLine = 0
-    lines.forEach(function (current_value) {
-        var linewidth = 0;
-        for (var i = 0; i < current_value.length; i++) {
-            if (current_value[i] == "-" || current_value[i] == "\n" || current_value[i] == "^") {
-                //do nothing, these do not add to width
-            }
-            else if (current_value[i] == ">") {
-                linewidth += .55;
-            }
-            else {
-                linewidth += 1;
-            }
-        }
-        if (linewidth > LongestLine)
-            LongestLine = linewidth;
-    });
-
+    var LongestLine = 0;
     var LinesHeight = 0;
-    for (var i = 0; i < lines.length; i++) {
-        if (lines[i].indexOf("-") >= 0 && lines[i].indexOf("^") == -1) {
-            LinesHeight += .55;
+    if (data.SingleWound != true) {
+        var Boxes;
+        if (data.SelectedBoxFormat == null) {
+            lines = data.BoxFormats[0].Boxes.split('\n');
+            Boxes = data.BoxFormats[0].Boxes;
+        } else {
+            lines = data.SelectedBoxFormat.split('\n');
+            Boxes = data.SelectedBoxFormat;
         }
-        LinesHeight++;
 
+        lines.forEach(function (current_value) {
+            var linewidth = 0;
+            for (var i = 0; i < current_value.length; i++) {
+                if (current_value[i] == "-" || current_value[i] == "\n" || current_value[i] == "^") {
+                    //do nothing, these do not add to width
+                }
+                else if (current_value[i] == ">") {
+                    linewidth += .55;
+                }
+                else {
+                    linewidth += 1;
+                }
+            }
+            if (linewidth > LongestLine)
+                LongestLine = linewidth;
+        });
+        for (var i = 0; i < lines.length; i++) {
+            if (lines[i].indexOf("-") >= 0 && lines[i].indexOf("^") == -1) {
+                LinesHeight += .55;
+            }
+            LinesHeight++;
+        }
+    } else {
+        LongestLine = (textwidth + 10)/23;
+        LinesHeight = .25;
     }
 
     console.log("create border");
@@ -189,179 +192,189 @@ function model_factory(data, xOffset) {
     var currentXOffset = 5;
     var currentYOffset = 16;
 
-    for (var i = 0; i < Boxes.length; i++) {
-        switch (Boxes.charAt(i)) {
-            case '0':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                currentXOffset += 23;
-                break;
-            case 'l':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'L');
-                currentXOffset += 23;
-                break;
-            case 'r':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'R');
-                currentXOffset += 23;
-                break;
-            case 'm':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'M');
-                currentXOffset += 23;
-                break;
-            case 'c':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'C');
-                currentXOffset += 23;
-                break;
-            case 'h':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'H');
-                currentXOffset += 23;
-                break;
-            case 'a':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'A');
-                currentXOffset += 23;
-                break;
-            case 'w':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'W');
-                currentXOffset += 23;
-                break;
-            case 's':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'S');
-                currentXOffset += 23;
-                break;
-            case 'g':
-                if (data.Type == "S")
-                    CreateSquare(plate, currentXOffset, currentYOffset);
-                if (data.Type == "C")
-                    CreateCircle(plate, currentXOffset, currentYOffset);
-                AddLetter(plate, currentXOffset, currentYOffset, 'G');
-                currentXOffset += 23;
-                break;
-            case 'L':
-                AddLetter(plate, currentXOffset, currentYOffset, 'L');
-                currentXOffset += 23;
-                break;
-            case 'R':
-                AddLetter(plate, currentXOffset, currentYOffset, 'R');
-                currentXOffset += 23;
-                break;
-            case 'A':
-                AddLetter(plate, currentXOffset, currentYOffset, 'A');
-                currentXOffset += 23;
-                break;
-            case 'B':
-                AddLetter(plate, currentXOffset, currentYOffset, 'B');
-                currentXOffset += 23;
-                break;
-            case 'C':
-                AddLetter(plate, currentXOffset, currentYOffset, 'C');
-                currentXOffset += 23;
-                break;
-            case 'D':
-                AddLetter(plate, currentXOffset, currentYOffset, 'D');
-                currentXOffset += 23;
-                break;
-            case 'E':
-                AddLetter(plate, currentXOffset, currentYOffset, 'E');
-                currentXOffset += 23;
-                break;
-            case 'F':
-                AddLetter(plate, currentXOffset, currentYOffset, 'F');
-                currentXOffset += 23;
-                break;
-            case 'G':
-                AddLetter(plate, currentXOffset, currentYOffset, 'G');
-                currentXOffset += 23;
-                break;
-            case 'H':
-                AddLetter(plate, currentXOffset, currentYOffset, 'H');
-                currentXOffset += 23;
-                break;
-            case 'I':
-                AddLetter(plate, currentXOffset, currentYOffset, 'I');
-                currentXOffset += 23;
-                break;
-            case '*':
-                AddLetter(plate, currentXOffset, currentYOffset, 'U');
-                currentXOffset += 23;
-                break;
-            case 'W':
-                AddLetter(plate, currentXOffset, currentYOffset, 'W');
-                currentXOffset += 23;
-                break;
-            case '1':
-                AddLetter(plate, currentXOffset, currentYOffset, '1'); 
-                currentXOffset += 23;
-                break;
-            case '2':
-                AddLetter(plate, currentXOffset, currentYOffset, '2');
-                currentXOffset += 23;
-                break;
-            case '3':
-                AddLetter(plate, currentXOffset, currentYOffset, '3');
-                currentXOffset += 23;
-                break;
-            case '4':
-                AddLetter(plate, currentXOffset, currentYOffset, '4');
-                currentXOffset += 23;
-                break;
-            case '5':
-                AddLetter(plate, currentXOffset, currentYOffset, '5');
-                currentXOffset += 23;
-                break;
-            case '6':
-                AddLetter(plate, currentXOffset, currentYOffset, '6');
-                currentXOffset += 23;
-                break;
-            case '.':
-                currentXOffset += 23;
-                break;
-            case '>':
-                currentXOffset += 12.5;
-                break;
-            case '^':
-                currentYOffset -= 12.5;
-                break;
-            case '-':
-                currentYOffset += 12.5;
-                break;
-            case '\n':
-                currentYOffset += 23;
-                currentXOffset = InitialXOffset;
-                break;
+    if (data.SingleWound != true) {
+        for (var i = 0; i < Boxes.length; i++) {
+            switch (Boxes.charAt(i)) {
+                case '0':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    currentXOffset += 23;
+                    break;
+                case 'l':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'L');
+                    currentXOffset += 23;
+                    break;
+                case 'r':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'R');
+                    currentXOffset += 23;
+                    break;
+                case 'm':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'M');
+                    currentXOffset += 23;
+                    break;
+                case 'c':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'C');
+                    currentXOffset += 23;
+                    break;
+                case 'h':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'H');
+                    currentXOffset += 23;
+                    break;
+                case 'a':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'A');
+                    currentXOffset += 23;
+                    break;
+                case 'w':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'W');
+                    currentXOffset += 23;
+                    break;
+                case 's':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'S');
+                    currentXOffset += 23;
+                    break;
+                case 'g':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'G');
+                    currentXOffset += 23;
+                    break;
+                case 'b':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'B');
+                    currentXOffset += 23;
+                    break;
+                case 'L':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'L');
+                    currentXOffset += 23;
+                    break;
+                case 'R':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'R');
+                    currentXOffset += 23;
+                    break;
+                case 'A':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'A');
+                    currentXOffset += 23;
+                    break;
+                case 'B':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'B');
+                    currentXOffset += 23;
+                    break;
+                case 'C':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'C');
+                    currentXOffset += 23;
+                    break;
+                case 'D':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'D');
+                    currentXOffset += 23;
+                    break;
+                case 'E':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'E');
+                    currentXOffset += 23;
+                    break;
+                case 'F':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'F');
+                    currentXOffset += 23;
+                    break;
+                case 'G':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'G');
+                    currentXOffset += 23;
+                    break;
+                case 'H':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'H');
+                    currentXOffset += 23;
+                    break;
+                case 'I':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'I');
+                    currentXOffset += 23;
+                    break;
+                case '*':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'U');
+                    currentXOffset += 23;
+                    break;
+                case 'W':
+                    AddLetter(plate, currentXOffset, currentYOffset, 'W');
+                    currentXOffset += 23;
+                    break;
+                case '1':
+                    AddLetter(plate, currentXOffset, currentYOffset, '1');
+                    currentXOffset += 23;
+                    break;
+                case '2':
+                    AddLetter(plate, currentXOffset, currentYOffset, '2');
+                    currentXOffset += 23;
+                    break;
+                case '3':
+                    AddLetter(plate, currentXOffset, currentYOffset, '3');
+                    currentXOffset += 23;
+                    break;
+                case '4':
+                    AddLetter(plate, currentXOffset, currentYOffset, '4');
+                    currentXOffset += 23;
+                    break;
+                case '5':
+                    AddLetter(plate, currentXOffset, currentYOffset, '5');
+                    currentXOffset += 23;
+                    break;
+                case '6':
+                    AddLetter(plate, currentXOffset, currentYOffset, '6');
+                    currentXOffset += 23;
+                    break;
+                case '.':
+                    currentXOffset += 23;
+                    break;
+                case '>':
+                    currentXOffset += 12.5;
+                    break;
+                case '^':
+                    currentYOffset -= 12.5;
+                    break;
+                case '-':
+                    currentYOffset += 12.5;
+                    break;
+                case '\n':
+                    currentYOffset += 23;
+                    currentXOffset = InitialXOffset;
+                    break;
+            }
         }
     }
 }
