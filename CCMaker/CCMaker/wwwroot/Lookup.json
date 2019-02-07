@@ -3165,7 +3165,7 @@
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/13",
+            "DisplayName": "Halberdier Officer 13/14",
             "Type": "S",
             "BoxFormats": [
               {
@@ -3177,7 +3177,7 @@
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "2Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/13",
+            "DisplayName": "Halberdier Officer 13/14",
             "Type": "S",
             "BoxFormats": [
               {
@@ -3189,7 +3189,7 @@
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "3Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/13",
+            "DisplayName": "Halberdier Officer 13/14",
             "Type": "S",
             "BoxFormats": [
               {
@@ -3201,7 +3201,7 @@
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "4Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/13",
+            "DisplayName": "Halberdier Officer 13/14",
             "Type": "S",
             "BoxFormats": [
               {
@@ -4202,24 +4202,867 @@
     {
       "Name": "Convergence of Cyriss",
       "Models": {
-        "Warlock": {
+        "Warcaster": [
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Aurora 1",
+            "DisplayName": "Aurora 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n....0>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Locke 1",
+            "DisplayName": "Locke 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Axis 1",
+            "DisplayName": "Axis 14/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Orion 1",
+            "DisplayName": "Orion 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>.....>...00"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n...00>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Lucant 1",
+            "DisplayName": "Lucant 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "0>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>....0>00000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00000\n.....>....0"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Syntherion 1",
+            "DisplayName": "Syntherion 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>.....>00000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Directrix 1",
+            "DisplayName": "Directrix 15/17",
+            "IncludeType": "Warcaster",
+            "Include": "Exponent Servitor",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>.....>..000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n..000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Exponent Servitor",
+            "DisplayName": "Exponent Servitor 12/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "...>.....>.....>....0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": ".....>.....>....0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": ".....>....0"
+              },
+              {
+                "Name": "Horizontal mmin",
+                "Boxes": ""
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Nemo -1",
+            "DisplayName": "Nemo  ?/?",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000>00000"
+              }
+            ]
+          }
 
-        },
-        "Warbeast": {
+        ],
+        "Warjack": [
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Assimilator",
+            "DisplayName": "Assimilator 11/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n000000\nmllrrm\n.mlrm.\n..ii.."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00m..\n000lm.\n000lli\n000rri\n000rm.\n.00m.."
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Cipher",
+            "DisplayName": "Cipher 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n.0000.\n000000\n00lr00\n0llrr0\nmmiimm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000m\n0000lm\n000lli\n000rri\n0000rm\n..000m"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Conservator",
+            "DisplayName": "Conservator 11/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n000000\nmllrrm\n.mlrm.\n..ii.."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00m..\n000lm.\n000lli\n000rri\n000rm.\n.00m.."
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Corollary",
+            "DisplayName": "Corollary 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\nm0000m\n.miim.\n..ii.."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..m..\n.00m.\n000ii\n000ii\n.00m.\n..m.."
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Diffuser",
+            "DisplayName": "Diffuser 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..00..\n.0000.\n0mhhm0\nmmiimm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....0m\n...0hm\n0000hi\n0000hi\n...0hm\n....0m"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Galvanizer",
+            "DisplayName": "Galvanizer 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..00..\n.0000.\n0mhhm0\nmmiimm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....0m\n...0hm\n0000hi\n0000hi\n...0hm\n....0m"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Inverter",
+            "DisplayName": "Inverter 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n.0000.\n000000\n00lr00\n0llrr0\nmmiimm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000m\n0000lm\n000lli\n000rri\n0000rm\n..000m"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Mitigator",
+            "DisplayName": "Mitigator 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n..00..\n.0000.\n0mhhm0\nmmiimm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....0m\n...0hm\n0000hi\n0000hi\n...0hm\n....0m"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Modulator",
+            "DisplayName": "Modulator 11/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n000000\nmllrrm\n.mlrm.\n..ii.."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00m..\n000lm.\n000lli\n000rri\n000rm.\n.00m.."
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Monitor",
+            "DisplayName": "Monitor 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n.0000.\n000000\n00lr00\n0llrr0\nmmiimm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000m\n0000lm\n000lli\n000rri\n0000rm\n..000m"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Prime Axiom",
+            "DisplayName": "Prime Axiom 7/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0000>0000..\n..0000>0000..\n..00ss>ss00..\n.0llsi>isrr0.\nlliiii>iiiirr\nmmmmmi>immmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....lm\n...0lm\n000lim\n000lim\n00ssim\n00siii-\n00siii\n00ssim\n000rim\n000rim\n...0rm\n....rm"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Prime Conflux",
+            "DisplayName": "Prime Conflux 7/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0000>0000..\n..0000>0000..\n..00ss>ss00..\n.0llsi>isrr0.\nlliiii>iiiirr\nmmmmmi>immmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....lm\n...0lm\n000lim\n000lim\n00ssim\n00siii-\n00siii\n00ssim\n000rim\n000rim\n...0rm\n....rm"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Toro",
+            "DisplayName": "Toro 11/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Vanguard",
+            "DisplayName": "Vanguard 13/17(19)",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\nmcaacm\n.mccm."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00l.\n00llm\n000mm\n000cc\n00rrc\n..00r."
+              }
+            ]
+          }
+        ],
+        "Unit": [
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Clockwork Angels",
+            "DisplayName": "Angels 14/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Clockwork Angels",
+            "DisplayName": "Angels 14/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Clockwork Angels",
+            "DisplayName": "Angels 14/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Eradicators (min)",
+            "DisplayName": "Eradicators 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A000>00000\nB000>00000\nC000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Eradicators (max)",
+            "DisplayName": "Eradicators 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Obstructors",
+            "DisplayName": "Obstructors 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Obstructors",
+            "DisplayName": "Obstructors 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Obstructors",
+            "DisplayName": "Obstructors 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Optifex Directive",
+            "DisplayName": "Directive 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Optifex Directive",
+            "DisplayName": "Directive 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Optifex Directive",
+            "DisplayName": "Directive 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Optifex Directive",
+            "DisplayName": "Directive 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Perforators (min)",
+            "DisplayName": "Perforators 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A000>00000\nB000>00000\nC000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Perforators (max)",
+            "DisplayName": "Perforators 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Reciprocators (min)",
+            "DisplayName": "Reciprocators 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A000>00000\nB000>00000\nC000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Reciprocators (max)",
+            "DisplayName": "Reciprocators 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A000>00000\nB000>00000\nC000>00000\nD000>00000\nE000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Reductors",
+            "DisplayName": "Reductors 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Reductors",
+            "DisplayName": "Reductors 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Reductors",
+            "DisplayName": "Reductors 12/14",
+            "SingleWound": true
+          }
 
-        },
-        "Unit": {
+        ],
+        "Attachment": [
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Transverse Enumerator",
+            "DisplayName": "Enumerator 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "*00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Transverse Enumerator",
+            "DisplayName": "Enumerator 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "3Transverse Enumerator",
+            "DisplayName": "Enumerator 13/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          }
+        ],
+        "Solo": [
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Accretion Servitors",
+            "DisplayName": "Accretion 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Accretion Servitors",
+            "DisplayName": "Accretion 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Accretion Servitors",
+            "DisplayName": "Accretion 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Optifex",
+            "DisplayName": "Optifex 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Algorithmic Dispersion Optifex",
+            "DisplayName": "Optifex 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "3Algorithmic Dispersion Optifex",
+            "DisplayName": "Optifex 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "4Algorithmic Dispersion Optifex",
+            "DisplayName": "Optifex 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000\n200000\n300000\n400000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Attunement Servitors",
+            "DisplayName": "Attunement 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Attunement Servitors",
+            "DisplayName": "Attunement 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "3Attunement Servitors",
+            "DisplayName": "Attunement 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Elimination Servitors",
+            "DisplayName": "Elimination 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Elimination Servitors",
+            "DisplayName": "Elimination 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "3Elimination Servitors",
+            "DisplayName": "Elimination 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Enigma Foundry",
+            "DisplayName": "Foundry 10/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Enigma Foundry",
+            "DisplayName": "Foundry 10/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000>00000\n200000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Frustum Locus",
+            "DisplayName": "Locus 10/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Frustum Locus",
+            "DisplayName": "Locus 10/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "100000>00000\n200000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Reflex Servitors",
+            "DisplayName": "Reflex 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Reflex Servitors",
+            "DisplayName": "Reflex 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Reflex Servitors",
+            "DisplayName": "Reflex 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Steelsoul Protector",
+            "DisplayName": "Protector 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "2Steelsoul Protector",
+            "DisplayName": "Protector 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "3Steelsoul Protector",
+            "DisplayName": "Protector 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "1000>00000\n2000>00000\n3000>00000"
+              }
+            ]
+          }
 
-        },
-        "Attachment": {
-
-        },
-        "Solo": {
-
-        },
-        "Battle Engine": {
-
-        }
+        ],
+        "Battle Engine": [
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Transfinite Emergence Projector & Permutation Servitors",
+            "DisplayName": "Projector 5/10",
+            "IncludeType": "Battle Engine",
+            "Include": "Permutation Servitors",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n.....>..000>00000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00000\n.....>..000"
+              }
+            ]
+          },
+          {
+            "Faction": "Convergence of Cyriss",
+            "CCName": "Permutation Servitors",
+            "DisplayName": "Permutation 12/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "...>.....>.....>.....>....."
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": ".....>.....>....."
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": ".....>....."
+              },
+              {
+                "Name": "Horizontal min",
+                "Boxes": ""
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -5939,6 +6782,8 @@
             "Faction": "Circle Orboros",
             "CCName": "Kaya 2",
             "DisplayName": "Kaya 16/14",
+            "IncludeType": "Warbeast",
+            "Include": "Laris",
             "Type": "S",
             "BoxFormats": [
               {
@@ -6198,13 +7043,429 @@
 
         ],
         "Warbeast": [
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Argus Moonhound",
+            "DisplayName": "Argus Moonhound 14/14",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0.0.0.\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n.00^0m-\n000\n.00^0b-\n000\n.00^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Brennos the Elderhorn",
+            "DisplayName": "Brennos the Elderhorn 12/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000\n.000^0m-\n0000\n0000^0b-\n0000\n0000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Feral Warpwolf",
+            "DisplayName": "Feral Warpwolf 14/16",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0...\n0.0000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0000\n..000^0m-\n00000\n.0000^0b-\n.0000\n.0000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Ghetorix",
+            "DisplayName": "Ghetorix 14/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0...\n..00..\n..0000\n0.0000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "...000\n....00^0m-\n000000\n.00000^0b-\n..0000\n..0000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Gnarlhorn Satyr",
+            "DisplayName": "Gnarlhorn Satyr 12/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000\n.000^0m-\n0000\n0000^0b-\n.000\n.000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Gorax Rager",
+            "DisplayName": "Gorax Rager 12/16",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0.000.\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n.00^0m-\n000\n000^0b-\n000\n.00^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Laris",
+            "DisplayName": "Laris 15/14",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "....00\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00\n.00^0m-\n.00\n.00^0b-\n000\n000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Loki",
+            "DisplayName": "Loki 14/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..00..\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000\n..000^0m-\n00000\n00000^0b-\n..000\n..000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Megalith",
+            "DisplayName": "Megalith 10/19",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..000.\n000000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0000\n..0000^0m-\n000000\n000000^0b-\n.00000\n..0000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Pureblood Warpwolf",
+            "DisplayName": "Pureblood Warpwolf 14/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "....00\n....00\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..000\n..000^0m-\n..000\n..000^0b-\n00000\n00000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Razorwing Griffon",
+            "DisplayName": "Razorwing Griffon 15/14",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000.0.\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n000^0m-\n000\n.00^0b-\n000\n.00^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Rip Horn Satyr",
+            "DisplayName": "Rip Horn Satyr 12/19",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000\n0000^0m-\n0000\n0000^0b-\n0000\n0000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Rotterhorn Griffon",
+            "DisplayName": "Rotterhorn Griffon 15/14",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000.0.\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n000^0m-\n000\n.00^0b-\n000\n.00^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Scarsfell Griffon",
+            "DisplayName": "Scarsfell Griffon 15/13",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000.0.\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n000^0m-\n000\n.00^0b-\n000\n.00^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Shadowhorn Satyr",
+            "DisplayName": "Shadowhorn Satyr 13/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000\n.000^0m-\n0000\n0000^0b-\n.000\n.000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Storm Raptor",
+            "DisplayName": "Storm Raptor 12/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical-Compressed",
+                "Boxes": "-1^>.000\n..0000\n-2^.0000^0m-\n>..000\n-3^>.000\n...000\n-4^..000^0b-\n>..000\n-5^>0000\n.00000\n-6^00000^0s-\n>.0000"
+              },
+              {
+                "Name": "Vertical",
+                "Boxes": "..0000000\n..0000000^0m-\n...000000\n...000000^0b-\n000000000\n000000000^0s-"
+              },
+              {
+                "Name": "Horizontal-Compressed",
+                "Boxes": ">1.2.3.4.5.6\n-.^..-..^..-.0^00-0^\n-0^00-00^..-00^00-0^\n-0^00-00^00-00^00-0^\n-0^00-00^00-00^00-0^\n-.^00-..^00-..^00-.^\n>.0...0...0\n>.0...0...0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "....00\n....00\n00..00\n000000\n000000\n000000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Warpwolf Stalker",
+            "DisplayName": "Warpwolf Stalker 14/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0.0.0.\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0000\n.000^0m-\n0000\n.000^0b-\n0000\n.000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Wild Argus",
+            "DisplayName": "Wild Argus 14/15",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0.0.0.\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n.00^0m-\n000\n.00^0b-\n000\n.00^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Winter Argus",
+            "DisplayName": "Winter Argus 14/15",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "0.0.0.\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n.00^0m-\n000\n.00^0b-\n000\n.00^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Wold Guardian",
+            "DisplayName": "Wold Guardian 9/20",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n0.00..\n000000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".00000\n..0000^0m-\n000000\n000000^0b-\n..0000\n..0000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Wold Wight",
+            "DisplayName": "Wold Wight 12/15",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..0.0.\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0\n.0^0m-\n00\n.0^0b-\n00\n.0^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Woldwarden",
+            "DisplayName": "Woldwarden 10/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n..000.\n000000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..0000\n..0000^0m-\n000000\n000000^0b-\n.00000\n..0000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Woldwatcher",
+            "DisplayName": "Woldwatcher 10/17",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "....0.\n0.0000\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000\n..00^0m-\n.000\n.000^0b-\n0000\n.000^0s-"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Woldwrath",
+            "DisplayName": "Woldwrath 7/20",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical-Compressed",
+                "Boxes": "-1^>..000\n....000\n-2^...000^0m-\n>...000\n-3^>00000\n.000000\n-4^000000^0b-\n>.00000\n-5^>.0000\n..00000\n-6^.00000^0s-\n>..0000"
+              },
+              {
+                "Name": "Vertical",
+                "Boxes": ".....000000\n.....000000^0m-\n00000000000\n00000000000^0b-\n..000000000\n..000000000^0s-"
+              },
+              {
+                "Name": "Horizontal-Compressed",
+                "Boxes": ">1.2.3.4.5.6\n-.^..-.0^00-0.^..-.^\n-.^..-.0^00-00^00-0^\n-0^..-00^00-00^00-0^\n-0^00-00^00-00^00-0^\n-0^00-00^00-00^00-0^\n-.^00-..^00-..^00-.^\n>.0...0...0\n>.0...0...0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00..\n..00..\n..0000\n..0000\n..0000\n000000\n000000\n000000\n000000\n000000\n000000\n>0.0.0\n>m.b.s"
+              }
+            ]
+          },
+          {
+            "Faction": "Circle Orboros",
+            "CCName": "Woldwyrd",
+            "DisplayName": "Woldwyrd 13/16",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "00..00\n000000\n000000\n>0.0.0\n>m.b.s"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "000\n000^0m-\n.00\n.00^0b-\n000\n000^0s-"
+              }
+            ]
+          }
 
         ],
         "Unit": [
           {
             "Faction": "Circle Orboros",
             "CCName": "Bríghid & Caul",
-            "DisplayName": "Bríghid & Caul 16/12",
+            "DisplayName": "Bríghid 16/12",
             "IncludeType": "Unit",
             "Include": "Caul",
             "Type": "S",
@@ -6451,7 +7712,7 @@
             "DisplayName": "Wolves of Orboros (max) 13/13",
             "SingleWound": true
           }
-         
+
         ],
         "Attachment": [
           {
@@ -6663,7 +7924,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Blackclad Stoneshaper",
-            "DisplayName": "Blackclad Stoneshaper 13/13",
+            "DisplayName": "Stoneshaper 13/13",
             "Type": "S",
             "BoxFormats": [
               {
@@ -6675,31 +7936,31 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "2Blackclad Stoneshaper",
-            "DisplayName": "Blackclad Stoneshaper 13/13",
+            "DisplayName": "Stoneshaper 13/13",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Blackclad Stoneshaper",
-            "DisplayName": "Blackclad Stoneshaper 13/13",
+            "CCName": "3Blackclad Stoneshaper",
+            "DisplayName": "Stoneshaper 13/13",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
             "CCName": "Blackclad Wayfarer",
-            "DisplayName": "Blackclad Wayfarer 14/13",
+            "DisplayName": "Wayfarer 14/13",
             "Type": "S",
             "BoxFormats": [
               {
@@ -6711,19 +7972,19 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "2Blackclad Wayfarer",
-            "DisplayName": "Blackclad Wayfarer 14/13",
+            "DisplayName": "Wayfarer 14/13",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
             "CCName": "Bloodweaver Night Witch",
-            "DisplayName": "Bloodweaver Night Witch 14/11",
+            "DisplayName": "Night Witch 14/11",
             "Type": "S",
             "BoxFormats": [
               {
@@ -6735,19 +7996,19 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "2Bloodweaver Night Witch",
-            "DisplayName": "Bloodweaver Night Witch 14/11",
+            "DisplayName": "Night Witch 14/11",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
             "CCName": "Cassius the Oathkeeper",
-            "DisplayName": "Cassius the Oathkeeper 14/16",
+            "DisplayName": "Cassius 14/16",
             "Type": "S",
             "BoxFormats": [
               {
@@ -6759,7 +8020,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Druid Wilder",
-            "DisplayName": "Druid Wilder 14/11",
+            "DisplayName": "Wilder 14/11",
             "Type": "S",
             "BoxFormats": [
               {
@@ -6788,31 +8049,31 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Gallows Grove",
+            "CCName": "3Gallows Grove",
             "DisplayName": "Gallows Grove 5/16",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Gallows Grove",
+            "CCName": "4Gallows Grove",
             "DisplayName": "Gallows Grove 5/16",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           },
@@ -6848,7 +8109,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -6884,7 +8145,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -6908,7 +8169,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "000>00000"
+                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -6932,7 +8193,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "000>00000"
+                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -6968,19 +8229,19 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2War Wolf",
+            "CCName": "3War Wolf",
             "DisplayName": "War Wolf 13/12",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": "100000\n200000\n300000"
               }
             ]
           },

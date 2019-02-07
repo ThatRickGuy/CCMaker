@@ -45,7 +45,6 @@ function AddLetter(parent, currentXOffset, currentYOffset, Letter) {
 }
 
 function GridClicked(d) {
-    //console.log("clicked!" + d.model.CCName);
     selected = d;
     $('#ModelOptions').collapse("show");
     $('#txtDisplayName').val(d.model.DisplayName);
@@ -62,7 +61,6 @@ function GridClicked(d) {
 
 function SVGModelChanges() {
     $('#ModelOptions').collapse("hide");
-    var svg = document.getElementById("svg");
     var data = selected.model;
     data.DisplayName = $('#txtDisplayName').val();
     data.SelectedBoxFormat = $('#cboBoxFormat').val();
@@ -115,14 +113,14 @@ function model_factory(data, xOffset) {
         .data([{ "x": xOffset, "y": 50, "model": data, "UID": "grid" + UID }])
         .attr("transform", "translate(" + xOffset + "," + 50 + ")")
         .attr("class", "Model")
-        .attr("id", "grid"+UID)
+        .attr("id", "grid" + UID)
         .call(drag)
         .on("click", function (d) { GridClicked(d); });
 
     console.log("parse data");
     var lines = [];
-    var LongestLine = 0;
-    var LinesHeight = 0;
+    var LongestLine = (textwidth + 10) / 23;
+    var LinesHeight = .25;
     if (data.SingleWound != true) {
         var Boxes;
         if (data.SelectedBoxFormat == null) {
@@ -153,11 +151,8 @@ function model_factory(data, xOffset) {
             if (lines[i].indexOf("-") >= 0 && lines[i].indexOf("^") == -1) {
                 LinesHeight += .55;
             }
-            LinesHeight++;
+            if (lines[i] != "") LinesHeight++;
         }
-    } else {
-        LongestLine = (textwidth + 10)/23;
-        LinesHeight = .25;
     }
 
     console.log("create border");
@@ -280,6 +275,14 @@ function model_factory(data, xOffset) {
                     if (data.Type == "C")
                         CreateCircle(plate, currentXOffset, currentYOffset);
                     AddLetter(plate, currentXOffset, currentYOffset, 'B');
+                    currentXOffset += 23;
+                    break;
+                case 'i':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentXOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentXOffset, currentYOffset);
+                    AddLetter(plate, currentXOffset, currentYOffset, 'I');
                     currentXOffset += 23;
                     break;
                 case 'L':

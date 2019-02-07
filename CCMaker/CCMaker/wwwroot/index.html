@@ -12,6 +12,7 @@
             crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="./js/site.js" asp-append-version="true"></script>
+    <script src="./js/keybinding.js" asp-append-version="true"></script>
 
     <style type="text/css">
     </style>
@@ -45,7 +46,7 @@
     </div>
 
     <div id="ModelOptions" class="collapse" style="position:absolute; top:20px; z-index:15; right:0px; width:200px; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
-        <i class="fas fa-times-circle; fa-2x" style="float:right;cursor:pointer;" data-toggle="collapse" data-target="#ModelOptions"></i>
+        <i class="fa fa-window-close" style="float:right;cursor:pointer;" data-toggle="collapse" data-target="#ModelOptions" aria-hidden="true"></i>
         Display Name: <input type="text" id="txtDisplayName" style="width:170px;" /><br />
         Boxes Format: <select id="cboBoxFormat" style="width:170px;"></select><br />
         Boxes Override: <input type="text" id="txtBoxFormat" style="width:170px;" /><br />
@@ -54,9 +55,9 @@
         <ul>
             <li>. - blank space</li>
             <li>0 - box</li>
-            <li>L,R,M,C,A,S - box with system</li>
+            <li>l,r,m,c,a,s,i,b,s - box with system</li>
             <li>1,2,3,4,5,6 - Unit model identifiers A-F</li>
-            <li>l,r - Left and Right indicators (L, R) for colossals</li>
+            <li>L,R - Left and Right indicators (L, R) for colossals</li>
             <li>* - unit model identifier UA</li>
             <li>W - unit model identifier WA</li>
             <li>> - half box horizontal gap</li>
@@ -105,10 +106,7 @@
                     var X = -250;
                     for (var i = 0; i < lists.length; i++) {
                         var list = lists[i];
-
-
-
-
+                        
 
                         X += 300;
                         var OverrideModels = CheckForThemeOverrides(AllModels, faction, list.theme);
