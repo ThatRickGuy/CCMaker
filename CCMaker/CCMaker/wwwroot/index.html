@@ -12,13 +12,9 @@
             crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script src="./js/site.js" asp-append-version="true"></script>
-    <script src="./js/keybinding.js" asp-append-version="true"></script>
-
-    <style type="text/css">
-    </style>
+    <script src="./js/LookUp.js" asp-append-version="true"></script>
 </head>
 <body>
-
 
     <div style="position:absolute; top:0px; height:100%; width:100%; z-index:1;">
         <svg id="svg" style="position:absolute; width:110%; height:110%; top:-5px;">
@@ -55,7 +51,7 @@
         <ul>
             <li>. - blank space</li>
             <li>0 - box</li>
-            <li>l,r,m,c,a,s,i,b,s - box with system</li>
+            <li>l,r,m,c,a,s,i,b - box with system</li>
             <li>1,2,3,4,5,6 - Unit model identifiers A-F</li>
             <li>L,R - Left and Right indicators (L, R) for colossals</li>
             <li>* - unit model identifier UA</li>
@@ -100,257 +96,145 @@
                     var AllModels = json;
 
                     var ModelsToRender = [];
+                    var ModelGroupsToRender = [];
 
 
 
                     var X = -250;
                     for (var i = 0; i < lists.length; i++) {
                         var list = lists[i];
-                        
+
 
                         X += 300;
-                        var OverrideModels = CheckForThemeOverrides(AllModels, faction, list.theme);
                         for (var j = 0; j < list.models.length; j++) {
                             var TargetName = "";
                             TargetName = list.models[j].desc;
                             if (TargetName == null) TargetName = list.models[j].name;
-                            var model = null;
-
-                            //Theme override models, currently only used for Minion Blindwater Gatorman Posse
-                            if (OverrideModels != null) {
-                                for (var l = 0; l < OverrideModels.length; l++) {
-                                    if (OverrideModels[l].CCName == TargetName) {
-                                        model = OverrideModels[l];
-                                        if (model != null) {
-                                            model.SourceData = list.models[j];
-                                            model.XOffset = X;
-                                            ModelsToRender.push(model);
-                                            if (model.Include != null) {
-                                                var IncludeType = model.IncludeType
-                                                var model = lookup(AllModels, faction, model.Include, IncludeType);
-                                                if (model != null) {
-                                                    model.SourceData = list.models[j];
-                                                    model.SourceData.type = IncludeType;
-                                                    model.XOffset = X;
-                                                    ModelsToRender.push(model);
-                                                }
-                                            }
-                                        }
-                                    }
+                            var Modelset;
+                            Modelset = lookUp(AllModels, faction, list.theme, TargetName, list.models[j].type, list.models[j].attached, X);
+                            var IM = Modelset.IndependentModels
+                            if (IM != null) {
+                                for (var k = 0; k < IM.length; k++) {
+                                    ModelsToRender.push(IM[k]);
                                 }
                             }
-
-                            //Not overridden, normal stuff
-                            if (model == null) {
-                                model = lookup(AllModels, faction, TargetName, list.models[j].type);
-                                if (model != null) {
-                                    model.SourceData = list.models[j];
-                                    model.XOffset = X;
-                                    ModelsToRender.push(model);
-                                    
-                                    if (model.Include != null) {
-                                        var IncludeType = model.IncludeType
-                                        var model = lookup(AllModels, faction, model.Include, IncludeType);
-                                        if (model != null) {
-                                            model.SourceData = list.models[j];
-                                            model.SourceData.type = IncludeType;
-                                            model.XOffset = X;
-                                            ModelsToRender.push(model);
-                                        }
-                                    }
-                                }
-                            }
-                            var attached = list.models[j].attached;
-                            if (model == null || list.models[j].type == "Warcaster" || list.models[j].type == "Warlock") {
-                                //Attached to a single wound infantry unit or to the caster, treat like solo
-                                if (attached != null) {
-                                    for (var k = 0; k < attached.length; k++) {
-
-                                        TargetName = attached[k].desc;
-                                        if (TargetName == null) TargetName = attached[k].name;
-
-                                        var model = lookup(AllModels, faction, TargetName, attached[k].type);
-                                        if (model != null) {
-                                            model.SourceData = list.models[j].attached[k];
-                                            model.XOffset = X;
-                                            ModelsToRender.push(model);
-                                            //model_factory(model, X);
-                                        }
-                                    }
-                                }
-                            } else if (list.models[j].type == "Unit") {
-                                //attached to a unit with box models
-                                if (attached != null) {
-                                    for (var k = 0; k < attached.length; k++) {
-
-                                        TargetName = attached[k].desc;
-                                        if (TargetName == null) TargetName = attached[k].name;
-
-                                        var Attached = lookup(AllModels, faction, TargetName, attached[k].type);
-                                        if (Attached != null) {
-                                            if (model.SingleWound == true) {
-                                                if (Attached.BoxFormats != null) {
-                                                    model.BoxFormats[0].Boxes = Attached.BoxFormats[0].Boxes;
-                                                }
-                                            } else {
-                                                model.BoxFormats[0].Boxes += '\n' + Attached.BoxFormats[0].Boxes;
-                                            }
-                                        }
-                                    }
-                                }
-                            } else {
-                                //Attached to something else
-                                if (attached != null) {
-                                    for (var k = 0; k < attached.length; k++) {
-
-                                        TargetName = attached[k].desc;
-                                        if (TargetName == null) TargetName = attached[k].name;
-
-                                        var Attached = lookup(AllModels, faction, TargetName, attached[k].type);
-                                        if (Attached != null) {
-                                            Attached.SourceData = list.models[j].attached[k];
-                                            Attached.XOffset = X;
-                                            ModelsToRender.push(Attached);
-                                        }
-                                    }
-                                }
+                            var MG = Modelset.ModelGroup;
+                            if (MG != null) {
+                                //for (var k = 0; k < MG.length; k++) {
+                                ModelGroupsToRender.push(MG);//[k]);
+                                //}
                             }
                         }
 
 
-
-                        //consolidate solos and Attachments
-                        if ($('input[name="Combine"]').is(':checked')) {
-                            var dict = {};
-                            var IndexToRemove = [];
-                            for (var m = 0; m < ModelsToRender.length; m++) {
-                                if (ModelsToRender[m].SourceData.type == "Solo" || ModelsToRender[m].SourceData.type == "Attachment") {
-                                    if (dict["'" + ModelsToRender[m].CCName + "'"] == null) {
-                                        dict["'" + ModelsToRender[m].CCName + "'"] = 1;
-                                    } else {
-                                        dict["'" + ModelsToRender[m].CCName + "'"]++;
-                                        IndexToRemove.push(m);
-                                    }
-                                }
-                            }
-                            for (var n = IndexToRemove.length - 1; n >= 0; n--) {
-                                ModelsToRender.splice(IndexToRemove[n], 1);
-                            }
-                            for (var m = 0; m < ModelsToRender.length; m++) {
-                                if (dict["'" + ModelsToRender[m].CCName + "'"] != null) {
-                                    TargetName = dict["'" + ModelsToRender[m].CCName + "'"] + ModelsToRender[m].CCName;
-                                    var XOffset = ModelsToRender[m].XOffset;
-                                    var model = lookup(AllModels, faction, TargetName, ModelsToRender[m].SourceData.type);
-                                    if (model != null) {
-                                        ModelsToRender[m] = model;
-                                        ModelsToRender[m].XOffset = XOffset;
-                                    }
-                                }
-                            }
-                        }
 
                         for (var z = 0; z < ModelsToRender.length; z++) {
-                            model_factory(ModelsToRender[z], ModelsToRender[z].XOffset)
+                            model_factory(ModelsToRender[z], ModelsToRender[z].X, 50, d3.select("#svg"), true, null, true)
+                        }
+                        for (var z = 0; z < ModelGroupsToRender.length; z++) {
+                            modelGroup_factory(ModelGroupsToRender[z], X)
                         }
 
                         ModelsToRender = [];
+                        ModelGroupsToRender = [];
                     }
 
 
 
-                    if ($('input[name="IncludeObjectives"]').is(':checked')) {
-                        var model = lookup(AllModels, "Other", "Objective", "Other");
-                        if (model != null) {
-                            model_factory(model, 650);
-                        }
-                    }
-                    if ($('input[name="IncludeScenarios"]').is(':checked')) {
-                        var model = lookup(AllModels, "Other", "Scenario", "Other");
-                        if (model != null) {
-                            model_factory(model, 650);
-                        }
-                    }
-                    if ($('input[name="IncludeRound"]').is(':checked')) {
-                        var model = lookup(AllModels, "Other", "Round", "Other");
-                        if (model != null) {
-                            model_factory(model, 650);
-                        }
-                    }
+                    //if ($('input[name="IncludeObjectives"]').is(':checked')) {
+                    //    var model = lookup(AllModels, "Other", "Objective", "Other");
+                    //    if (model != null) {
+                    //        model_factory(model, 650);
+                    //    }
+                    //}
+                    //if ($('input[name="IncludeScenarios"]').is(':checked')) {
+                    //    var model = lookup(AllModels, "Other", "Scenario", "Other");
+                    //    if (model != null) {
+                    //        model_factory(model, 650);
+                    //    }
+                    //}
+                    //if ($('input[name="IncludeRound"]').is(':checked')) {
+                    //    var model = lookup(AllModels, "Other", "Round", "Other");
+                    //    if (model != null) {
+                    //        model_factory(model, 650);
+                    //    }
+                    //}
                 });
             });
         }
 
-        function CheckForThemeOverrides(AllModels, Faction, ThemeName) {
-            for (var i = 0; i < AllModels.Factions.length; i++) {
-                if (AllModels.Factions[i].Name == Faction) {
-                    if (AllModels.Factions[i].ThemeOverrides != null) {
-                        for (var j = 0; j < AllModels.Factions[i].ThemeOverrides.length; j++) {
-                            if (AllModels.Factions[i].ThemeOverrides[j].ThemeName == ThemeName) {
-                                return AllModels.Factions[i].ThemeOverrides[j].Models;
-                            }
-                        }
-                    }
-                }
-            }
-            return false;
-        }
+                //function CheckForThemeOverrides(AllModels, Faction, ThemeName) {
+                //    for (var i = 0; i < AllModels.Factions.length; i++) {
+                //        if (AllModels.Factions[i].Name == Faction) {
+                //            if (AllModels.Factions[i].ThemeOverrides != null) {
+                //                for (var j = 0; j < AllModels.Factions[i].ThemeOverrides.length; j++) {
+                //                    if (AllModels.Factions[i].ThemeOverrides[j].ThemeName == ThemeName) {
+                //                        return AllModels.Factions[i].ThemeOverrides[j].Models;
+                //                    }
+                //                }
+                //            }
+                //        }
+                //    }
+                //    return false;
+                //}
 
-        function lookup(AllModels, Faction, TargetName, TargetKey) {
-            for (var i = 0; i < AllModels.Factions.length; i++) {
-                if (AllModels.Factions[i].Name == Faction) {
-                    var models = AllModels.Factions[i].Models[TargetKey];
-                    if (models != null) {
-                        for (var j = 0; j < models.length; j++) {
-                            if (models[j].CCName == TargetName) {
+                //function lookup(AllModels, Faction, TargetName, TargetKey) {
+                //    TargetName = TargetName.replace("í", "i");
+                //    for (var i = 0; i < AllModels.Factions.length; i++) {
+                //        if (AllModels.Factions[i].Name == Faction) {
+                //            var models = AllModels.Factions[i].Models[TargetKey];
+                //            if (models != null) {
+                //                for (var j = 0; j < models.length; j++) {
+                //                    if (models[j].CCName == TargetName) {
 
-                                //Stop single wound models from returning
-                                if (models[j].SingleWound == true) {
-                                    return null;
-                                }
-                                return clone(models[j]);
-                            }
-                        }
-                    }
-                }
-            }
-            for (var i = 0; i < AllModels.Factions.length; i++) {
-                if (AllModels.Factions[i].Name == "Mercenaries") {
-                    var models = AllModels.Factions[i].Models[TargetKey];
-                    if (models != null) {
-                        for (var j = 0; j < models.length; j++) {
-                            if (models[j].CCName == TargetName) {
-                                //Stop single wound models from returning
-                                if (models[j].SingleWound == true) {
-                                    return null;
-                                }
-                                return clone(models[j]);
-                            }
-                        }
-                    }
-                }
-            }
-            for (var i = 0; i < AllModels.Factions.length; i++) {
-                if (AllModels.Factions[i].Name == "Minions") {
-                    var models = AllModels.Factions[i].Models[TargetKey];
-                    if (models != null) {
-                        for (var j = 0; j < models.length; j++) {
-                            if (models[j].CCName == TargetName) {
-                                //Stop single wound models from returning
-                                if (models[j].SingleWound == true) {
-                                    return null;
-                                }
-                                return clone(models[j]);
-                            }
-                        }
-                    }
-                }
-            }
-            return null;
-        }
+                //                        //Stop single wound models from returning
+                //                        if (models[j].SingleWound == true) {
+                //                            return null;
+                //                        }
+                //                        return clone(models[j]);
+                //                    }
+                //                }
+                //            }
+                //        }
+                //    }
+                //    for (var i = 0; i < AllModels.Factions.length; i++) {
+                //        if (AllModels.Factions[i].Name == "Mercenaries") {
+                //            var models = AllModels.Factions[i].Models[TargetKey];
+                //            if (models != null) {
+                //                for (var j = 0; j < models.length; j++) {
+                //                    if (models[j].CCName == TargetName) {
+                //                        //Stop single wound models from returning
+                //                        if (models[j].SingleWound == true) {
+                //                            return null;
+                //                        }
+                //                        return clone(models[j]);
+                //                    }
+                //                }
+                //            }
+                //        }
+                //    }
+                //    for (var i = 0; i < AllModels.Factions.length; i++) {
+                //        if (AllModels.Factions[i].Name == "Minions") {
+                //            var models = AllModels.Factions[i].Models[TargetKey];
+                //            if (models != null) {
+                //                for (var j = 0; j < models.length; j++) {
+                //                    if (models[j].CCName == TargetName) {
+                //                        //Stop single wound models from returning
+                //                        if (models[j].SingleWound == true) {
+                //                            return null;
+                //                        }
+                //                        return clone(models[j]);
+                //                    }
+                //                }
+                //            }
+                //        }
+                //    }
+                //    return null;
+                //}
 
-        function clone(object) {
-            return JSON.parse(JSON.stringify(object));
-        }
+                //function clone(object) {
+                //    return JSON.parse(JSON.stringify(object));
+                //}
     </script>
 </body>
 </html>
