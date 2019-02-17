@@ -859,6 +859,18 @@
           },
           {
             "Faction": "Cygnar",
+            "CCName": "Arcane Tempest Gun Mages",
+            "DisplayName": "Gun Mages 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Arcane Tempest Gun Mages",
+            "DisplayName": "Gun Mages 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
             "CCName": "Black 13th Strike Force",
             "DisplayName": "Black 13 14/11",
             "Type": "S",
@@ -869,6 +881,159 @@
               }
             ]
           },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Field Mechaniks (min)",
+            "DisplayName": "Gun Mages 12/11",
+            "SingleWound": true,
+            "IncludeType": "Unit",
+            "Include": "Gobber Grunts"
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Field Mechaniks (min)",
+            "DisplayName": "Gun Mages 12/11",
+            "SingleWound": true,
+            "IncludeType": "Unit",
+            "Include": "Gobber Grunts"
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Field Mechaniks (max)",
+            "DisplayName": "Gun Mages 12/11",
+            "SingleWound": true,
+            "IncludeType": "Unit",
+            "Include": "Gobber Grunts"
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Field Mechaniks (max)",
+            "DisplayName": "Gun Mages 12/11",
+            "SingleWound": true,
+            "IncludeType": "Unit",
+            "Include": "Gobber Grunts"
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Gobber Grunts",
+            "DisplayName": "Gobber 14/9",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Long Gunner Infantry (min)",
+            "DisplayName": "Long Gunner 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Long Gunner Infantry (min)",
+            "DisplayName": "Long Gunner 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Long Gunner Infantry (max)",
+            "DisplayName": "Long Gunner 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Long Gunner Infantry (max)",
+            "DisplayName": "Long Gunner 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Patrol Dog",
+            "DisplayName": "Patrol Dog 14/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Precursor Knights (min)",
+            "DisplayName": "Precursors 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Precursor Knights (min)",
+            "DisplayName": "Precursors 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Precursor Knights (max)",
+            "DisplayName": "Precursors 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Precursor Knights (max)",
+            "DisplayName": "Precursors 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Rangers",
+            "DisplayName": "Rangers 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Rangers",
+            "DisplayName": "Rangers 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Silver Line Stormguard (min)",
+            "DisplayName": "Silver Line 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Silver Line Stormguard (min)",
+            "DisplayName": "Silver Line 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Silver Line Stormguard (max)",
+            "DisplayName": "Silver Line 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Silver Line Stormguard (max)",
+            "DisplayName": "Silver Line 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormblade Infantry",
+            "DisplayName": "Stormblades 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Stormblade Infantry",
+            "DisplayName": "Stormblades 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormguard Infantry",
+            "DisplayName": "Stormblades 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Stormguard Infantry",
+            "DisplayName": "Stormblades 12/15",
+            "SingleWound": true
+          },
+
           {
             "Faction": "Cygnar",
             "CCName": "Storm Lances (min)",
@@ -892,6 +1057,54 @@
                 "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
               }
             ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormsmith Grenadiers",
+            "DisplayName": "Stormsmiths 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Stormsmith Grenadiers",
+            "DisplayName": "Stormsmiths 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Stormsmith Storm Tower",
+            "DisplayName": "Storm Tower 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Stormsmith Storm Tower",
+            "DisplayName": "Storm Tower 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Sword Knights (min)",
+            "DisplayName": "Sword Knights 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Sword Knights (min)",
+            "DisplayName": "Sword Knights 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Sword Knights (max)",
+            "DisplayName": "Sword Knights 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Sword Knights (max)",
+            "DisplayName": "Sword Knights 13/14",
+            "SingleWound": true
           },
           {
             "Faction": "Cygnar",
@@ -919,6 +1132,72 @@
           },
           {
             "Faction": "Cygnar",
+            "CCName": "Trencher Cannon Crew",
+            "DisplayName": "Cannon 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Cannon Crew",
+            "DisplayName": "Cannon 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Chain Gun Crew",
+            "DisplayName": "Chain Gun 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Chain Gun Crew",
+            "DisplayName": "Chain Gun 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Combat Engineers",
+            "DisplayName": "Combat Engineers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Combat Engineers",
+            "DisplayName": "Combat Engineers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "3Trencher Combat Engineers",
+            "DisplayName": "Combat Engineers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Commandos (min)",
+            "DisplayName": "Commandos 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Commandos (min)",
+            "DisplayName": "Commandos 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Commandos (max)",
+            "DisplayName": "Commandos 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Commandos (max)",
+            "DisplayName": "Commandos 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
             "CCName": "Trencher Express Team",
             "DisplayName": "Express Gunner 13/15",
             "Type": "S",
@@ -928,6 +1207,54 @@
                 "Boxes": "A00000"
               }
             ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Infantry (min)",
+            "DisplayName": "Trenchers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Infantry (min)",
+            "DisplayName": "Trenchers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Infantry (max)",
+            "DisplayName": "Trenchers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Infantry (max)",
+            "DisplayName": "Trenchers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Long Gunners (min)",
+            "DisplayName": "Trenchers Long Gunners 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Long Gunners (min)",
+            "DisplayName": "Trenchers Long Gunners 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Long Gunners (max)",
+            "DisplayName": "Trenchers Long Gunners 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Long Gunners (max)",
+            "DisplayName": "Trenchers Long Gunners 13/13",
+            "SingleWound": true
           }
         ],
         "Attachment": [
@@ -981,6 +1308,24 @@
           },
           {
             "Faction": "Cygnar",
+            "CCName": "Stormblade Infantry Storm Gunner",
+            "DisplayName": "Stormblade WA 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Stormblade Infantry Storm Gunner",
+            "DisplayName": "Stormblade WA 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "3Stormblade Infantry Storm Gunner",
+            "DisplayName": "Stormblade WA 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
             "CCName": "Sword Knight Officer & Standard",
             "DisplayName": "Sword Knight UA 12/15",
             "Type": "S",
@@ -1005,6 +1350,24 @@
           },
           {
             "Faction": "Cygnar",
+            "CCName": "Trencher Commando Scattergunner",
+            "DisplayName": "Commando WA 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Commando Scattergunner",
+            "DisplayName": "Commando WA 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "3Trencher Commando Scattergunner",
+            "DisplayName": "Commando WA 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
             "CCName": "Trencher Infantry Officer & Sniper",
             "DisplayName": "Trencher UA 13/13",
             "Type": "S",
@@ -1014,6 +1377,24 @@
                 "Boxes": "*00000"
               }
             ]
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "Trencher Infantry Rifle Grenadier",
+            "DisplayName": "Trencher WA 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "2Trencher Infantry Rifle Grenadier",
+            "DisplayName": "Trencher WA 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cygnar",
+            "CCName": "3Trencher Infantry Rifle Grenadier",
+            "DisplayName": "Trencher WA 13/13",
+            "SingleWound": true
           },
           {
             "Faction": "Cygnar",
