@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CC Maker</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/RG9_tiny.png" />
+
+    <link rel="stylesheet" href="./css/site.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="./js/site.js"></script>
+    <script src="./js/LookUp.js"></script>
+    <script src="./js/movement.js"></script>
+
+
+    <style>
+        .no-transition {
+            -webkit-transition: none;
+            transition: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="position:absolute; top:0px; height:100%; width:100%; z-index:1;">
+        <svg id="svg" style="position:absolute; width:110%; height:110%; top:-5px;">
+
+            <circle cx="18" cy="19" r="12" fill="white" stroke="black" stroke-width="1px"></circle>
+            <text x="21" y="24" font-family="Constantia" class="Perm" transform="translate(40,0) scale(-1,1)">R</text>
+            <text x="17" y="24" font-family="Constantia" class="Perm" transform="">D</text>
+
+            <img src=".\images\CCLogo.svg" style="position:absolute; left:3px; top:28px; width:30px;" />
+        </svg>
+    </div>
+
+    <div style="position:absolute; top:5px; right:5px; cursor:pointer;z-index:5;">
+        <i class="fas fa-bars" data-toggle="collapse" data-target="#LoadDiv"></i>
+    </div>
+
+    <div id="LoadDiv" style="position:absolute; width:500px; z-index:9; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
+        Conflict Chamber URL: <input type="text" id="txtCCURL" /><button onclick="LoadFromCC(); " style="margin-left:10px">Load!</button><br />
+        <input type="checkbox" id="chkIncludeObjectives" name="IncludeObjectives" checked />Include Objectives<br />
+        <input type="checkbox" id="chkIncludeScenarios" name="IncludeScenarios" checked />Include Scenarios<br />
+        <input type="checkbox" id="chkIncludeRound" name="IncludeRound" checked />Include Round<br />
+        <input type="checkbox" id="chkCombine" name="Combine" checked />Combine Like Models<br />
+        Click and Drag, or use the arrow keys to arrange the grids.
+        <button onclick="save();">Generate Save Link</button>
+        <div id="SaveLink"></div>
+    </div>
+
+    <div id="ModelOptions" class="collapse" style="position:absolute; top:20px; z-index:15; right:0px; width:200px; border: 1px solid black; border-radius:5px; background-color:lightgray; padding:10px; margin:10px;">
+        <i class="fa fa-window-close" style="float:right;cursor:pointer;" data-toggle="collapse" data-target="#ModelOptions" aria-hidden="true"></i>
+        <i id="HideArea" class="fas fa-ellipsis-h" style="float:right;cursor:pointer; margin-right:4px;" data-toggle="collapse" data-target="#ModelOptionsArea" aria-hidden="true"></i>
+        <div id="ModelOptionsArea">
+            Display Name: <input type="text" id="txtDisplayName" style="width:170px;" /><br />
+            Boxes Format: <select id="cboBoxFormat" style="width:170px;"></select><br />
+            Boxes Override: <textarea id="txtBoxFormat" style="width:170px; height:200px;"></textarea><br />
+            <button onclick="SVGModelChanges()">Update</button>
+            <button onclick="SVGModelRemove()">Remove</button>
+            <ul>
+                <li>. - blank space</li>
+                <li>0 - box</li>
+                <li>l,r,m,c,a,s,i,b,h,w,g,b,i - box with system</li>
+                <li>A,B,C,D,E,F,G,H,I - unit model indicators</li>
+                <li>1,2,3,4,5,6 - duplicate model indicators</li>
+                <li>L,R - Left and Right indicators (L, R) for colossals</li>
+                <li>* - unit model identifier UA</li>
+                <li>W - unit model identifier WA</li>
+                <li>> - half box horizontal gap</li>
+                <li>^ - half box vertical (up)</li>
+                <li>- - half box vertical (down)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajaxSetup({ cache: false });
+
+            $('txtCCURL').value = localStorage.LastList;
+
+            $.getJSON("./LookupDate.json", function (ld) {
+                if (new Date(ld.LookupDate) > new Date(localStorage.getItem('AllModelsDate'))) {
+                    $.getJSON("./Lookup.json", function (json) {
+                        localStorage.setItem('AllModels', JSON.stringify(json));
+                        localStorage.setItem('AllModelsDate', new Date);
+                    });
+                }
+            });
+        });
+
+
+        $('#LoadDiv').collapse("show");
+        $('#ModelOptions').collapse("hide");
+        $('#HideArea').collapse("show");
+        $('#ModelOptionsArea').collapse("show");
+
+        function save() {
+            exportSVG(document.getElementById('svg'));
+        }
+
+        function LoadFromCC() {
+            $('#LoadDiv').collapse("hide");
+            d3.selectAll('.Model').remove();
+
+
+            var url = txtCCURL.value;
+            localStorage.LastList = url;
+            var CCCode = url.split('?')[1];
+            $.getJSON("https://api.conflictchamber.com/list/" + CCCode + ".JSON", function (CCjson) {
+                var faction = CCjson.faction;
+                var lists = CCjson.lists;
+
+                var AllModels;
+                var AllModels = JSON.parse(localStorage.getItem('AllModels'));
+
+
+                var ModelsToRender = [];
+                var ModelGroupsToRender = [];
+
+
+
+                var X = -250;
+                for (var i = 0; i < lists.length; i++) {
+                    var list = lists[i];
+
+
+                    X += 300;
+                    for (var j = 0; j < list.models.length; j++) {
+                        var TargetName = "";
+                        TargetName = list.models[j].desc;
+                        if (TargetName == null) TargetName = list.models[j].name;
+                        var Modelset;
+                        Modelset = lookUp(AllModels, faction, list.theme, TargetName, list.models[j].type, list.models[j].attached, X);
+                        var IM = Modelset.IndependentModels
+                        if (IM != null) {
+                            for (var k = 0; k < IM.length; k++) {
+                                ModelsToRender.push(IM[k]);
+                            }
+                        }
+                        var MG = Modelset.ModelGroup;
+                        if (MG != null) {
+                            ModelGroupsToRender.push(MG);
+                        }
+                    }
+
+
+
+                    for (var z = 0; z < ModelsToRender.length; z++) {
+                        model_factory(ModelsToRender[z], null, ModelsToRender[z].X, 50, "svg", true, null, true)
+                    }
+                    for (var z = 0; z < ModelGroupsToRender.length; z++) {
+                        modelGroup_factory(ModelGroupsToRender[z], X)
+                    }
+
+                    ModelsToRender = [];
+                    ModelGroupsToRender = [];
+                }
+
+                if ($('input[name="IncludeObjectives"]').is(':checked')) {
+                    var model = lookUp(AllModels, "Other", "", "Objective", "Other", null, 650);
+                    if (model.IndependentModels != null) {
+                        model_factory(model.IndependentModels[0], null, 650, 50, "svg", true, null, true);
+                    }
+                }
+                if ($('input[name="IncludeScenarios"]').is(':checked')) {
+                    var model = lookUp(AllModels, "Other", "", "Scenario", "Other", null, 650);
+                    if (model.IndependentModels != null) {
+                        model_factory(model.IndependentModels[0], null, 650, 50, "svg", true, null, true);
+                    }
+                }
+                if ($('input[name="IncludeRound"]').is(':checked')) {
+                    var model = lookUp(AllModels, "Other", "", "Round", "Other", null, 650);
+                    if (model.IndependentModels != null) {
+                        model_factory(model.IndependentModels[0], null, 650, 50, "svg", true, null, true);
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>

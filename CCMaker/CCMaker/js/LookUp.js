@@ -21,18 +21,26 @@ function clone(object) {
 
 function lookUpSingle(AllModels, Faction, ThemeName, TargetName, TargetKey) {
     TargetName = TargetName.replace("í", "i");
-    for (var i = 0; i < AllModels.Factions.length; i++) {
-        if (AllModels.Factions[i].Name == Faction) {
-            var models = AllModels.Factions[i].Models[TargetKey];
-            if (models != null) {
-                for (var j = 0; j < models.length; j++) {
-                    if (models[j].CCName == TargetName) {
-                        //Stop single wound models from returning
-                        //if (models[j].SingleWound == true) {
-                        //    return null;
-                        //}
-                        return clone(models[j]);
+    if (AllModels.Factions != null) {
+        for (var i = 0; i < AllModels.Factions.length; i++) {
+            if (AllModels.Factions[i].Name == Faction) {
+                var models = AllModels.Factions[i].Models[TargetKey];
+                if (models != null) {
+                    for (var j = 0; j < models.length; j++) {
+                        if (models[j].CCName == TargetName) {
+                            return clone(models[j]);
+                        }
                     }
+                }
+            }
+        }
+    } else {
+        //override list was sent in
+        var models = AllModels.Models;
+        if (models != null) {
+            for (var j = 0; j < models.length; j++) {
+                if (models[j].CCName == TargetName) {
+                    return clone(models[j]);
                 }
             }
         }
@@ -72,7 +80,11 @@ function lookUp(AllModels, Faction, ThemeName, TargetName, TargetKey, Attached, 
     if (model != null) {
         //add the found model the return set
         model.X = xOffset;
-        ModelGroup.push(model);
+        if (Attached == null && model.Include == null) {
+            IndependentModels.push(model);
+        } else {
+            ModelGroup.push(model);
+        }
 
         if (Attached != null) {
             //Attached models. This can be a UA (good!) or a Jack/Beast (bad!)
@@ -154,7 +166,11 @@ function lookUp(AllModels, Faction, ThemeName, TargetName, TargetKey, Attached, 
 
             if (model != null) {
                 model.X = xOffset;
-                ModelGroup.push(model);
+                if (OldModel.IncludeType == 'Warbeast' || OldModel.IncludeType == 'Warjack') {
+                    IndependentModels.push(model);
+                } else {
+                    ModelGroup.push(model);
+                }
             }
         }
     }

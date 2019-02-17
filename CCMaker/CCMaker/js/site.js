@@ -1,17 +1,6 @@
 ﻿var selected;
-var selectedParent;
 var UID = 0;
 
-
-var drag = d3.behavior.drag()
-    .on("drag", function (d, i) {
-        GridClicked(d);
-        d.x += d3.event.dx
-        d.y += d3.event.dy
-        d3.select(this).attr("transform", function (d, i) {
-            return "translate(" + [d.x, d.y] + ")"
-        })
-    });
 
 function CreateSquare(parent, currentxOffset, currentYOffset) {
     var square = parent.append("svg:rect")
@@ -46,37 +35,39 @@ function AddLetter(parent, currentxOffset, currentYOffset, Letter) {
 }
 
 function GridClicked(d) {
-    if (d.model != null) {
-        selected = d;
-        $('#ModelOptions').collapse("show");
-        $('#txtDisplayName').val(d.model.DisplayName);
-        $('#cboBoxFormat').empty();
-        $.each(d.model.BoxFormats, function (i, item) {
-            $('#cboBoxFormat').append($('<option>', {
-                value: item.Boxes,
-                text: item.Name
-            }));
-        });
-    } else {
-        selectedParent = d;
-        console.log(selectedParent.models);
-    }
+    setTimeout(function () {
+        if (d.model != null) {
+            selected = d;
+            $('#ModelOptions').collapse("show");
+            $('#txtDisplayName').val(d.model.DisplayName);
+            $('#cboBoxFormat').empty();
+            //if I populate this, it will override the selection, so I'd need to set it up to 
+            //overwrite whenever a selection is made, or add an 'override' checkbox
+            //$('#txtBoxFormat').val(d.model.SelectedBoxFormat);
+            $('#txtBoxFormat').val("");
+            $.each(d.model.BoxFormats, function (i, item) {
+                $('#cboBoxFormat').append($('<option>', {
+                    value: item.Boxes,
+                    text: item.Name
+                }));
+            });
+        }
+    }, 100);
 }
 
 
 
 function SVGModelChanges() {
     $('#ModelOptions').collapse("hide");
-    if (selected.MySVGParent != null && selected.MySVGParent != d3.select("#svg")) {
+    if (selected.MySVGParentID != null && selected.MySVGParentID != "svg") {
         //this is a model group
-        var data = selectedParent.models;
         selected.model.DisplayName = $('#txtDisplayName').val();
         selected.model.SelectedBoxFormat = $('#cboBoxFormat').val();
         if ($('#txtBoxFormat').val() !== '') selected.model.SelectedBoxFormat = $('#txtBoxFormat').val();
 
-        modelGroup_factory(data, 50);
+        modelGroup_factory(selected.parentData, 50);
 
-        d3.select('#' + selectedParent.UID).remove();
+        d3.select('#' + selected.MySVGParentID).remove();
     } else {
         // this is a single model
         var data = selected.model;
@@ -85,7 +76,7 @@ function SVGModelChanges() {
         if ($('#txtBoxFormat').val() !== '') data.SelectedBoxFormat = $('#txtBoxFormat').val();
         d3.select('#' + selected.UID).remove();
 
-        model_factory(data, data.X, 50, d3.select("#svg"), true, null, true)
+        model_factory(data, null, data.X, 50, "svg", true, null, true)
     }
 }
 
@@ -166,17 +157,17 @@ function modelGroup_factory(data, xOffset) {
 
     var plate = d3.select("#svg")
         .append("svg:g")
-        .data([{ "x": xOffset, "y": 0, "models": data, "UID": "grid" + UID }])
+        .data([{ "x": xOffset, "y": 0, "model": data, "UID": "parentgrid" + UID, "MySVGParentID": "svg"}])
         .attr("transform", "translate(" + xOffset + "," + 0 + ")")
         .attr("class", "Model")
-        .attr("id", "grid" + UID)
+        .attr("id", "parentgrid" + UID)
         .call(drag);
 
     var border = plate.append("svg:rect")
         .attr("x", 2)
         .attr("y", 9)
-        .attr("width", LongestLine )
-        .attr("height", (LinesHeight-1) * 23 + 7)
+        .attr("width", LongestLine)
+        .attr("height", (LinesHeight - 1) * 23 + 7)
         .attr("rx", 3)
         .attr("ry", 3)
         .attr("stroke", "black")
@@ -184,12 +175,13 @@ function modelGroup_factory(data, xOffset) {
 
     var yOffset = 0;
     for (var i = 0; i < data.length; i++) {
-        var newplate = model_factory(data[i], 0, yOffset, plate, false, LongestLine, false);
-        yOffset += newplate.height +9;
+        var newplate = model_factory(data[i], data, 0, yOffset, plate[0][0].id, false, LongestLine, false);
+        yOffset += newplate.height + 9;
     }
 }
 
-function model_factory(data, xOffset, yOffset, d3Parent, includeDrag, width, includeBorder) {
+function model_factory(data, parentData, xOffset, yOffset, d3ParentID, includeDrag, width, includeBorder) {
+
     //data format
     /*
         "Faction": "Khador",
@@ -220,12 +212,13 @@ function model_factory(data, xOffset, yOffset, d3Parent, includeDrag, width, inc
     svg.appendChild(text);
     var textwidth = text.getComputedTextLength();
     d3.select("svg").empty();
-
+    
     var plate;
+    var d3Parent = d3.select('#' + d3ParentID);
     if (includeDrag) {
         plate = d3Parent
             .append("svg:g")
-            .data([{ "x": xOffset, "y": yOffset, "model": data, "UID": "grid" + UID }])
+            .data([{ "x": xOffset, "y": yOffset, "model": data, "parentData": parentData, "UID": "grid" + UID, "MySVGParentID": d3ParentID }])
             .attr("transform", "translate(" + xOffset + "," + yOffset + ")")
             .attr("class", "Model")
             .attr("id", "grid" + UID)
@@ -234,7 +227,7 @@ function model_factory(data, xOffset, yOffset, d3Parent, includeDrag, width, inc
     } else {
         plate = d3Parent
             .append("svg:g")
-            .data([{ "x": xOffset, "y": yOffset, "model": data, "UID": "grid" + UID, "MySVGParent": d3Parent}])
+            .data([{ "x": xOffset, "y": yOffset, "model": data, "parentData": parentData, "UID": "grid" + UID, "MySVGParentID": d3ParentID }])
             .attr("transform", "translate(" + xOffset + "," + yOffset + ")")
             .attr("class", "Model")
             .attr("id", "grid" + UID)

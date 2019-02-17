@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E03E3DD9-F399-4A59-9BEC-9F3F3EE3D5FE}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		Lookup.json = Lookup.json
+		LookupDate.json = LookupDate.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{D8735AC3-A5FA-45DB-B527-00540FDDCDFC}"
+	ProjectSection(SolutionItems) = preProject
+		js\LookUp.js = js\LookUp.js
+		js\movement.js = js\movement.js
+		js\site.js = js\site.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{1C65A394-7BEB-42B8-8C2D-3E8C1FAF9F13}"
+	ProjectSection(SolutionItems) = preProject
+		images\CCLogo.svg = images\CCLogo.svg
+		images\RG9_tiny.png = images\RG9_tiny.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{AB37396F-6C5C-4AE4-938A-3C07CEBFDDD0}"
+	ProjectSection(SolutionItems) = preProject
+		css\site.css = css\site.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8735AC3-A5FA-45DB-B527-00540FDDCDFC} = {E03E3DD9-F399-4A59-9BEC-9F3F3EE3D5FE}
+		{1C65A394-7BEB-42B8-8C2D-3E8C1FAF9F13} = {E03E3DD9-F399-4A59-9BEC-9F3F3EE3D5FE}
+		{AB37396F-6C5C-4AE4-938A-3C07CEBFDDD0} = {E03E3DD9-F399-4A59-9BEC-9F3F3EE3D5FE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1A23F1B-9E85-47F2-AC2D-E6361F3C85FF}
+	EndGlobalSection
+EndGlobal
