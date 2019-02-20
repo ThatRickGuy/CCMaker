@@ -157,8 +157,8 @@ function modelGroup_factory(data, xOffset) {
 
     var plate = d3.select("#svg")
         .append("svg:g")
-        .data([{ "x": xOffset, "y": 0, "model": data, "UID": "parentgrid" + UID, "MySVGParentID": "svg"}])
-        .attr("transform", "translate(" + xOffset + "," + 0 + ")")
+        .data([{ "x": xOffset, "y": 50, "model": data, "UID": "parentgrid" + UID, "MySVGParentID": "svg"}])
+        .attr("transform", "translate(" + xOffset + "," + 50 + ")")
         .attr("class", "Model")
         .attr("id", "parentgrid" + UID)
         .call(drag);

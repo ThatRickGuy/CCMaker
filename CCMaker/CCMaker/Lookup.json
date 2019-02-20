@@ -16,7 +16,7 @@
               },
               {
                 "Name": "Vertical max 10",
-                "Boxes": "100000>00000\n00000\n-200000>00000\n00000"
+                "Boxes": "100000>00000\n.00000\n-200000>00000\n.00000"
               },
               {
                 "Name": "Vertical max 5",
@@ -36,7 +36,7 @@
               },
               {
                 "Name": "Vertical max 10",
-                "Boxes": "100000>00000\n00000\n-200000>00000\n00000"
+                "Boxes": "100000>00000\n.00000\n-200000>00000\n.00000"
               },
               {
                 "Name": "Vertical max 5",
@@ -865,12 +865,6 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Arcane Tempest Gun Mages",
-            "DisplayName": "Gun Mages 14/11",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Black 13th Strike Force",
             "DisplayName": "Black 13 14/11",
             "Type": "S",
@@ -891,23 +885,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Field Mechaniks (min)",
-            "DisplayName": "Gun Mages 12/11",
-            "SingleWound": true,
-            "IncludeType": "Unit",
-            "Include": "Gobber Grunts"
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Field Mechaniks (max)",
-            "DisplayName": "Gun Mages 12/11",
-            "SingleWound": true,
-            "IncludeType": "Unit",
-            "Include": "Gobber Grunts"
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Field Mechaniks (max)",
             "DisplayName": "Gun Mages 12/11",
             "SingleWound": true,
             "IncludeType": "Unit",
@@ -927,19 +905,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Long Gunner Infantry (min)",
-            "DisplayName": "Long Gunner 12/12",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Long Gunner Infantry (max)",
-            "DisplayName": "Long Gunner 12/12",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Long Gunner Infantry (max)",
             "DisplayName": "Long Gunner 12/12",
             "SingleWound": true
           },
@@ -957,19 +923,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Precursor Knights (min)",
-            "DisplayName": "Precursors 13/14",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Precursor Knights (max)",
-            "DisplayName": "Precursors 13/14",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Precursor Knights (max)",
             "DisplayName": "Precursors 13/14",
             "SingleWound": true
           },
@@ -981,19 +935,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Rangers",
-            "DisplayName": "Rangers 14/11",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Silver Line Stormguard (min)",
-            "DisplayName": "Silver Line 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Silver Line Stormguard (min)",
             "DisplayName": "Silver Line 12/15",
             "SingleWound": true
           },
@@ -1005,19 +947,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Silver Line Stormguard (max)",
-            "DisplayName": "Silver Line 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Stormblade Infantry",
-            "DisplayName": "Stormblades 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Stormblade Infantry",
             "DisplayName": "Stormblades 12/15",
             "SingleWound": true
           },
@@ -1027,13 +957,6 @@
             "DisplayName": "Stormblades 12/15",
             "SingleWound": true
           },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Stormguard Infantry",
-            "DisplayName": "Stormblades 12/15",
-            "SingleWound": true
-          },
-
           {
             "Faction": "Cygnar",
             "CCName": "Storm Lances (min)",
@@ -1066,19 +989,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Stormsmith Grenadiers",
-            "DisplayName": "Stormsmiths 13/11",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Stormsmith Storm Tower",
-            "DisplayName": "Storm Tower 13/11",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Stormsmith Storm Tower",
             "DisplayName": "Storm Tower 13/11",
             "SingleWound": true
           },
@@ -1090,19 +1001,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Sword Knights (min)",
-            "DisplayName": "Sword Knights 13/14",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Sword Knights (max)",
-            "DisplayName": "Sword Knights 13/14",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Sword Knights (max)",
             "DisplayName": "Sword Knights 13/14",
             "SingleWound": true
           },
@@ -1138,31 +1037,13 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Trencher Cannon Crew",
-            "DisplayName": "Cannon 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Trencher Chain Gun Crew",
             "DisplayName": "Chain Gun 13/13",
             "SingleWound": true
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Trencher Chain Gun Crew",
-            "DisplayName": "Chain Gun 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Trencher Combat Engineers",
-            "DisplayName": "Combat Engineers 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Trencher Combat Engineers",
             "DisplayName": "Combat Engineers 13/13",
             "SingleWound": true
           },
@@ -1180,19 +1061,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Trencher Commandos (min)",
-            "DisplayName": "Commandos 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Trencher Commandos (max)",
-            "DisplayName": "Commandos 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Trencher Commandos (max)",
             "DisplayName": "Commandos 13/13",
             "SingleWound": true
           },
@@ -1216,19 +1085,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Trencher Infantry (min)",
-            "DisplayName": "Trenchers 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Trencher Infantry (max)",
-            "DisplayName": "Trenchers 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Trencher Infantry (max)",
             "DisplayName": "Trenchers 13/13",
             "SingleWound": true
           },
@@ -1240,19 +1097,7 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Trencher Long Gunners (min)",
-            "DisplayName": "Trenchers Long Gunners 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Trencher Long Gunners (max)",
-            "DisplayName": "Trenchers Long Gunners 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Trencher Long Gunners (max)",
             "DisplayName": "Trenchers Long Gunners 13/13",
             "SingleWound": true
           }
@@ -1314,18 +1159,6 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Stormblade Infantry Storm Gunner",
-            "DisplayName": "Stormblade WA 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "3Stormblade Infantry Storm Gunner",
-            "DisplayName": "Stormblade WA 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Sword Knight Officer & Standard",
             "DisplayName": "Sword Knight UA 12/15",
             "Type": "S",
@@ -1356,12 +1189,6 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Trencher Commando Scattergunner",
-            "DisplayName": "Commando WA 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "3Trencher Commando Scattergunner",
             "DisplayName": "Commando WA 13/13",
             "SingleWound": true
@@ -1381,18 +1208,6 @@
           {
             "Faction": "Cygnar",
             "CCName": "Trencher Infantry Rifle Grenadier",
-            "DisplayName": "Trencher WA 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Trencher Infantry Rifle Grenadier",
-            "DisplayName": "Trencher WA 13/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "3Trencher Infantry Rifle Grenadier",
             "DisplayName": "Trencher WA 13/13",
             "SingleWound": true
           },
@@ -1448,18 +1263,6 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Arcane Tempest Rifleman",
-            "DisplayName": "AT Rifleman 14/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Archduke Alain Runewood, Lord of Fharin",
             "DisplayName": "Runewood 13/14",
             "Type": "S",
@@ -1472,8 +1275,8 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "Captain Arlan Strangeways",
-            "DisplayName": "Strangeways 12/16",
+            "CCName": "Captain Arlan Strangewayes",
+            "DisplayName": "Strangewayes 12/16",
             "Type": "S",
             "BoxFormats": [
               {
@@ -1515,18 +1318,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Gun Mage Captain Adept",
-            "DisplayName": "GM Captain 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -1616,18 +1407,6 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Stormblade Captain",
-            "DisplayName": "Sb Captain 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Trench Buster",
             "DisplayName": "Buster 13/16(18)",
             "Type": "S",
@@ -1640,18 +1419,6 @@
           },
           {
             "Faction": "Cygnar",
-            "CCName": "2Trench Buster",
-            "DisplayName": "Buster 13/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Cygnar",
             "CCName": "Trencher Master Gunner",
             "DisplayName": "Gunner 13/13",
             "Type": "S",
@@ -1659,18 +1426,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Cygnar",
-            "CCName": "2Trencher Master Gunner",
-            "DisplayName": "Gunner 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -2779,18 +2534,6 @@
           },
           {
             "Faction": "Protectorate of Menoth",
-            "CCName": "2Attendant Priest",
-            "DisplayName": "Priest 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
             "CCName": "Exemplar Cinerator Officer",
             "DisplayName": "Cinerator UA 11/17",
             "Type": "S",
@@ -2815,30 +2558,6 @@
           },
           {
             "Faction": "Protectorate of Menoth",
-            "CCName": "2Exemplar Errant Officer & Standard",
-            "DisplayName": "Errant UA 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "3Exemplar Errant Officer & Standard",
-            "DisplayName": "Errant UA 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
             "CCName": "Flameguard Cleanser Officer",
             "DisplayName": "Cleanser UA 11/14",
             "Type": "S",
@@ -2846,18 +2565,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Flameguard Cleanser Officer",
-            "DisplayName": "Cleanser UA 11/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -2875,42 +2582,6 @@
           },
           {
             "Faction": "Protectorate of Menoth",
-            "CCName": "2Knights Exemplar Officer",
-            "DisplayName": "Knights UA 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "3Knights Exemplar Officer",
-            "DisplayName": "Knights UA 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "4Knights Exemplar Officer",
-            "DisplayName": "Knights UA 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
             "CCName": "Monolith Bearer",
             "DisplayName": "Monolith Bearer 12/12",
             "Type": "S",
@@ -2918,30 +2589,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Monolith Bearer",
-            "DisplayName": "Monolith Bearer 12/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "3Monolith Bearer",
-            "DisplayName": "Monolith Bearer 12/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -2956,42 +2603,6 @@
                 "Boxes": "00000"
               }
             ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Temple Flameguard Officer & Standard",
-            "DisplayName": "Temple Flameguard UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "3Temple Flameguard Officer & Standard",
-            "DisplayName": "Temple Flameguard UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "4Temple Flameguard Officer & Standard",
-            "DisplayName": "Temple Flameguard UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
           }
         ],
         "Solo": [
@@ -3004,18 +2615,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Allegiant of the Order of the Fist",
-            "DisplayName": "Fist Allegiant 14/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -3063,18 +2662,6 @@
           },
           {
             "Faction": "Protectorate of Menoth",
-            "CCName": "2Deliverer Arms Master",
-            "DisplayName": "Arms Master 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
             "CCName": "Exemplar Bastion Seneschal",
             "DisplayName": "Bastion Seneschal 11/16",
             "Type": "S",
@@ -3082,18 +2669,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Exemplar Bastion Seneschal",
-            "DisplayName": "Bastion Seneschal 11/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -3111,18 +2686,6 @@
           },
           {
             "Faction": "Protectorate of Menoth",
-            "CCName": "2Exemplar Errant Seneschal",
-            "DisplayName": "Errant Seneschal 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
             "CCName": "Exemplar Warder",
             "DisplayName": "Warder 12/16(18)",
             "Type": "S",
@@ -3130,18 +2693,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Exemplar Warder",
-            "DisplayName": "Warder 12/16(18)",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -3235,18 +2786,6 @@
           },
           {
             "Faction": "Protectorate of Menoth",
-            "CCName": "2Knights Exemplar Seneschal",
-            "DisplayName": "Knights Seneschal 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
             "CCName": "Nicia, Tear of Vengeance",
             "DisplayName": "Nicia 15/13",
             "Type": "S",
@@ -3271,30 +2810,6 @@
           },
           {
             "Faction": "Protectorate of Menoth",
-            "CCName": "2Paladin of the Order of the Wall",
-            "DisplayName": "Wall Paladin 13/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "3Paladin of the Order of the Wall",
-            "DisplayName": "Wall Paladin 13/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
             "CCName": "Pyrrhus, Flameguard Hero",
             "DisplayName": "Pyrrhus 15/14(16)",
             "Type": "S",
@@ -3314,18 +2829,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Reclaimer Gatekeeper",
-            "DisplayName": "Gatekeeper 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -3374,18 +2877,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Protectorate of Menoth",
-            "CCName": "2Vassal of Menoth",
-            "DisplayName": "Vassal 12/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -3491,6 +2982,8 @@
             "CCName": "Butcher 3",
             "DisplayName": "Butcher 14/18",
             "Type": "S",
+            "IncludeType": "Warcaster",
+            "Include": "War Argus",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
@@ -3503,6 +2996,18 @@
               {
                 "Name": "Horizontal Max 10",
                 "Boxes": "00000>00000\n00000>00000\n-A000>00000\nB000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "War Argus",
+            "DisplayName": "War Argus 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000>000\nB00000>000"
               }
             ]
           },
@@ -4245,6 +3750,121 @@
         "Unit": [
           {
             "Faction": "Khador",
+            "CCName": "Assault Kommandos (min)",
+            "DisplayName": "Assault Kommandos 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Assault Kommandos (max)",
+            "DisplayName": "Assault Kommandos 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Battle Mechaniks (min)",
+            "DisplayName": "Mechaniks 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Battle Mechaniks (max)",
+            "DisplayName": "Mechaniks 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Black Dragons (min)",
+            "DisplayName": "Black Dragons 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Black Dragons (max)",
+            "DisplayName": "Black Dragons 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Doom Reaver Swordsmen",
+            "DisplayName": "Doom Reavers 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Greylord Ternion",
+            "DisplayName": "Ternion 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Iron Fang Pikemen (min)",
+            "DisplayName": "Pikemen 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Iron Fang Pikemen (max)",
+            "DisplayName": "Pikemen 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Kossite Woodsmen (min)",
+            "DisplayName": "Kossite 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Kossite Woodsmen (max)",
+            "DisplayName": "Kossite 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Widowmaker Scouts",
+            "DisplayName": "Widowmakers 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Field Gun Crew",
+            "DisplayName": "Field Gun 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Infantry (min)",
+            "DisplayName": "WG Infantry 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Infantry (max)",
+            "DisplayName": "WG Infantry 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Mortar Crew",
+            "DisplayName": "Mortar 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Rifle Corps (min)",
+            "DisplayName": "Rifle Corps 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Rifle Corps (max)",
+            "DisplayName": "Rifle Corps 12/13",
+            "SingleWound": true
+          },
+
+          {
+            "Faction": "Khador",
             "CCName": "Great Bears of the Gallowswood",
             "DisplayName": "Great Bears 13/14",
             "Type": "S",
@@ -4391,7 +4011,44 @@
         "Attachment": [
           {
             "Faction": "Khador",
-            "CCName": "Battle Mechanic Officer",
+            "CCName": "Assault Kommando Flame Thrower (1)",
+            "DisplayName": "Flame Thrower 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Assault Kommando Flame Thrower (2)",
+            "DisplayName": "2 Flame Thrower 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Assault Kommando Flame Thrower (3)",
+            "DisplayName": "3 Flame Thrower 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Rocketeer (1)",
+            "DisplayName": "Rocketeer 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Rocketeer (2)",
+            "DisplayName": "2 Rocketeers 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Rocketeer (3)",
+            "DisplayName": "3 Rocketeers 12/13",
+            "SingleWound": true
+          },
+
+          {
+            "Faction": "Khador",
+            "CCName": "Battle Mechanik Officer",
             "DisplayName": "Mechanic UA 11/16",
             "Type": "S",
             "BoxFormats": [
@@ -4415,18 +4072,6 @@
           },
           {
             "Faction": "Khador",
-            "CCName": "2Black Dragon Officer & Standard",
-            "DisplayName": "Black Dragon UA 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
             "CCName": "Greylord Escort",
             "DisplayName": "Doom Reaver UA 13/13",
             "Type": "S",
@@ -4434,78 +4079,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "2Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "3Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "4Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "5Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "6Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "7Greylord Escort",
-            "DisplayName": "Doom Reaver UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000\n500000\n600000\n700000"
               }
             ]
           },
@@ -4523,30 +4096,6 @@
           },
           {
             "Faction": "Khador",
-            "CCName": "2Iron Fang Pikemen Officer & Standard",
-            "DisplayName": "IFP UA 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "3Iron Fang Pikemen Officer & Standard",
-            "DisplayName": "IFP UA 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
             "CCName": "Kayazy Assassin Underboss",
             "DisplayName": "Underboss 13/12",
             "Type": "S",
@@ -4554,18 +4103,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "2Kayazy Assassin Underboss",
-            "DisplayName": "Underboss 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -4640,42 +4177,6 @@
                 "Boxes": "00000"
               }
             ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "2Winter Guard Infantry Officer & Standard",
-            "DisplayName": "WGI UA",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "3Winter Guard Infantry Officer & Standard",
-            "DisplayName": "WGI UA",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "4Winter Guard Infantry Officer & Standard",
-            "DisplayName": "WGI UA",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
           }
         ],
         "Solo": [
@@ -4704,20 +4205,6 @@
               }
             ]
           },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Greylord Forge Seer",
-            "DisplayName": "Forge Seer 10/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-
           {
             "Faction": "Khador",
             "CCName": "Iron Fang Kovnik",
@@ -4730,20 +4217,6 @@
               }
             ]
           },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Iron Fang Kovnik",
-            "DisplayName": "IF Kovnik 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-
           {
             "Faction": "Khador",
             "CCName": "Kaptain Sofya Skirova",
@@ -4769,20 +4242,6 @@
               }
             ]
           },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Koldun Lord",
-            "DisplayName": "Koldun Lord 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-
           {
             "Faction": "Khador",
             "CCName": "Kovnik Andrei Malakov",
@@ -4821,20 +4280,6 @@
               }
             ]
           },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Man-O-War Drakhun",
-            "DisplayName": "Drakhun 10/18(16)",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n00000>000\n200000>00000\n00000>000"
-              }
-            ]
-          },
-
           {
             "Faction": "Khador",
             "CCName": "Man-O-War Kovnik",
@@ -4847,20 +4292,6 @@
               }
             ]
           },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Man-O-War Kovnik",
-            "DisplayName": "MoW Kovnik 10/16(18)",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-
           {
             "Faction": "Khador",
             "CCName": "Man-O-War Strike Tanker",
@@ -4870,19 +4301,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>00000"
-              }
-            ]
-          },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Man-O-War Strike Tanker",
-            "DisplayName": "Strike Tanker 9/17(21)",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
               }
             ]
           },
@@ -4898,20 +4316,6 @@
               }
             ]
           },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Man-O-War Suppression Tanker",
-            "DisplayName": "Suppress Tanker 9/17(21)",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
-              }
-            ]
-          },
-
           {
             "Faction": "Khador",
             "CCName": "Manhunter",
@@ -4924,20 +4328,18 @@
               }
             ]
           },
-
           {
             "Faction": "Khador",
-            "CCName": "2Manhunter",
-            "DisplayName": "Manhunter 14/14",
+            "CCName": "Kovnik Apprentice Kratikoff",
+            "DisplayName": "Sorscha 15/14",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "100000\n200000"
+                "Boxes": "00000"
               }
             ]
           },
-
           {
             "Faction": "Khador",
             "CCName": "Uhlan Kovnik Markov",
@@ -4971,19 +4373,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-
-          {
-            "Faction": "Khador",
-            "CCName": "2Winter Guard Artillery Kapitan",
-            "DisplayName": "WG Artillery Kap 12/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -5023,26 +4412,6 @@
           },
           {
             "Faction": "Khador",
-            "CCName": "2Man-O-War Assault Chariot",
-            "DisplayName": "Assault Chariot 9/19",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "A00000>00000>00000>000\nB00000>00000>00000>000"
-              },
-              {
-                "Name": "Horizontal 15 max",
-                "Boxes": "A00000>00000>00000\n.000\nB00000>00000>00000\n.000"
-              },
-              {
-                "Name": "Horizontal 10 max",
-                "Boxes": "A00000>00000\n.00000>000\nB00000>00000\n.00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
             "CCName": "Man-O-War Siege Chariot",
             "DisplayName": "Siege Chariot 9/19",
             "Type": "S",
@@ -5058,26 +4427,6 @@
               {
                 "Name": "Horizontal 10 max",
                 "Boxes": "00000>00000\n00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "2Man-O-War Siege Chariot",
-            "DisplayName": "Siege Chariot 9/19",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "A000>00000>00000>00000\nB000>00000>00000>00000"
-              },
-              {
-                "Name": "Horizontal 15 max",
-                "Boxes": "A00000>00000>00000\n.000\nB00000>00000>00000\n.000"
-              },
-              {
-                "Name": "Horizontal 10 max",
-                "Boxes": "A00000>00000\n.00000>000\nB00000>00000\n.00000>000"
               }
             ]
           },
@@ -5100,26 +4449,6 @@
                 "Boxes": "00000>00000\n00000>00000\n00000>000"
               }
             ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "Winter Guard Gun Carriage",
-            "DisplayName": "Gun Carriage 9/20",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "A00000>00000>00000>00000>00000>000\nB00000>00000>00000>00000>00000>000"
-              },
-              {
-                "Name": "Horizontal 15 max",
-                "Boxes": "A00000>00000>00000\n.00000>00000>000\nB00000>00000>00000\n.00000>00000>000"
-              },
-              {
-                "Name": "Horizontal 10 max",
-                "Boxes": "A00000>00000\n.00000>00000\n.00000>000\nB00000>00000\n.00000>00000\n.00000>000"
-              }
-            ]
           }
         ]
       }
@@ -5127,24 +4456,1627 @@
     {
       "Name": "Cryx",
       "Models": {
-        "Warlock": {
+        "Warcaster": [
+          {
+            "Faction": "Cryx",
+            "CCName": "Agathia 1",
+            "DisplayName": "Agathia 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>0"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Aiakos 2",
+            "DisplayName": "Aiakos 15/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n00"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Asphyxious 1",
+            "DisplayName": "Asphyxious 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Asphyxious 2",
+            "DisplayName": "Asphyxious 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Asphyxious 3",
+            "DisplayName": "Asphyxious 15/17",
+            "IncludeType": "Warcaster",
+            "Include": "Vociferon",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Vociferon",
+            "DisplayName": "Vociferon 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Coven 1",
+            "DisplayName": "Coven 16/13",
+            "IncludeType": "Warcaster",
+            "Include": "Egregore",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000>000\nB00000>000\nC00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Egregore",
+            "DisplayName": "Egregore 13/17",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Deneghra 1",
+            "DisplayName": "Deneghra 16/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>0"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Deneghra 2",
+            "DisplayName": "Deneghra 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>0"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Deneghra 3",
+            "DisplayName": "Deneghra 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Goreshade 1",
+            "DisplayName": "Goreshade 15/16",
+            "IncludeType": "Warcaster",
+            "Include": "Deathwalker",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n00"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Deathwalker",
+            "DisplayName": "Deathwalker 14/10",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Goreshade 2",
+            "DisplayName": "Goreshade 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n00"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Goreshade 3",
+            "DisplayName": "Goreshade 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n00"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Haley -1",
+            "DisplayName": "Haley  ?/?",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Mortenebra 1",
+            "DisplayName": "Mortenebra 15/16",
+            "IncludeType": "Warcaster",
+            "Include": "Deryliss",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>0"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Deryliss",
+            "DisplayName": "Deryliss 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Mortenebra 2",
+            "DisplayName": "Mortenebra 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n0000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>0000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Scaverous 1",
+            "DisplayName": "Scaverous 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Skarre 1",
+            "DisplayName": "Skarre 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>0"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Skarre 2",
+            "DisplayName": "Skarre 16/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>0"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Skarre 3",
+            "DisplayName": "Skarre 12/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00000\n00000>0"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Sturgis 2",
+            "DisplayName": "Sturgis 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Terminus 1",
+            "DisplayName": "Terminus 14/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n00000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Venethrax 1",
+            "DisplayName": "Venethrax 15/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000\n000"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000\n00000>000"
+              }
+            ]
+          }
 
-        },
-        "Warbeast": {
-
-        },
-        "Unit": {
-
-        },
-        "Attachment": {
-
-        },
-        "Solo": {
-
-        },
-        "Battle Engine": {
-
-        }
+        ],
+        "Warjack": [
+          {
+            "Faction": "Cryx",
+            "CCName": "Barathrum",
+            "DisplayName": "Barathrum 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Cankerworm",
+            "DisplayName": "Cankerworm 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "000000\n000000\nhccccm\nhhhmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "00hh\n00ch\n00ch\n00cm\n00cm\n00mm"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Corruptor",
+            "DisplayName": "Corruptor 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Deathjack",
+            "DisplayName": "Deathjack 13/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n000llm\n0000mm\n0000cc\n000rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Deathripper",
+            "DisplayName": "Deathripper 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\nhhcaam\nhccmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0hh\n.0hc\n00cc\n00am\n.0am\n.0mm"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Defiler",
+            "DisplayName": "Defiler 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\nhhcaam\nhccmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0hh\n.0hc\n00cc\n00am\n.0am\n.0mm"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Desecrator",
+            "DisplayName": "Desecrator 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Erebus",
+            "DisplayName": "Erebus 14/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Harrower",
+            "DisplayName": "Harrower 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Helldiver",
+            "DisplayName": "Helldiver 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\nhccccm\nhhhmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0hh\n00ch\n00ch\n00cm\n00cm\n.0mm"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Inflictor",
+            "DisplayName": "Inflictor 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Kharybdis",
+            "DisplayName": "Kharybdis 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Kraken",
+            "DisplayName": "Kraken 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "....00>00....\n...000>000...\n0000ss>ss0000\n00llsc>csrr00\nllcccc>ccccrr\nlcmmmm>mmmmcr"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00ll\n..00lc\n..0lcm\n.00lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n.00rcm\n..0rcm\n..00rc\n..00rr"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Leviathan",
+            "DisplayName": "Leviathan 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".000l.\n.00llm\n0000mm\n0000cc\n.00rrc\n.000r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Malice",
+            "DisplayName": "Malice 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Nightmare",
+            "DisplayName": "Nightmare 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Nightwretch",
+            "DisplayName": "Nightwretch 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\nhhcaam\nhccmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0hh\n.0hc\n00cc\n00am\n.0am\n.0mm"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Reaper",
+            "DisplayName": "Reaper 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Ripjaw",
+            "DisplayName": "Ripjaw 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n000000\nhhcaam\nhccmmm"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0hh\n.0hc\n00cc\n00am\n.0am\n.0mm"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Scavenger",
+            "DisplayName": "Scavenger 15/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\nhccccm\n.hhmm."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0h.\n00ch\n00ch\n00cm\n00cm\n.0m."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Seether",
+            "DisplayName": "Seether 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Sepulcher",
+            "DisplayName": "Sepulcher 10/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "....00>00....\n...000>000...\n0000ss>ss0000\n00llsc>csrr00\nllcccc>ccccrr\nlcmmmm>mmmmcr"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00ll\n..00lc\n..0lcm\n.00lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n.00rcm\n..0rcm\n..00rc\n..00rr"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Shrike",
+            "DisplayName": "Shrike 15/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0000.\n000000\nhccccm\n.hhmm."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0h.\n00ch\n00ch\n00cm\n00cm\n.0m."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Slayer",
+            "DisplayName": "Slayer 13/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "..00..\n.0000.\n000000\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "..00l.\n.00llm\n0000mm\n0000cc\n.00rrc\n..00r."
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Stalker",
+            "DisplayName": "Stalker 15/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": ".0..0.\n0l00r0\nllmcrr\n.mmcc."
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": ".0l.\n0llm\n.0mm\n.0cc\n0rrc\n.0r."
+              }
+            ]
+          }
+        ],
+        "Unit": [
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Knights (min)",
+            "DisplayName": "Bane Knights 12/16",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Knights (max)",
+            "DisplayName": "Bane Knights 12/16",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Riders (min)",
+            "DisplayName": "Bane Riders 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Riders (max)",
+            "DisplayName": "Bane Riders 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Warriors (min)",
+            "DisplayName": "Bane Warriors 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Warriors (max)",
+            "DisplayName": "Bane Warriors 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bile Thralls (min)",
+            "DisplayName": "Bile Thralls 10/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bile Thralls (max)",
+            "DisplayName": "Bile Thralls 10/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Black Ogrun Boarding Party (min)",
+            "DisplayName": "Boarding Party 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Black Ogrun Boarding Party (max)",
+            "DisplayName": "Boarding Party 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Black Ogrun Ironmongers",
+            "DisplayName": "Ironmongers 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Black Ogrun Smog Belchers (min)",
+            "DisplayName": "Smog Belchers 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Black Ogrun Smog Belchers (max)",
+            "DisplayName": "Smog Belchers 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Blackbane's Ghost Raiders (min)",
+            "DisplayName": "Blackbanes 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Blackbane's Ghost Raiders (max)",
+            "DisplayName": "Blackbanes 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Blighted Trollkin Marauders (min)",
+            "DisplayName": "Marauders 12/16",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Blighted Trollkin Marauders (max)",
+            "DisplayName": "Marauders 12/16",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bloodgorgers (min)",
+            "DisplayName": "Bloodgorgers 12/16",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bloodgorgers (max)",
+            "DisplayName": "Bloodgorgers 12/16",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Carrion Thralls (min)",
+            "DisplayName": "Carrion Thralls 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Carrion Thralls (max)",
+            "DisplayName": "Carrion Thralls 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Mechanithralls (min)",
+            "DisplayName": "Mechanithralls 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Mechanithralls (max)",
+            "DisplayName": "Mechanithralls 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Necrosurgeon & Stitch Thralls",
+            "DisplayName": "Necrosurgeon 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Revenant Cannon Crew",
+            "DisplayName": "Cannon Crew 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Revenant Crew of the Atramentous (min)",
+            "DisplayName": "Revenant Crew 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Revenant Crew of the Atramentous (max)",
+            "DisplayName": "Revenant Crew 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Blood Witches (min)",
+            "DisplayName": "Blood Witches 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Blood Witches (max)",
+            "DisplayName": "Blood Witches 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Gunslingers",
+            "DisplayName": "Gunslingers 14/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Raiders (min)",
+            "DisplayName": "Raiders 14/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Raiders (max)",
+            "DisplayName": "Raiders 14/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Scharde Dirge Seers",
+            "DisplayName": "Dirge Seers 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Scharde Pirates (min)",
+            "DisplayName": "Pirates 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Scharde Pirates (max)",
+            "DisplayName": "Pirates 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Soulhunters (min)",
+            "DisplayName": "Soulhunters 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Soulhunters (max)",
+            "DisplayName": "Soulhunters 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000\nD00000\nE00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "The Withershadow Combine",
+            "DisplayName": "Withershadow 13/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000\nB00000\nC00000"
+              }
+            ]
+          }
+        ],
+        "Attachment": [
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Knight Officer",
+            "DisplayName": "Bane Knight UA 12/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Warrior Officer & Standard",
+            "DisplayName": "Bane Warrior UA 12/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Brute Thrall (1)",
+            "DisplayName": "Brute Thrall 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Brute Thrall (2)",
+            "DisplayName": "Brute Thrall 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000>000\nB00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Brute Thrall (3)",
+            "DisplayName": "Brute Thrall 12/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000>000\nB00000>000\nC00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Jussika Bloodtongue",
+            "DisplayName": "Jussika 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Revenant Crew Rifleman (1)",
+            "DisplayName": "1 Rifleman 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Revenant Crew Rifleman (2)",
+            "DisplayName": "2 Rifleman 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Revenant Crew Rifleman (3)",
+            "DisplayName": "3 Rifleman 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Blood Hag",
+            "DisplayName": "Blood Hag 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Raider Sea Witch",
+            "DisplayName": "Sea Witch 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Scharde Pirate Officer",
+            "DisplayName": "Pirate UA 13/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Skarlock Commander",
+            "DisplayName": "Skarlock 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          }
+        ],
+        "Solo": [
+          {
+            "Faction": "Cryx",
+            "CCName": "Agrimony, Crone of the Dying Strands",
+            "DisplayName": "Agrimony 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Aiakos, Scourge of the Meredius",
+            "DisplayName": "Aiakos 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Axiara Wraithblade",
+            "DisplayName": "Axiara 15/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bane Lord Tartarus",
+            "DisplayName": "Tartarus 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bloat Thrall",
+            "DisplayName": "Bloat Thrall 10/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Bloat Thrall Overseer Mobius",
+            "DisplayName": "Mobius 10/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Captain Rengrave",
+            "DisplayName": "Rengrave 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Darragh Wrathe",
+            "DisplayName": "Darragh 14/17",
+            "IncludeType": "Solo",
+            "Include": "Darragh Wrathe Dismount",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Darragh Wrathe Dismount",
+            "DisplayName": "Dismount 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "General Gerlak Slaughterborn",
+            "DisplayName": "Gerlak 14/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Hellslinger Phantom",
+            "DisplayName": "Hellslinger 15/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Iron Lich Overseer",
+            "DisplayName": "Overseer 14/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Machine Wraith",
+            "DisplayName": "Machine Wraith 14/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Misery Cage",
+            "DisplayName": "Misery Cage 5/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Necrotech",
+            "DisplayName": "Necrotech 12/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Pistol Wraith",
+            "DisplayName": "Pistol Wraith 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Blood Priestess",
+            "DisplayName": "Blood Priestess 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Satyxis Raider Captain",
+            "DisplayName": "Raider Captain 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Scrap Thrall (3)",
+            "DisplayName": "Scrap Thrall 11/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Severa Blacktide",
+            "DisplayName": "Severa 15/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Skarlock Thrall",
+            "DisplayName": "Skarlock 14/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Soul Trapper",
+            "DisplayName": "Soul Trapper 11/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Warwitch Initiate Deneghra",
+            "DisplayName": "Deneghra 15/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Cryx",
+            "CCName": "Warwitch Siren",
+            "DisplayName": "Warwitch Siren 14/13",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          }
+        ],
+        "Battle Engine": [
+          {
+            "Faction": "Cryx",
+            "CCName": "Wraith Engine",
+            "DisplayName": "Wraith Engine 12/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-15",
+                "Boxes": "00000>00000>00000/n00000>00000>0"
+              },
+              {
+                "Name": "Horizontal max-10",
+                "Boxes": "00000>00000/n00000>00000/n00000>0"
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -5154,48 +6086,24 @@
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "Dawnguard Invictor Officer & Standard",
-            "DisplayName": "Invictor Officer 12/15",
+            "DisplayName": "Invictor UA 12/15",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2Dawnguard Invictor Officer & Standard",
-            "DisplayName": "Invictor Officer 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "Dawnguard Sentinel Officer & Standard",
-            "DisplayName": "Sentinel Officer 12/15",
+            "DisplayName": "Sentinel UA 12/15",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2Dawnguard Sentinel Officer & Standard",
-            "DisplayName": "Sentinel Officer 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -5214,127 +6122,43 @@
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "House Ellowuyr Swordsman Officer & Standard",
-            "DisplayName": "Swordsman Officer 13/13",
+            "DisplayName": "Swordsman UA 13/13",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2House Ellowuyr Swordsman Officer & Standard",
-            "DisplayName": "Swordsman Officer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/14",
+            "DisplayName": "Halberdier UA 13/14",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "3Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "4Houseguard Halberdier Officer & Standard",
-            "DisplayName": "Halberdier Officer 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           },
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "Houseguard Rifleman Officer & Standard",
-            "DisplayName": "Rifleman Officer 13/13",
+            "DisplayName": "Rifleman UA 13/13",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2Houseguard Rifleman Officer & Standard",
-            "DisplayName": "Rifleman Officer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "3Houseguard Rifleman Officer & Standard",
-            "DisplayName": "Rifleman Officer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "4Houseguard Rifleman Officer & Standard",
-            "DisplayName": "Rifleman Officer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           },
           {
             "Faction": "Retribution of Scyrah",
             "CCName": "Mage Hunter Strike Force Commander",
-            "DisplayName": "MHSF Commander 14/11",
+            "DisplayName": "MHSF UA 14/11",
             "Type": "S",
             "BoxFormats": [
               {
@@ -5345,15 +6169,21 @@
           },
           {
             "Faction": "Retribution of Scyrah",
-            "CCName": "2Mage Hunter Strike Force Commander",
-            "DisplayName": "MHSF Commander 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
+            "CCName": "Soulless Escort (1)",
+            "DisplayName": "Soulless 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Soulless Escort (2)",
+            "DisplayName": "2 Soulless 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Soulless Escort (3)",
+            "DisplayName": "3 Soulless 12/12",
+            "SingleWound": true
           }
         ],
         "Battle Engine": [
@@ -5413,6 +6243,12 @@
           },
           {
             "Faction": "Retribution of Scyrah",
+            "CCName": "Arcanist Mechanik",
+            "DisplayName": "Mechanik 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
             "CCName": "Fane Knight Guardian",
             "DisplayName": "Fane Knight 13/16",
             "Type": "S",
@@ -5449,18 +6285,6 @@
           },
           {
             "Faction": "Retribution of Scyrah",
-            "CCName": "2Dawnguard Destor Thane",
-            "DisplayName": "Destor Thane 13/17",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
             "CCName": "Dawnguard Sentinel Scyir",
             "DisplayName": "Scyir 13/16",
             "Type": "S",
@@ -5468,18 +6292,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2Dawnguard Sentinel Scyir",
-            "DisplayName": "Scyir 13/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -5509,18 +6321,6 @@
           },
           {
             "Faction": "Retribution of Scyrah",
-            "CCName": "2Ghost Sniper",
-            "DisplayName": "Ghost 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
             "CCName": "House Shyeel Artificer",
             "DisplayName": "Artificer 12/17",
             "Type": "S",
@@ -5528,18 +6328,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2House Shyeel Artificer",
-            "DisplayName": "Artificer 12/17",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -5557,18 +6345,6 @@
           },
           {
             "Faction": "Retribution of Scyrah",
-            "CCName": "2House Shyeel Magister",
-            "DisplayName": "Magister 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
             "CCName": "Houseguard Thane",
             "DisplayName": "HG Thane 13/15",
             "Type": "S",
@@ -5576,18 +6352,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2Houseguard Thane",
-            "DisplayName": "HG Thane 13/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -5605,18 +6369,6 @@
           },
           {
             "Faction": "Retribution of Scyrah",
-            "CCName": "2Lys Healer",
-            "DisplayName": "Healer 13/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
             "CCName": "Mage Hunter Assassin",
             "DisplayName": "Assassin 15/12",
             "Type": "S",
@@ -5624,18 +6376,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Retribution of Scyrah",
-            "CCName": "2Mage Hunter Assassin",
-            "DisplayName": "Assassin 15/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -5677,29 +6417,23 @@
           },
           {
             "Faction": "Retribution of Scyrah",
-            "CCName": "2Priest of Nyssor",
-            "DisplayName": "Priest 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
+            "CCName": "Soulless Voidtracer",
+            "DisplayName": "Voidtracer 13/13",
+            "SingleWound": true
           }
         ],
         "Unit": [
           {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Destors (min)",
+            "DisplayName": "Destors 13/17",
+            "Type": "S",
             "BoxFormats": [
               {
                 "Boxes": "A00000\nB00000\nC00000",
                 "Name": "Horizontal"
               }
-            ],
-            "CCName": "Dawnguard Destors (min)",
-            "DisplayName": "Destors 13/17",
-            "Faction": "Retribution of Scyrah",
-            "Type": "S"
+            ]
           },
           {
             "Faction": "Retribution of Scyrah",
@@ -5715,6 +6449,126 @@
           },
           {
             "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Invictors (min)",
+            "DisplayName": "Invictors 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Invictors (max)",
+            "DisplayName": "Invictors 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Sentinels (min)",
+            "DisplayName": "Sentinels 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Dawnguard Sentinels (max)",
+            "DisplayName": "Sentinels 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Heavy Rifle Team",
+            "DisplayName": "Rifle Team 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Ellowuyr Swordsmen (min)",
+            "DisplayName": "Swordsmen 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Ellowuyr Swordsmen (max)",
+            "DisplayName": "Swordsmen 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Shyeel Arcanists",
+            "DisplayName": "Arcanists 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Shyeel Battle Mages",
+            "DisplayName": "Battle Mages 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "House Vyre Electromancers",
+            "DisplayName": "Electromancers 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Houseguard Halberdiers (min)",
+            "DisplayName": "Halberdiers 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Houseguard Halberdiers (max)",
+            "DisplayName": "Halberdiers 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Houseguard Riflemen (min)",
+            "DisplayName": "Riflemen 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Houseguard Riflemen (max)",
+            "DisplayName": "Riflemen 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Mage Hunter Infiltrators (min)",
+            "DisplayName": "Infiltrators 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Mage Hunter Infiltrators (max)",
+            "DisplayName": "Infiltrators 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Mage Hunter Strike Force (min)",
+            "DisplayName": "Strike Force 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Mage Hunter Strike Force (max)",
+            "DisplayName": "Strike Force 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Ryssovass Defenders (min)",
+            "DisplayName": "Defenders 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Ryssovass Defenders (max)",
+            "DisplayName": "Defenders 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Retribution of Scyrah",
             "CCName": "Spears of Scyrah",
             "DisplayName": "Spears 15/11",
             "Type": "S",
@@ -5724,6 +6578,12 @@
                 "Boxes": "A00000\nB00000\nC00000"
               }
             ]
+          },
+          {
+            "Faction": "Retribution of Scyrah",
+            "CCName": "Stormfall Archers",
+            "DisplayName": "Stormfall 13/13",
+            "SingleWound": true
           }
         ],
         "Warcaster": [
@@ -6697,18 +7557,6 @@
           },
           {
             "Faction": "Convergence of Cyriss",
-            "CCName": "2Clockwork Angels",
-            "DisplayName": "Angels 14/12",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Clockwork Angels",
-            "DisplayName": "Angels 14/12",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
             "CCName": "Eradicators (min)",
             "DisplayName": "Eradicators 12/15",
             "Type": "S",
@@ -6739,37 +7587,7 @@
           },
           {
             "Faction": "Convergence of Cyriss",
-            "CCName": "2Obstructors",
-            "DisplayName": "Obstructors 12/14",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Obstructors",
-            "DisplayName": "Obstructors 12/14",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
             "CCName": "Optifex Directive",
-            "DisplayName": "Directive 13/12",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Optifex Directive",
-            "DisplayName": "Directive 13/12",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Optifex Directive",
-            "DisplayName": "Directive 13/12",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Optifex Directive",
             "DisplayName": "Directive 13/12",
             "SingleWound": true
           },
@@ -6826,20 +7644,7 @@
             "CCName": "Reductors",
             "DisplayName": "Reductors 12/14",
             "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Reductors",
-            "DisplayName": "Reductors 12/14",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Reductors",
-            "DisplayName": "Reductors 12/14",
-            "SingleWound": true
           }
-
         ],
         "Attachment": [
           {
@@ -6853,48 +7658,12 @@
                 "Boxes": "*00000"
               }
             ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Transverse Enumerator",
-            "DisplayName": "Enumerator 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "3Transverse Enumerator",
-            "DisplayName": "Enumerator 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
           }
         ],
         "Solo": [
           {
             "Faction": "Convergence of Cyriss",
             "CCName": "Accretion Servitors",
-            "DisplayName": "Accretion 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Accretion Servitors",
-            "DisplayName": "Accretion 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Accretion Servitors",
             "DisplayName": "Accretion 12/13",
             "SingleWound": true
           },
@@ -6912,73 +7681,13 @@
           },
           {
             "Faction": "Convergence of Cyriss",
-            "CCName": "2Algorithmic Dispersion Optifex",
-            "DisplayName": "Optifex 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "3Algorithmic Dispersion Optifex",
-            "DisplayName": "Optifex 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "4Algorithmic Dispersion Optifex",
-            "DisplayName": "Optifex 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
             "CCName": "Attunement Servitors",
             "DisplayName": "Attunement 12/13",
             "SingleWound": true
           },
           {
             "Faction": "Convergence of Cyriss",
-            "CCName": "2Attunement Servitors",
-            "DisplayName": "Attunement 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "3Attunement Servitors",
-            "DisplayName": "Attunement 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
             "CCName": "Elimination Servitors",
-            "DisplayName": "Elimination 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Elimination Servitors",
-            "DisplayName": "Elimination 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "3Elimination Servitors",
             "DisplayName": "Elimination 12/13",
             "SingleWound": true
           },
@@ -6996,18 +7705,6 @@
           },
           {
             "Faction": "Convergence of Cyriss",
-            "CCName": "2Enigma Foundry",
-            "DisplayName": "Foundry 10/18",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
             "CCName": "Frustum Locus",
             "DisplayName": "Locus 10/18",
             "Type": "S",
@@ -7020,31 +7717,7 @@
           },
           {
             "Faction": "Convergence of Cyriss",
-            "CCName": "2Frustum Locus",
-            "DisplayName": "Locus 10/18",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
             "CCName": "Reflex Servitors",
-            "DisplayName": "Reflex 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Reflex Servitors",
-            "DisplayName": "Reflex 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Reflex Servitors",
             "DisplayName": "Reflex 12/13",
             "SingleWound": true
           },
@@ -7057,18 +7730,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Convergence of Cyriss",
-            "CCName": "2Steelsoul Protector",
-            "DisplayName": "Protector 12/17",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -7440,30 +8101,6 @@
           },
           {
             "Faction": "Crucible Guard",
-            "CCName": "2Crucible Guard Infantry Officer & Standard",
-            "DisplayName": "Infantry UA 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
-            "CCName": "3Crucible Guard Infantry Officer & Standard",
-            "DisplayName": "Infantry UA 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
             "CCName": "Crucible Guard Rocketman Captain",
             "DisplayName": "Rocketman UA 14/11",
             "Type": "S",
@@ -7471,30 +8108,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
-            "CCName": "2Crucible Guard Rocketman Captain",
-            "DisplayName": "Rocketman UA 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
-            "CCName": "3Crucible Guard Rocketman Captain",
-            "DisplayName": "Rocketman UA 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -7576,18 +8189,6 @@
           },
           {
             "Faction": "Crucible Guard",
-            "CCName": "2Rocketman Ace",
-            "DisplayName": "Ace 16/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
             "CCName": "Trancer",
             "DisplayName": "Trancer 13/11",
             "Type": "S",
@@ -7595,42 +8196,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
-            "CCName": "2Trancer",
-            "DisplayName": "Trancer 13/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
-            "CCName": "3Trancer",
-            "DisplayName": "Trancer 13/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Crucible Guard",
-            "CCName": "4Trancer",
-            "DisplayName": "Trancer 13/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           }
@@ -8475,34 +9040,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Cephalyx Mind Bender & Drudges (min)",
-            "DisplayName": "Mind Bender 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Cephalyx Mind Bender & Drudges (min)",
-            "DisplayName": "Mind Bender 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Cephalyx Mind Slaver & Drudges (min)",
             "DisplayName": "Mind Slaver 14/13",
             "IncludeType": "Unit",
@@ -8512,34 +9049,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "2Cephalyx Mind Slaver & Drudges (min)",
-            "DisplayName": "Mind Slaver 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Cephalyx Mind Slaver & Drudges (min)",
-            "DisplayName": "Mind Slaver 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -8559,34 +9068,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Cephalyx Mind Bender & Drudges (max)",
-            "DisplayName": "Mind Bender 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Cephalyx Mind Bender & Drudges (max)",
-            "DisplayName": "Mind Bender 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Cephalyx Mind Slaver & Drudges (max)",
             "DisplayName": "Mind Slaver 14/13",
             "IncludeType": "Unit",
@@ -8599,35 +9080,6 @@
               }
             ]
           },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "2Cephalyx Mind Slaver & Drudges (max)",
-            "DisplayName": "Mind Slaver 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Cephalyx Mind Slaver & Drudges (max)",
-            "DisplayName": "Mind Slaver 14/13",
-            "IncludeType": "Unit",
-            "Include": "Drudges",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-
           {
             "Faction": "Mercenaries",
             "CCName": "Drudges",
@@ -9030,18 +9482,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Cephalyx Dominator",
-            "DisplayName": "Dominator 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Hammerfall High Shield Officer & Standard",
             "DisplayName": "High Shield UA 11/15",
             "Type": "S",
@@ -9049,30 +9489,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "2Hammerfall High Shield Officer & Standard",
-            "DisplayName": "High Shield UA 11/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Hammerfall High Shield Officer & Standard",
-            "DisplayName": "High Shield UA 11/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -9090,18 +9506,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Idrian Skirmisher Chieftain & Guide",
-            "DisplayName": "Chieftain 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Kayazy Assassin Underboss",
             "DisplayName": "Underboss 13/12",
             "Type": "S",
@@ -9114,18 +9518,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Kayazy Assassin Underboss",
-            "DisplayName": "Underboss 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Long Gunner Infantry Officer & Standard",
             "DisplayName": "Long Gunner UA 12/12",
             "Type": "S",
@@ -9133,18 +9525,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "2Long Gunner Infantry Officer & Standard",
-            "DisplayName": "Long Gunner UA 12/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -9174,18 +9554,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Precursor Knight Officer & Standard",
-            "DisplayName": "Precursor UA 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Sea Dog Pirate Rifleman",
             "DisplayName": "Pirate Rifleman 13/11",
             "SingleWound": true
@@ -9204,42 +9572,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Trencher Infantry Officer & Sniper",
-            "DisplayName": "Trencher UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Trencher Infantry Officer & Sniper",
-            "DisplayName": "Trencher UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "4Trencher Infantry Officer & Sniper",
-            "DisplayName": "Trencher UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Trencher Infantry Rifle Grenadier",
             "DisplayName": "Trencher Grenadier 13/13",
             "SingleWound": true
@@ -9253,18 +9585,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "2Trencher Long Gunner Officer",
-            "DisplayName": "Trencher Long Gunner UA 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           }
@@ -9327,30 +9647,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "2Cephalyx Agitator",
-            "DisplayName": "Agitator 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Cephalyx Agitator",
-            "DisplayName": "Agitator 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -9574,18 +9870,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Ogrun Bokur",
-            "DisplayName": "Ogrun Bokur 12/16(18)",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Orin Midwinter, Rogue Inquisitor",
             "DisplayName": "Orin Midwinter 13/12",
             "Type": "S",
@@ -9706,30 +9990,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Steelhead Arcanist",
-            "DisplayName": "Steelhead Arcanist ?/?",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Steelhead Arcanist",
-            "DisplayName": "Steelhead Arcanist ?/?",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Steelhead Gunner",
             "DisplayName": "Steelhead Gunner ?/?",
             "Type": "S",
@@ -9742,30 +10002,6 @@
           },
           {
             "Faction": "Mercenaries",
-            "CCName": "2Steelhead Gunner",
-            "DisplayName": "Steelhead Gunner ?/?",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "3Steelhead Gunner",
-            "DisplayName": "Steelhead Gunner ?/?",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
             "CCName": "Steelhead Ironhead",
             "DisplayName": "Steelhead Ironhead ?/?",
             "Type": "S",
@@ -9773,18 +10009,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Mercenaries",
-            "CCName": "2Steelhead Ironhead",
-            "DisplayName": "Steelhead Ironhead ?/?",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -10593,8 +10817,8 @@
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "Basher",
-            "DisplayName": "Troll Basher 12/16",
+            "CCName": "Troll Basher",
+            "DisplayName": "Basher 12/16",
             "Type": "C",
             "BoxFormats": [
               {
@@ -10953,24 +11177,6 @@
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "2Kriel Warrior Standard & Piper",
-            "DisplayName": "Kriel Warrior Standard & Piper 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "3Kriel Warrior Standard & Piper",
-            "DisplayName": "Kriel Warrior Standard & Piper 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "4Kriel Warrior Standard & Piper",
-            "DisplayName": "Kriel Warrior Standard & Piper 12/15",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Trollbloods",
             "CCName": "Northkin Elder",
             "DisplayName": "Elder 12/13",
             "Type": "S",
@@ -10995,18 +11201,6 @@
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "2Pyg Bushwhacker Officer & Mortar",
-            "DisplayName": "Bushwhacker Officer 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
             "CCName": "Scattergunner Officer & Standard",
             "DisplayName": "Scattergunner Officer 12/14",
             "Type": "S",
@@ -11014,30 +11208,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "2Scattergunner Officer & Standard",
-            "DisplayName": "Scattergunner Officer 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "3Scattergunner Officer & Standard",
-            "DisplayName": "Scattergunner Officer 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
               }
             ]
           },
@@ -11079,18 +11249,6 @@
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "2Trollkin Fennblade Officer & Drummer",
-            "DisplayName": "Fennblade Officer 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
             "CCName": "Trollkin Sorcerer",
             "DisplayName": "Sorcerer 12/14",
             "Type": "S",
@@ -11100,32 +11258,7 @@
                 "Boxes": "00000"
               }
             ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "2Trollkin Sorcerer",
-            "DisplayName": "Sorcerer 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "3Trollkin Sorcerer",
-            "DisplayName": "Sorcerer 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
           }
-
         ],
         "Solo": [
           {
@@ -11154,18 +11287,6 @@
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "2Fell Caller Hero",
-            "DisplayName": "Fell Caller 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
             "CCName": "Fennblade Kithkar",
             "DisplayName": "Kithkar 12/15",
             "Type": "S",
@@ -11173,18 +11294,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "2Fennblade Kithkar",
-            "DisplayName": "Kithkar 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -11238,18 +11347,6 @@
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "2Northkin Shaman",
-            "DisplayName": "Northkin Shaman 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
             "CCName": "Stone Scribe Chronicler",
             "DisplayName": "Stone Scribe 12/13",
             "Type": "S",
@@ -11257,18 +11354,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "2Stone Scribe Chronicler",
-            "DisplayName": "Stone Scribe 12/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -11287,18 +11372,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "2Trollkin Champion Hero",
-            "DisplayName": "Champion Hero 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -11323,18 +11396,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Trollbloods",
-            "CCName": "2Trollkin Skinner",
-            "DisplayName": "Skinner 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -12440,19 +12501,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Druid of Orboros Overseer",
-            "DisplayName": "Druid of Orboros Overseer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Druid of Orboros Overseer",
-            "DisplayName": "Druid of Orboros Overseer 13/13",
+            "DisplayName": "Overseer 13/13",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12464,7 +12513,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Nuala the Huntress",
-            "DisplayName": "Nuala the Huntress 14/11",
+            "DisplayName": "Nuala 14/11",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12476,19 +12525,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Reeve of Orboros Chieftain & Standard",
-            "DisplayName": "Reeve of Orboros Chieftain & Standard 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Reeve of Orboros Chieftain & Standard",
-            "DisplayName": "Reeve of Orboros Chieftain & Standard 13/13",
+            "DisplayName": "Reeve UA 13/13",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12511,44 +12548,8 @@
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Stone Keeper",
-            "DisplayName": "Stone Keeper 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
             "CCName": "Tharn Bloodweaver Haruspex",
-            "DisplayName": "Tharn Bloodweaver Haruspex 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Tharn Bloodweaver Haruspex",
-            "DisplayName": "Tharn Bloodweaver Haruspex 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Tharn Bloodweaver Haruspex",
-            "DisplayName": "Tharn Bloodweaver Haruspex 14/11",
+            "DisplayName": "Haruspex 14/11",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12560,19 +12561,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Tharn Ravager Chieftain",
-            "DisplayName": "Tharn Ravager Chieftain 13/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Tharn Ravager Chieftain",
-            "DisplayName": "Tharn Ravager Chieftain 13/15",
+            "DisplayName": "Chieftain 13/15",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12584,19 +12573,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Warpborn Skinwalker Alpha",
-            "DisplayName": "Warpborn Skinwalker Alpha 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Warpborn Skinwalker Alpha",
-            "DisplayName": "Warpborn Skinwalker Alpha 12/16",
+            "DisplayName": "Skinwalker UA 12/16",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12608,31 +12585,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Wolves of Orboros Chieftain & Standard",
-            "DisplayName": "Wolves of Orboros Chieftain & Standard 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Wolves of Orboros Chieftain & Standard",
-            "DisplayName": "Wolves of Orboros Chieftain & Standard 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Wolves of Orboros Chieftain & Standard",
-            "DisplayName": "Wolves of Orboros Chieftain & Standard 13/13",
+            "DisplayName": "Wolves UA 13/13",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12652,18 +12605,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Blackclad Stoneshaper",
-            "DisplayName": "Stoneshaper 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -12693,18 +12634,6 @@
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Blackclad Wayfarer",
-            "DisplayName": "Wayfarer 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
             "CCName": "Bloodweaver Night Witch",
             "DisplayName": "Night Witch 14/11",
             "Type": "S",
@@ -12712,18 +12641,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Bloodweaver Night Witch",
-            "DisplayName": "Night Witch 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -12765,42 +12682,6 @@
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Gallows Grove",
-            "DisplayName": "Gallows Grove 5/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "3Gallows Grove",
-            "DisplayName": "Gallows Grove 5/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "4Gallows Grove",
-            "DisplayName": "Gallows Grove 5/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
             "CCName": "Lord of the Feast",
             "DisplayName": "Lord of the Feast 12/16",
             "Type": "S",
@@ -12825,20 +12706,8 @@
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Reeve Hunter",
-            "DisplayName": "Reeve Hunter 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
             "CCName": "Tharn Blood Shaman",
-            "DisplayName": "Tharn Blood Shaman 14/11",
+            "DisplayName": "Blood Shaman 14/11",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12850,7 +12719,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Tharn Ravager Shaman",
-            "DisplayName": "Tharn Ravager Shaman 13/15",
+            "DisplayName": "Ravager Shaman 13/15",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12861,44 +12730,20 @@
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Tharn Ravager Shaman",
-            "DisplayName": "Tharn Ravager Shaman 13/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
             "CCName": "Tharn Ravager White Mane",
-            "DisplayName": "Tharn Ravager White Mane 13/15",
+            "DisplayName": "White Mane 13/15",
             "Type": "S",
             "BoxFormats": [
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
-            "CCName": "2Tharn Ravager White Mane",
-            "DisplayName": "Tharn Ravager White Mane 13/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
           {
             "Faction": "Circle Orboros",
             "CCName": "Tharn Wolf Rider Champion",
-            "DisplayName": "Tharn Wolf Rider Champion 15/14",
+            "DisplayName": "Wolf Rider Champion 15/14",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12909,20 +12754,8 @@
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2Tharn Wolf Rider Champion",
-            "DisplayName": "Tharn Wolf Rider Champion 15/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
             "CCName": "Una the Falconer",
-            "DisplayName": "Una the Falconer 15/13",
+            "DisplayName": "Una 15/13",
             "Type": "S",
             "BoxFormats": [
               {
@@ -12945,18 +12778,6 @@
           },
           {
             "Faction": "Circle Orboros",
-            "CCName": "2War Wolf",
-            "DisplayName": "War Wolf 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Circle Orboros",
             "CCName": "3War Wolf",
             "DisplayName": "War Wolf 13/12",
             "Type": "S",
@@ -12970,7 +12791,7 @@
           {
             "Faction": "Circle Orboros",
             "CCName": "Wolf Lord Morraig",
-            "DisplayName": "Wolf Lord Morraig 14/17(15)",
+            "DisplayName": "Morraig 14/17(15)",
             "Type": "S",
             "BoxFormats": [
               {
@@ -13807,6 +13628,121 @@
         "Unit": [
           {
             "Faction": "Skorne",
+            "CCName": "Immortals (min)",
+            "DisplayName": "Immortals 11/17",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Immortals (max)",
+            "DisplayName": "Immortals 11/17",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Nihilators (min)",
+            "DisplayName": "Nihilators 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Nihilators (max)",
+            "DisplayName": "Nihilators 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Paingiver Beast Handlers (min)",
+            "DisplayName": "Paingiver Beast Handlers 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Paingiver Beast Handlers (max)",
+            "DisplayName": "Paingiver Beast Handlers 13/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Paingiver Bloodrunners",
+            "DisplayName": "Paingiver Bloodrunners 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Praetorian Karax (min)",
+            "DisplayName": "Praetorian Karax 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Praetorian Karax (max)",
+            "DisplayName": "Praetorian Karax 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Praetorian Keltarii (min)",
+            "DisplayName": "Praetorian Keltarii 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Praetorian Keltarii (max)",
+            "DisplayName": "Praetorian Keltarii 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Praetorian Swordsmen (min)",
+            "DisplayName": "Praetorian Swordsmen 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Praetorian Swordsmen (max)",
+            "DisplayName": "Praetorian Swordsmen 13/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Venator Catapult Crew",
+            "DisplayName": "Venator Catapult Crew 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Venator Flayer Cannon Crew",
+            "DisplayName": "Venator Flayer Cannon Crew 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Venator Reivers (min)",
+            "DisplayName": "Venator Reivers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Venator Reivers (max)",
+            "DisplayName": "Venator Reivers 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Venator Slingers (min)",
+            "DisplayName": "Venator Slingers 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Skorne",
+            "CCName": "Venator Slingers (max)",
+            "DisplayName": "Venator Slingers 13/12",
+            "SingleWound": true
+          },
+
+          {
+            "Faction": "Skorne",
             "CCName": "Cataphract Arcuarii (min)",
             "DisplayName": "Arcuarii 11/15",
             "Type": "S",
@@ -13956,30 +13892,6 @@
           },
           {
             "Faction": "Skorne",
-            "CCName": "2Extoller Advocate",
-            "DisplayName": "Advocate 14/13 ",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "3Extoller Advocate",
-            "DisplayName": "Advocate 14/13 ",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
             "CCName": "Praetorian Karax Officer & Standard",
             "DisplayName": "Karax Officer 12/15",
             "Type": "S",
@@ -13992,42 +13904,6 @@
           },
           {
             "Faction": "Skorne",
-            "CCName": "2Praetorian Karax Officer & Standard",
-            "DisplayName": "Karax Officer 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "3Praetorian Karax Officer & Standard",
-            "DisplayName": "Karax Officer 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "4Praetorian Karax Officer & Standard",
-            "DisplayName": "Karax Officer 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
             "CCName": "Praetorian Swordsman Officer & Standard",
             "DisplayName": "Praetorian Swordsman Officer & Standard 13/14",
             "Type": "S",
@@ -14035,42 +13911,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "2Praetorian Swordsman Officer & Standard",
-            "DisplayName": "Praetorian Swordsman Officer & Standard 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "3Praetorian Swordsman Officer & Standard",
-            "DisplayName": "Praetorian Swordsman Officer & Standard 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "4Praetorian Swordsman Officer & Standard",
-            "DisplayName": "Praetorian Swordsman Officer & Standard 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           },
@@ -14095,42 +13935,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "2Venator Reiver Officer & Standard",
-            "DisplayName": "Reiver Officer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "3Venator Reiver Officer & Standard",
-            "DisplayName": "Reiver Officer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "4Venator Reiver Officer & Standard",
-            "DisplayName": "Reiver Officer 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           }
@@ -14186,30 +13990,6 @@
           },
           {
             "Faction": "Skorne",
-            "CCName": "2Ancestral Guardian",
-            "DisplayName": "Ancestral Guardian 10/18",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "Ancestral Guardian",
-            "DisplayName": "3Ancestral Guardian 10/18",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000\n300000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
             "CCName": "Aptimus Marketh",
             "DisplayName": "Marketh 13/13",
             "Type": "S",
@@ -14234,30 +14014,6 @@
           },
           {
             "Faction": "Skorne",
-            "CCName": "2Extoller Novitiate",
-            "DisplayName": "Novitiate 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "3Extoller Novitiate",
-            "DisplayName": "Novitiate 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
             "CCName": "Extoller Soulward",
             "DisplayName": "Soulward 14/12",
             "Type": "S",
@@ -14265,18 +14021,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "2Extoller Soulward",
-            "DisplayName": "Soulward 14/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -14306,30 +14050,6 @@
           },
           {
             "Faction": "Skorne",
-            "CCName": "2Immortal Vessel",
-            "DisplayName": "Immortal Vessel 11/17",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "3Immortal Vessel",
-            "DisplayName": "Immortal Vessel 11/17",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
             "CCName": "Mortitheurge Willbreaker",
             "DisplayName": "Willbreaker 13/13",
             "Type": "S",
@@ -14337,18 +14057,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "2Mortitheurge Willbreaker",
-            "DisplayName": "Willbreaker 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -14366,18 +14074,6 @@
           },
           {
             "Faction": "Skorne",
-            "CCName": "2Paingiver Bloodrunner Master Tormentor",
-            "DisplayName": "Tormentor 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
             "CCName": "Paingiver Task Master",
             "DisplayName": "Task Master 13/13",
             "Type": "S",
@@ -14385,18 +14081,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "2Paingiver Task Master",
-            "DisplayName": "Task Master 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -14426,18 +14110,6 @@
           },
           {
             "Faction": "Skorne",
-            "CCName": "2Venator Dakar",
-            "DisplayName": "Dakar 13/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Skorne",
             "CCName": "Void Spirit",
             "DisplayName": "Void Spirit 14/12",
             "Type": "S",
@@ -14447,20 +14119,7 @@
                 "Boxes": "00000"
               }
             ]
-          },
-          {
-            "Faction": "Skorne",
-            "CCName": "2Void Spirit",
-            "DisplayName": "Void Spirit 14/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
           }
-
         ],
         "Battle Engine": [
           {
@@ -15607,18 +15266,6 @@
           },
           {
             "Faction": "Legion of Everblight",
-            "CCName": "2Blighted Nyss Archer Officer & Ammo Porter",
-            "DisplayName": "Archer UA 13/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
             "CCName": "Blighted Nyss Swordsman Abbot & Champion",
             "DisplayName": "Abbot & Champ 14/13",
             "Type": "S",
@@ -15662,18 +15309,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
-            "CCName": "2Strider Scout Officer & Musician",
-            "DisplayName": "Strider Scout UA 15/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -15741,18 +15376,6 @@
           },
           {
             "Faction": "Legion of Everblight",
-            "CCName": "2Beast Mistress",
-            "DisplayName": "Mistress 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
             "CCName": "Blighted Nyss Shepherd",
             "DisplayName": "Shepherd 13/11",
             "SingleWound": true
@@ -15771,18 +15394,6 @@
           },
           {
             "Faction": "Legion of Everblight",
-            "CCName": "2Blighted Nyss Sorceress & Hellion",
-            "DisplayName": "Sorceress 14/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
             "CCName": "Blighted Nyss Warlord",
             "DisplayName": "Warlord 14/13",
             "Type": "S",
@@ -15790,18 +15401,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
-            "CCName": "2Blighted Nyss Warlord",
-            "DisplayName": "Warlord 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -15843,20 +15442,8 @@
           },
           {
             "Faction": "Legion of Everblight",
-            "CCName": "2Grotesque Assassin",
-            "DisplayName": "Assassin 14/13",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
             "CCName": "Incubus (5)",
-            "DisplayName": "Incubus (5) 13/15",
+            "DisplayName": "Incubus 13/15",
             "SingleWound": true
           },
           {
@@ -15874,18 +15461,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
-            "CCName": "2Strider Deathstalker",
-            "DisplayName": "Deathstalker 15/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -15915,18 +15490,6 @@
           },
           {
             "Faction": "Legion of Everblight",
-            "CCName": "2The Forsaken",
-            "DisplayName": "Forsaken 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
             "CCName": "Warmonger War Chief",
             "DisplayName": "War Chief 12/17",
             "Type": "S",
@@ -15934,18 +15497,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Legion of Everblight",
-            "CCName": "2Warmonger War Chief",
-            "DisplayName": "War Chief 12/17",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           }
@@ -16412,18 +15963,6 @@
           },
           {
             "Faction": "Grymkin",
-            "CCName": "2Lantern Man",
-            "DisplayName": "Lantern Man 12/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Grymkin",
             "CCName": "Neigh Slayer War Horse",
             "DisplayName": "Neigh Slayer War Horse 13/16",
             "Type": "S",
@@ -16436,18 +15975,6 @@
           },
           {
             "Faction": "Grymkin",
-            "CCName": "2Neigh Slayer War Horse",
-            "DisplayName": "Neigh Slayer War Horse 13/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Grymkin",
             "CCName": "Piggyback Officer",
             "DisplayName": "Piggyback Officer 11/14",
             "Type": "S",
@@ -16455,18 +15982,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "*000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Grymkin",
-            "CCName": "2Piggyback Officer",
-            "DisplayName": "Piggyback Officer 11/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           }
@@ -16504,18 +16019,6 @@
           },
           {
             "Faction": "Grymkin",
-            "CCName": "2Glimmer Imp",
-            "DisplayName": "Glimmer Imp 14/10",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Grymkin",
             "CCName": "Grave Ghoul",
             "DisplayName": "Grave Ghoul 12/16",
             "Type": "S",
@@ -16523,18 +16026,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Grymkin",
-            "CCName": "2Grave Ghoul",
-            "DisplayName": "Grave Ghoul 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -16576,18 +16067,6 @@
           },
           {
             "Faction": "Grymkin",
-            "CCName": "2Trapperkin",
-            "DisplayName": "Trapperkin 14/11",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Grymkin",
             "CCName": "Witchwood",
             "DisplayName": "Witchwood5/18",
             "Type": "S",
@@ -16595,18 +16074,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Grymkin",
-            "CCName": "2Witchwood",
-            "DisplayName": "Witchwood 5/18",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000>00000\n200000>00000"
               }
             ]
           }
@@ -17204,6 +16671,91 @@
         "Unit": [
           {
             "Faction": "Minions",
+            "CCName": "Farrow Brigands (min)",
+            "DisplayName": "Brigands 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Brigands (max)",
+            "DisplayName": "Brigands 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Slaughterhousers",
+            "DisplayName": "Slaughterhousers 12/15",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Bone Grinders (min)",
+            "DisplayName": "Bone Grinders 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Bone Grinders (max)",
+            "DisplayName": "Bone Grinders 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Bog Trog Ambushers (min)",
+            "DisplayName": "Ambushers 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Bog Trog Ambushers (max)",
+            "DisplayName": "Ambushers 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Swamp Gobber Bellows Crew",
+            "DisplayName": "Bellows Crew 15/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Razorback Crew",
+            "DisplayName": "Razorback 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Croak Raiders (min)",
+            "DisplayName": "Raiders 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Croak Raiders (max)",
+            "DisplayName": "Raiders 13/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Commandos (min)",
+            "DisplayName": "Commandos 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Farrow Commandos (max)",
+            "DisplayName": "Commandos 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Croak Trappers",
+            "DisplayName": "Croak Trappers 13/13",
+            "SingleWound": true
+          },
+
+          {
+            "Faction": "Minions",
             "CCName": "Boil Master & Spirit Cauldron",
             "DisplayName": "Cauldron 5/18",
             "IncludeType": "Unit",
@@ -17293,6 +16845,25 @@
         "Attachment": [
           {
             "Faction": "Minions",
+            "CCName": "Void Leech (1)",
+            "DisplayName": "Void Leech 10/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Void Leech (2)",
+            "DisplayName": "2 Void Leech 10/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Void Leech (3)",
+            "DisplayName": "3 Void Leech 10/13",
+            "SingleWound": true
+          },
+
+          {
+            "Faction": "Minions",
             "CCName": "Farrow Brigand Warlord",
             "DisplayName": "Warlord 12/14",
             "Type": "S",
@@ -17302,33 +16873,28 @@
                 "Boxes": "00000>000"
               }
             ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "2Farrow Brigand Warlord",
-            "DisplayName": "Warlord 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "3Farrow Brigand Warlord",
-            "DisplayName": "Warlord 12/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000"
-              }
-            ]
           }
         ],
         "Solo": [
+          {
+            "Faction": "Minions",
+            "CCName": "Feralgeist",
+            "DisplayName": "Feralgeist 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Swamp Gobber River Raider",
+            "DisplayName": "Swamp Gobber River Raider 14/11",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Minions",
+            "CCName": "Swamp Gobber Chef",
+            "DisplayName": "Swamp Gobber Chef 14/12",
+            "SingleWound": true
+          },
+
           {
             "Faction": "Minions",
             "CCName": "Agata, Queen of Carnage",
@@ -17367,18 +16933,6 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "2Bog Trog Mist Speaker",
-            "DisplayName": "Mist Speaker 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
             "CCName": "Bog Trog Trawler",
             "DisplayName": "Trawler 12/15",
             "Type": "S",
@@ -17386,18 +16940,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "2Bog Trog Trawler",
-            "DisplayName": "Trawler 12/15",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
               }
             ]
           },
@@ -17422,18 +16964,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "2Bone Shrine",
-            "DisplayName": "Shrine 5/18",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
               }
             ]
           },
@@ -17473,30 +17003,6 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "Croak Hunter",
-            "DisplayName": "2Croak Hunter 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "Croak Hunter",
-            "DisplayName": "3Croak Hunter 13/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
             "CCName": "Dahlia Hallyr & Skarath",
             "DisplayName": "Dahlia 16/12",
             "Include": "Skarath",
@@ -17527,18 +17033,6 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "2Efaarit Scouts",
-            "DisplayName": "Efaarit Scouts 14/14",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
             "CCName": "Gatorman Husk",
             "DisplayName": "Gatorman Husk 12/16",
             "Type": "S",
@@ -17546,30 +17040,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "2Gatorman Husk",
-            "DisplayName": "Gatorman Husk 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "3Gatorman Husk",
-            "DisplayName": "Gatorman Husk 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000\n3000>00000"
               }
             ]
           },
@@ -17587,18 +17057,6 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "2Gatorman Witch Doctor",
-            "DisplayName": "Witch Doc 12/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
             "CCName": "Gobber Tinker",
             "DisplayName": "Tinker 14/12",
             "Type": "S",
@@ -17611,18 +17069,6 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "2Gobber Tinker",
-            "DisplayName": "Tinker 14/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
             "CCName": "Gremlin Swarm",
             "DisplayName": "Gremlin 13/12",
             "Type": "S",
@@ -17630,42 +17076,6 @@
               {
                 "Name": "Horizontal",
                 "Boxes": "00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "2Gremlin Swarm",
-            "DisplayName": "Gremlin 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "3Gremlin Swarm",
-            "DisplayName": "Gremlin 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
-            "CCName": "4Gremlin Swarm",
-            "DisplayName": "Gremlin 13/12",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "100000\n200000\n300000\n400000"
               }
             ]
           },
@@ -17785,18 +17195,6 @@
           },
           {
             "Faction": "Minions",
-            "CCName": "2Thrullg",
-            "DisplayName": "Thrullg 13/16",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "1000>00000\n2000>00000"
-              }
-            ]
-          },
-          {
-            "Faction": "Minions",
             "CCName": "Totem Hunter",
             "DisplayName": "Totem Hunter 14/15",
             "Type": "S",
@@ -17851,7 +17249,7 @@
                 "Name": "Vertical 5",
                 "Boxes": "00000\n000"
               }
-             ]
+            ]
           },
           {
             "Faction": "Minions",
