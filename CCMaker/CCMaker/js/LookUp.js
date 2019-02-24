@@ -86,6 +86,17 @@ function lookUp(AllModels, Faction, ThemeName, TargetName, TargetKey, Attached, 
             ModelGroup.push(model);
         }
 
+        //grab any models directly included before attachments
+        var Includes = LookupIncludes(model, AllModels, OverrideModels, Faction, ThemeName, xOffset);
+
+        for (var j = 0; j < Includes.IndependentModels.length; j++) {
+            IndependentModels.push(Includes.IndependentModels[j]);
+        }
+        for (var j = 0; j < Includes.ModelGroup.length; j++) {
+            ModelGroup.push(Includes.ModelGroup[j]);
+        }
+
+
         if (Attached != null) {
             //Attached models. This can be a UA (good!) or a Jack/Beast (bad!)
             //loop through all attached models
@@ -137,40 +148,63 @@ function lookUp(AllModels, Faction, ThemeName, TargetName, TargetKey, Attached, 
                         IndependentModels.push(attachedModel);
                     }
                 }
+
+
+                // attached models can have includes as well!
+                var Includes = LookupIncludes(attachedModel, AllModels, OverrideModels, Faction, ThemeName, xOffset);
+
+                for (var j = 0; j < Includes.IndependentModels.length; j++) {
+                    IndependentModels.push(Includes.IndependentModels[j]);
+                }
+                for (var j = 0; j < Includes.ModelGroup.length; j++) {
+                    ModelGroup.push(Includes.ModelGroup[j]);
+                }
             }
         }
 
-        //dig down the hole of includes
-        while (model != null && model.Include != null) {
-            var OldModel = model;
-            model = null;
-            //Check theme override models
-            if (OverrideModels != null) {
-                model = lookUpSingle(OverrideModels, Faction, ThemeName, OldModel.Include, OldModel.IncludeType);
-            }
 
-            //check supplied faction models
-            if (model == null) {
-                model = lookUpSingle(AllModels, Faction, ThemeName, OldModel.Include, OldModel.IncludeType);
-            }
+    }
 
-            //check merc models
-            if (model == null) {
-                model = lookUpSingle(AllModels, 'Mercenaries', ThemeName, OldModel.Include, OldModel.IncludeType);
-            }
+    return {
+        ModelGroup: ModelGroup,
+        IndependentModels: IndependentModels
+    };
 
-            //check minion models
-            if (model == null) {
-                model = lookUpSingle(AllModels, 'Minions', ThemeName, OldModel.Include, OldModel.IncludeType);
-            }
+}
 
-            if (model != null) {
-                model.X = xOffset;
-                if (OldModel.IncludeType == 'Warbeast' || OldModel.IncludeType == 'Warjack') {
-                    IndependentModels.push(model);
-                } else {
-                    ModelGroup.push(model);
-                }
+function LookupIncludes(model, AllModels, OverrideModels, Faction, ThemeName, XOffset) {
+    var ModelGroup = [];
+    var IndependentModels = [];
+
+    while (model != null && model.Include != null) {
+        var OldModel = model;
+        model = null;
+        //Check theme override models
+        if (OverrideModels != null) {
+            model = lookUpSingle(OverrideModels, Faction, ThemeName, OldModel.Include, OldModel.IncludeType);
+        }
+
+        //check supplied faction models
+        if (model == null) {
+            model = lookUpSingle(AllModels, Faction, ThemeName, OldModel.Include, OldModel.IncludeType);
+        }
+
+        //check merc models
+        if (model == null) {
+            model = lookUpSingle(AllModels, 'Mercenaries', ThemeName, OldModel.Include, OldModel.IncludeType);
+        }
+
+        //check minion models
+        if (model == null) {
+            model = lookUpSingle(AllModels, 'Minions', ThemeName, OldModel.Include, OldModel.IncludeType);
+        }
+
+        if (model != null) {
+            model.X = XOffset;
+            if (OldModel.IncludeType == 'Warbeast' || OldModel.IncludeType == 'Warjack') {
+                IndependentModels.push(model);
+            } else {
+                ModelGroup.push(model);
             }
         }
     }
@@ -179,5 +213,4 @@ function lookUp(AllModels, Faction, ThemeName, TargetName, TargetKey, Attached, 
         ModelGroup: ModelGroup,
         IndependentModels: IndependentModels
     };
-
 }

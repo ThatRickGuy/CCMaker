@@ -3498,11 +3498,11 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "l..000>000..r\n..0000>0000..\n0000ss>ss0000\n0lllsc>csrrr0\nllcccc>ccccrr\nlcmmmm>mmmmcr"
+                "Boxes": "L..000>000..R\n..0000>0000..\n0000ss>ss0000\n0lllsc>csrrr0\nllcccc>ccccrr\nlcmmmm>mmmmcr"
               },
               {
                 "Name": "Vertical",
-                "Boxes": "l.00ll\n..0llc\n.00lcm\n000lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n000rcm\n.00rcm\n..0rrc\nr.00rr"
+                "Boxes": "L.00ll\n..0llc\n.00lcm\n000lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n000rcm\n.00rcm\n..0rrc\nR.00rr"
               }
             ]
           },
@@ -3738,11 +3738,11 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "l..000>000..r\n..0000>0000..\n0000ss>ss0000\n0lllsc>csrrr0\nllcccc>ccccrr\nlcmmmm>mmmmcr"
+                "Boxes": "L..000>000..R\n..0000>0000..\n0000ss>ss0000\n0lllsc>csrrr0\nllcccc>ccccrr\nlcmmmm>mmmmcr"
               },
               {
                 "Name": "Vertical",
-                "Boxes": "l.00ll\n..0llc\n.00lcm\n000lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n000rcm\n.00rcm\n..0rrc\nr.00rr"
+                "Boxes": "L.00ll\n..0llc\n.00lcm\n000lcm\n00sscm\n00sccm\n-00sccm\n00sscm\n000rcm\n.00rcm\n..0rrc\nR.00rr"
               }
             ]
           }
@@ -8045,7 +8045,13 @@
           },
           {
             "Faction": "Crucible Guard",
-            "CCName": "Crucible Guard Infantry",
+            "CCName": "Crucible Guard Infantry (min)",
+            "DisplayName": "Infantry 12/14",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Crucible Guard",
+            "CCName": "Crucible Guard Infantry (max)",
             "DisplayName": "Infantry 12/14",
             "SingleWound": true
           },
@@ -10902,19 +10908,19 @@
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "Krielstone Bearer & Stone Scribes",
-            "DisplayName": "Krielstone 12/13",
-            "SingleWound": true
-          },
-          {
-            "Faction": "Trollbloods",
             "CCName": "Krielstone Bearer & Stone Scribes (min)",
             "DisplayName": "Krielstone 12/13",
             "SingleWound": true
           },
           {
             "Faction": "Trollbloods",
-            "CCName": "Northkin Bear Handlers & Battle Bears (max)",
+            "CCName": "Krielstone Bearer & Stone Scribes (max)",
+            "DisplayName": "Krielstone 12/13",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Trollbloods",
+            "CCName": "Northkin Bear Handlers & Battle Bears",
             "DisplayName": "Bear Handler 12/15",
             "IncludeType": "Unit",
             "Include": "Bears",
@@ -10922,7 +10928,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000"
+                "Boxes": ".00000"
               }
             ]
           },
@@ -10934,7 +10940,7 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "A000>00000\nB000>00000"
+                "Boxes": "A00000>000\nB00000>000"
               }
             ]
           },
