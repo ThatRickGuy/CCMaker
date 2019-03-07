@@ -413,6 +413,14 @@ function model_factory(data, parentData, xOffset, yOffset, d3ParentID, includeDr
                     AddLetter(plate, currentxOffset, currentYOffset, 'I');
                     currentxOffset += 23;
                     break;
+                case 'o':
+                    if (data.Type == "S")
+                        CreateSquare(plate, currentxOffset, currentYOffset);
+                    if (data.Type == "C")
+                        CreateCircle(plate, currentxOffset, currentYOffset);
+                    AddLetter(plate, currentxOffset, currentYOffset, 'O');
+                    currentxOffset += 23;
+                    break;
                 case 'L':
                     AddLetter(plate, currentxOffset, currentYOffset, 'L');
                     currentxOffset += 23;

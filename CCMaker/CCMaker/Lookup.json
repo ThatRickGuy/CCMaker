@@ -4398,15 +4398,15 @@
             "BoxFormats": [
               {
                 "Name": "Horizontal",
-                "Boxes": "00000>00000>00000>000"
+                "Boxes": "00000>00000>00000>00000>00000>000"
               },
               {
                 "Name": "Horizontal 15 max",
-                "Boxes": "00000>00000>00000\n000"
+                "Boxes": "00000>00000>00000\n00000>00000>000"
               },
               {
                 "Name": "Horizontal 10 max",
-                "Boxes": "00000>00000\n00000>000"
+                "Boxes": "00000>00000\n00000>00000\n00000>000"
               }
             ]
           },
@@ -4414,26 +4414,6 @@
             "Faction": "Khador",
             "CCName": "Man-O-War Siege Chariot",
             "DisplayName": "Siege Chariot 9/19",
-            "Type": "S",
-            "BoxFormats": [
-              {
-                "Name": "Horizontal",
-                "Boxes": "00000>00000>00000>000"
-              },
-              {
-                "Name": "Horizontal 15 max",
-                "Boxes": "00000>00000>00000\n000"
-              },
-              {
-                "Name": "Horizontal 10 max",
-                "Boxes": "00000>00000\n00000>000"
-              }
-            ]
-          },
-          {
-            "Faction": "Khador",
-            "CCName": "Winter Guard Gun Carriage",
-            "DisplayName": "Gun Carriage 9/20",
             "Type": "S",
             "BoxFormats": [
               {
@@ -4447,6 +4427,26 @@
               {
                 "Name": "Horizontal 10 max",
                 "Boxes": "00000>00000\n00000>00000\n00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Khador",
+            "CCName": "Winter Guard Gun Carriage",
+            "DisplayName": "Gun Carriage 9/20",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000>00000>00000>00000>000"
+              },
+              {
+                "Name": "Horizontal 15 max",
+                "Boxes": "00000>00000>00000\n00000>00000>00000\n00000>000"
+              },
+              {
+                "Name": "Horizontal 10 max",
+                "Boxes": "00000>00000\n00000>00000\n00000>00000\n00000>000"
               }
             ]
           }
@@ -16867,7 +16867,6 @@
             "DisplayName": "3 Void Leech 10/13",
             "SingleWound": true
           },
-
           {
             "Faction": "Minions",
             "CCName": "Farrow Brigand Warlord",
@@ -17331,24 +17330,359 @@
     {
       "Name": "Infernals",
       "Models": {
-        "Warlock": {
+        "Infernal Masters": [
+          {
+            "Faction": "Infernals",
+            "CCName": "Agathon 1",
+            "DisplayName": "Agathon 14/15",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n00"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00"
+              }
+            ]
+          },
 
-        },
-        "Warbeast": {
+          {
+            "Faction": "Infernals",
+            "CCName": "Omodamos 1",
+            "DisplayName": "Omodamos 14/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n0000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>0000"
+              }
+            ]
+          },
 
-        },
-        "Unit": {
+          {
+            "Faction": "Infernals",
+            "CCName": "Zaateroth 1",
+            "DisplayName": "Zaateroth 15/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>0"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n0"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>0"
+              }
+            ]
+          }
+        ],
+        "Horrors": [
+          {
+            "Faction": "Infernals",
+            "CCName": "Soul Stalker",
+            "DisplayName": "Soul Stalker 13/15",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "o0000>00000>0\nm0000>00\nc000"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0..\n0..\n0..\n0..\n00.\n00.\n00.\n000\n000\n000\nomc"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Tormentor",
+            "DisplayName": "Tormentor 11/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "o0000>00000>0\nm0000>00\nc000"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0..\n0..\n0..\n0..\n00.\n00.\n00.\n00.\n000\n000\n000\nomc"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Desolator",
+            "DisplayName": "Desolator 11/18",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "o0000>00000>0\nm0000>00\nc000"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0..\n0..\n0..\n0..\n00.\n00.\n00.\n00.\n000\n000\n000\nomc"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Lamenter",
+            "DisplayName": "Lamenter 13/14",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "o0000>0000\nm0000\nc000"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0..\n0..\n0..\n0..\n00.\n000\n000\n000\nomc"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Lamenter",
+            "DisplayName": "Lamenter 13/15",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "o0000>0000\nm0000\nc000"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0..\n0..\n0..\n0..\n00.\n000\n000\n000\nomc"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Foreboder",
+            "DisplayName": "Foreboder 13/10",
+            "Type": "C",
+            "BoxFormats": [
+              {
+                "Name": "Vertical",
+                "Boxes": "o0000>00\nm0000\nc0"
+              },
+              {
+                "Name": "Horizontal",
+                "Boxes": "0..\n0..\n00.\n00.\n00.\n000\nomc"
+              }
+            ]
+          }
+        ],
+        "Unit": [
+          {
+            "Faction": "Infernals",
+            "CCName": "Cultist Band (min)",
+            "DisplayName": "Cultists 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Cultist Band (max)",
+            "DisplayName": "Cultists 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Griever Swarm (min)",
+            "DisplayName": "Grievers 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Griever Swarm (max)",
+            "DisplayName": "Grievers 13/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Howlers (min)",
+            "DisplayName": "Howlers 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000>000\nB00000>000\nC00000>000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Howlers (max)",
+            "DisplayName": "Howlers 12/17",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "A00000>000\nB00000>000\nC00000>000\nD00000>000\nE00000>000"
+              }
+            ]
+          }
 
-        },
-        "Attachment": {
-
-        },
-        "Solo": {
-
-        },
-        "Battle Engine": {
-
-        }
+        ],
+        "Attachment": [
+          {
+            "Faction": "Infernals",
+            "CCName": "Dark Sentinel",
+            "DisplayName": "Dark Sentinel 12/12",
+            "SingleWound": true
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Umbral Guardian",
+            "DisplayName": "Guardian 13/16",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>000"
+              }
+            ]
+          }
+        ],
+        "Solo": [
+          {
+            "Faction": "Infernals",
+            "CCName": "Lord Roget d’Vyaros",
+            "DisplayName": "Roget 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Lord Adept Quintus Faustus",
+            "DisplayName": "Quintus 13/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Master Theurgist Gideon Asher",
+            "DisplayName": "Asher 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Great Princess Regna Gravnoy",
+            "DisplayName": "Regna 14/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Valin Hauke, The Fallen Knight",
+            "DisplayName": "Regna 13/18",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "The Wretch",
+            "DisplayName": "Wretch 13/11",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Mordecai, Master of Arms",
+            "DisplayName": "Mordecai 13/14",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          },
+          {
+            "Faction": "Infernals",
+            "CCName": "Kezia Brand, The Screaming Night",
+            "DisplayName": "Kezia 16/12",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000"
+              }
+            ]
+          }
+        ],
+        "Battle Engine": [
+          {
+            "Faction": "Infernals",
+            "CCName": "Infernal Gate",
+            "DisplayName": "Infernal Gate 5/19",
+            "Type": "S",
+            "BoxFormats": [
+              {
+                "Name": "Horizontal",
+                "Boxes": "00000>00000>00000>00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 15",
+                "Boxes": "00000>00000>00000\n00000>00000"
+              },
+              {
+                "Name": "Horizontal Max 10",
+                "Boxes": "00000>00000\n00000>00000\n00000"
+              }
+            ]
+          }
+        ]
       }
     }
   ]
